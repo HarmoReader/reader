@@ -1,0 +1,322 @@
+{
+ "updated": "2026-10-30T04:30:00+01:00",
+ "editions": [
+  {
+   "id": "canzoni-2026-10-29",
+   "source": "canzoni",
+   "date": "2026-10-29",
+   "title": "Le canzoni",
+   "intro": "I am a deejay I am what I play, di Luca Sofri.",
+   "song": {
+    "title": "Bitter",
+    "artist": "Meshell Ndegeocello",
+    "year": 1999,
+    "links": [
+     {
+      "label": "Spotify",
+      "url": "https://x.ilpost.it/re?l=D0I5w3ow8I1z679szIdITmvu2630fI5si09w&s=AMJAIGOOMDGJHHGK&req=dmc_cid%3D3683%26cv_id%3D370985"
+     },
+     {
+      "label": "Apple Music",
+      "url": "https://x.ilpost.it/re?l=D0I5w3ow8I1z679szIeITmvu2630fI5si09w&s=AMJAIGOOMDGJHHGK&req=dmc_cid%3D3683%26cv_id%3D370985"
+     },
+     {
+      "label": "YouTube",
+      "url": "https://x.ilpost.it/re?l=D0I5w3ow8I1z679szIfITmvu2630fI5si09w&s=AMJAIGOOMDGJHHGK&req=dmc_cid%3D3683%26cv_id%3D370985"
+     }
+    ]
+   },
+   "paragraphs": [
+    "Un brano notturno e dolce nei suoni, ma amaro nel testo, su una storia finita male. L'album fu molto lodato dalla critica senza diventare un successo da Festivalbar.",
+    "In apertura Sofri commenta le risposte dei lettori sui libri più belli degli ultimi cinque anni, quasi tutti romanzi. Racconta anche di aver ritrovato in un'agenda del 1988 la traccia di un concerto a Milano di cui non ricorda niente."
+   ],
+   "gmailUrl": "https://mail.google.com/mail/?authuser=ennioberti@gmail.com#all/thread-f:1880421335906365752"
+  },
+  {
+   "id": "evening-2026-10-29",
+   "source": "evening",
+   "date": "2026-10-29",
+   "title": "Evening Post, le storie di oggi",
+   "intro": "In apertura una battuta sul mento appoggiato alla mano mentre si lavora, con il pezzo che rassicura chi lo fa.",
+   "introUrl": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szI3ITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985",
+   "sections": [
+    {
+     "heading": "Estero",
+     "items": [
+      {
+       "text": "In Spagna si cercano ancora dei dispersi",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szI4ITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Alcuni partiti israeliani dovranno rimangiarsi le promesse per governare",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szI5ITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Come è fuggito Flávio Bolsonaro: depistaggio e aiuto del governo argentino",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szI6ITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "L'UE ha dubbi sul Canada \"membro associato\"",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szI7ITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Attivista israeliano aggredito e arrestato in Cisgiordania",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szIiITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "La Finlandia indaga su Google per una foresta abbattuta",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szIjITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "In Albania multe fino a 5.500 euro per le proteste violente",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szIkITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    },
+    {
+     "heading": "Economia",
+     "items": [
+      {
+       "text": "La BCE ha lasciato i tassi invariati",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szI8ITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Lagarde lascerà con otto mesi d'anticipo",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szI9ITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Volkswagen: perdita di quasi 6 miliardi nel trimestre, la peggiore dal 2015",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szImITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "L'economia USA è cresciuta più delle attese",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szInITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Apple cede ai MacBook con schermo touch",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szIlITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    },
+    {
+     "heading": "Italia",
+     "items": [
+      {
+       "text": "L'ex ILVA deve chiudere davvero",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szIaITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Lo sciopero di venerdì non dovrebbe toccare i trasporti",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szIbITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Quali tasse si riducono con la legge di bilancio",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szIcITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Gli azionisti di MPS votano contro il piano per non farsi comprare da Intesa",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szIeITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Del Vecchio rinuncia all'offerta per il Fatto Quotidiano",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szIfITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Chi fu l'ultimo italiano a vincere in Formula 1?",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szIhITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    },
+    {
+     "heading": "Da ascoltare",
+     "items": [
+      {
+       "text": "Wilson: il nostro complicato rapporto con i soldi",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szIoITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    },
+    {
+     "heading": "Da leggere",
+     "items": [
+      {
+       "text": "Le regioni non hanno abbastanza soldi per la sanità",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szIqITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "L'elezione dei nuovi membri del CSM, spiegata",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szIsITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Certe crociere non finiscono",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szItITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Il profilo Instagram che sbugiarda chi bara nelle maratone",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szIvITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Cosa funziona davvero contro il raffreddore",
+       "url": "https://x.ilpost.it/re?l=D0I5w3ow6I1z679szIxITmvttcwby&s=FENLNCIAFIGNJGJJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    }
+   ],
+   "gmailUrl": "https://mail.google.com/mail/?authuser=ennioberti@gmail.com#all/thread-f:1880405855437977545"
+  },
+  {
+   "id": "charlie-2026-10-18",
+   "source": "charlie",
+   "date": "2026-10-18",
+   "title": "Charlie, dilettanti",
+   "intro": "Il calo di competenza e autorevolezza tocca anche l'informazione: gli esempi sono la portavoce della Casa Bianca Katie Zacharia e il nuovo editore del gruppo Monrif.",
+   "sections": [
+    {
+     "heading": "In breve",
+     "items": [
+      {
+       "text": "Meta, nuove condizioni per gli account business: potrà usare i contenuti dei loro siti per addestrare la sua IA",
+       "url": "https://x.ilpost.it/re?l=D0I5w3lgbI1z679szI2ITmvdhaevvI5si09w&s=GHEHHBOFLPIKKNME&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Inchiesta su Pegaso e alcune aziende giornalistiche: sparita dai quotidiani, intervengono i comitati di redazione",
+       "url": "https://x.ilpost.it/re?l=D0I5w3lgbI1z679szI4ITmvdhaevvI5si09w&s=GHEHHBOFLPIKKNME&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Il Garante privacy sanziona Cairo Editore per le immagini del delitto di Garlasco su Giallo",
+       "url": "https://x.ilpost.it/re?l=D0I5w3lgbI1z679szIdITmvdhaevvI5si09w&s=GHEHHBOFLPIKKNME&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Quartz e la scomparsa dei lettori: i giornali comprano traffico a pagamento",
+       "url": "https://x.ilpost.it/re?l=D0I5w3lgbI1z679szIhITmvdhaevvI5si09w&s=GHEHHBOFLPIKKNME&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Il direttore del Manifesto spiega i buoni risultati del giornale",
+       "url": "https://x.ilpost.it/re?l=D0I5w3lgbI1z679szIiITmvdhaevvI5si09w&s=GHEHHBOFLPIKKNME&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Katie Zacharia e il Daily Mail",
+       "url": "https://x.ilpost.it/re?l=D0I5w3lgbI1z679szIjITmvdhaevvI5si09w&s=GHEHHBOFLPIKKNME&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Del Vecchio e i giornalisti del gruppo Monrif: business class e quindicesima",
+       "url": "https://x.ilpost.it/re?l=D0I5w3lgbI1z679szIoITmvdhaevvI5si09w&s=GHEHHBOFLPIKKNME&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "I tabloid serbi e la propaganda per Vučić",
+       "url": "https://x.ilpost.it/re?l=D0I5w3lgbI1z679szIqITmvdhaevvI5si09w&s=GHEHHBOFLPIKKNME&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Il Tirreno non ancora venduto",
+       "url": "https://x.ilpost.it/re?l=D0I5w3lgbI1z679szIrITmvdhaevvI5si09w&s=GHEHHBOFLPIKKNME&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Francesca Mannocchi torna alla Stampa"
+      }
+     ]
+    },
+    {
+     "heading": "Per parlare di giornali",
+     "items": [
+      {
+       "text": "Il prossimo Talk del Post a Napoli, con la rassegna \"I giornali spiegati bene\"",
+       "url": "https://x.ilpost.it/re?l=D0I5w3lgbI1z679szItITmvdhaevvI5si09w&s=GHEHHBOFLPIKKNME&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    }
+   ],
+   "gmailUrl": "https://mail.google.com/mail/?authuser=ennioberti@gmail.com#all/thread-f:1879370126709798579"
+  },
+  {
+   "id": "streaming-2026-10-29",
+   "source": "streaming",
+   "date": "2026-10-29",
+   "title": "Meglio legarsi per amore o a Kim Jong-un?",
+   "intro": "JustWatch, l'app per sapere dove vedere film e serie, è diventata anche una piattaforma di streaming e noleggio: la sezione JustWatchTV è attiva anche in Italia.",
+   "sections": [
+    {
+     "heading": "Ora in streaming",
+     "items": [
+      {
+       "text": "Noi, un po' meglio: il film di Luchetti con Elio Germano su una coppia che vuole adottare (Netflix)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3oowI1z679szI4ITmvtjx44b&s=KNDAGIJIANECNNBO&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Castle Walls: miniserie interamente generata con l'IA (Prime Video)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3oowI1z679szI6ITmvtjx44b&s=KNDAGIJIANECNNBO&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    },
+    {
+     "heading": "Arrivi e partenze",
+     "items": [
+      {
+       "text": "Nocturne: serie con Liev Schreiber e Stephen Graham, da venerdì (Apple TV)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3oowI1z679szI8ITmvtjx44b&s=KNDAGIJIANECNNBO&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    },
+    {
+     "heading": "Dalle profondità delle piattaforme",
+     "items": [
+      {
+       "text": "The Interview (2014): commedia satirica su Kim Jong-un (Prime Video)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3oowI1z679szI9ITmvtjx44b&s=KNDAGIJIANECNNBO&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    }
+   ],
+   "gmailUrl": "https://mail.google.com/mail/?authuser=ennioberti@gmail.com#all/thread-f:1880389296110801625"
+  },
+  {
+   "id": "streaming-2026-10-22",
+   "source": "streaming",
+   "date": "2026-10-22",
+   "title": "La miglior serie cilena e Jake Gyllenhaal viscidissimo",
+   "intro": "Netflix vuole cambiare dopo il calo di visualizzazioni e il crollo in borsa: licenziati i tre dirigenti dei contenuti.",
+   "introUrl": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szI2ITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985",
+   "sections": [
+    {
+     "heading": "Ora in streaming",
+     "items": [
+      {
+       "text": "Mis muertos tristes: miniserie di Pablo Larraín con fantasmi a Buenos Aires (Netflix)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szI3ITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Lupin, stagione 4 (Netflix)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szI6ITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    },
+    {
+     "heading": "Arrivi e partenze",
+     "items": [
+      {
+       "text": "Nobody Wants This, terza stagione (Netflix)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szI8ITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Dov'è Wanda?, seconda stagione (Apple TV)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szI9ITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Yaga: serie horror di Kat Sandler (HBO Max)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szIaITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    },
+    {
+     "heading": "Dalle profondità delle piattaforme",
+     "items": [
+      {
+       "text": "Lo sciacallo - Nightcrawler (2014), con Jake Gyllenhaal (Prime Video)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szIbITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    }
+   ],
+   "gmailUrl": "https://mail.google.com/mail/?authuser=ennioberti@gmail.com#all/thread-f:1879751850766468387"
+  }
+ ]
+}

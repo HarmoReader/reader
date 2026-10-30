@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Harmoreader</title>
+<meta name="theme-color" content="#2457d6">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<style>
+/* Layout: sidebar delle fonti, elenco delle uscite, pannello di lettura. Su telefono la sidebar è un cassetto e la lettura copre l'elenco. */
+:root {
+  --bg: #f4f5f7;
+  --surface: #ffffff;
+  --side: #1d2433;
+  --side-fg: #c9d1e3;
+  --side-active: #2b3550;
+  --fg: #1b2230;
+  --muted: #667086;
+  --line: #e1e4ea;
+  --accent: #2457d6;
+  --accent-fg: #ffffff;
+  --star: #e8a317;
+  --evening: #2457d6;
+  --canzoni: #c4472f;
+  --charlie: #7a4bc4;
+  --streaming: #17805f;
+  --shadow: 0 8px 30px rgba(10, 20, 40, .25);
+  --font-ui: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-read: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #12161f; --surface: #1a2030; --side: #0d1119; --side-fg: #aab4cb; --side-active: #1f2740;
+    --fg: #e6e9f1; --muted: #8b95ab; --line: #272f43; --accent: #6d95ff; --accent-fg: #0b1020;
+    --star: #f0b84a; --evening: #6d95ff; --canzoni: #f08468; --charlie: #b693f0; --streaming: #4cc9a0; --shadow: 0 8px 30px rgba(0,0,0,.6);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #12161f; --surface: #1a2030; --side: #0d1119; --side-fg: #aab4cb; --side-active: #1f2740;
+  --fg: #e6e9f1; --muted: #8b95ab; --line: #272f43; --accent: #6d95ff; --accent-fg: #0b1020;
+  --star: #f0b84a; --evening: #6d95ff; --canzoni: #f08468; --charlie: #b693f0; --streaming: #4cc9a0; --shadow: 0 8px 30px rgba(0,0,0,.6);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  background: var(--bg); color: var(--fg); font: 15px/1.45 var(--font-ui);
+  -webkit-tap-highlight-color: transparent; overflow: hidden;
+}
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+#app { display: grid; height: 100%; grid-template-columns: 1fr; }
+
+/* Sidebar */
+#side {
+  position: fixed; inset: 0 auto 0 0; width: min(82vw, 300px); z-index: 30; background: var(--side); color: var(--side-fg);
+  transform: translateX(-100%); transition: transform .22s ease; display: flex; flex-direction: column;
+  padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
+}
+#side.open { transform: none; box-shadow: var(--shadow); }
+#scrim { position: fixed; inset: 0; background: rgba(5, 10, 20, .45); z-index: 20; opacity: 0; pointer-events: none; transition: opacity .2s; }
+#scrim.on { opacity: 1; pointer-events: auto; }
+.brand { padding: 18px 18px 10px; color: #fff; font-weight: 700; font-size: 17px; letter-spacing: .01em; }
+.brand small { display: block; font-weight: 400; font-size: 12px; color: var(--side-fg); margin-top: 2px; }
+.nav { padding: 6px 8px; display: flex; flex-direction: column; gap: 2px; overflow: auto; }
+.nav h2 { margin: 14px 10px 4px; font-size: 11px; text-transform: uppercase; letter-spacing: .09em; color: #7d89a6; font-weight: 600; }
+.nav button {
+  display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 10px 10px; border-radius: 8px; color: var(--side-fg); min-height: 44px;
+}
+.nav button:hover { background: var(--side-active); }
+.nav button[aria-current="true"] { background: var(--side-active); color: #fff; font-weight: 600; }
+.nav .dot { width: 10px; height: 10px; border-radius: 3px; flex: none; }
+.nav .count { margin-left: auto; font-size: 12px; font-variant-numeric: tabular-nums; color: #8c98b4; }
+.nav .ico { width: 18px; text-align: center; flex: none; }
+.side-foot { margin-top: auto; padding: 10px 18px 16px; font-size: 12px; color: #7d89a6; border-top: 1px solid #263049; }
+.side-foot button { color: var(--side-fg); text-decoration: underline; min-height: 32px; }
+
+/* Elenco */
+#list-pane { display: flex; flex-direction: column; min-width: 0; height: 100%; background: var(--bg); }
+.bar {
+  display: flex; align-items: center; gap: 4px; padding: calc(env(safe-area-inset-top, 0px) + 8px) max(8px, env(safe-area-inset-right, 0px)) 8px max(8px, env(safe-area-inset-left, 0px));
+  background: var(--accent); color: var(--accent-fg); min-height: 56px;
+}
+.bar h1 { margin: 0 auto 0 4px; font-size: 18px; font-weight: 650; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.icon-btn { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; flex: none; }
+.icon-btn:hover { background: rgba(255,255,255,.14); }
+.icon-btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.icon-btn.spin svg { animation: rot .8s linear infinite; }
+@keyframes rot { to { transform: rotate(360deg); } }
+#items { overflow: auto; flex: 1; padding: 8px max(10px, env(safe-area-inset-right, 0px)) calc(24px + env(safe-area-inset-bottom, 0px)) max(10px, env(safe-area-inset-left, 0px)); display: flex; flex-direction: column; gap: 8px; }
+.day { margin: 10px 4px 0; font-size: 12px; font-weight: 650; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+.card {
+  position: relative; display: block; width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line);
+  border-radius: 10px; padding: 12px 14px 12px 16px; min-height: 76px;
+}
+.card::before { content: ""; position: absolute; left: 0; top: 10px; bottom: 10px; width: 4px; border-radius: 0 3px 3px 0; background: var(--src, var(--accent)); }
+.card:hover { border-color: var(--accent); }
+.card[aria-current="true"] { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
+.card .meta { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+.card .meta .src { font-weight: 650; color: var(--src, var(--accent)); }
+.card .meta .star { margin-left: auto; color: var(--star); }
+.card h3 { margin: 0; font-size: 16px; line-height: 1.3; font-weight: 700; }
+.card p { margin: 4px 0 0; font-size: 13.5px; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.card.read h3 { font-weight: 500; color: var(--muted); }
+.card:not(.read) .meta::after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); order: 5; margin-left: 4px; }
+.card .meta .star:not(:empty) { order: 6; margin-left: auto; }
+.empty { margin: 60px 20px; text-align: center; color: var(--muted); }
+.empty strong { display: block; color: var(--fg); font-size: 16px; margin-bottom: 4px; }
+
+/* Lettura */
+#read-pane {
+  position: fixed; inset: 0; z-index: 10; background: var(--surface); display: flex; flex-direction: column;
+  transform: translateX(100%); transition: transform .22s ease; visibility: hidden;
+}
+#read-pane.open { transform: none; visibility: visible; }
+#read-pane .bar { background: var(--surface); color: var(--fg); border-bottom: 1px solid var(--line); }
+#read-pane .icon-btn:hover { background: var(--bg); }
+#read-pane .bar .grow { margin-right: auto; }
+#read-pane .icon-btn[aria-pressed="true"] { color: var(--star); }
+#read-pane .icon-btn[aria-pressed="true"] svg { fill: currentColor; }
+#article { overflow: auto; flex: 1; padding: 20px max(18px, env(safe-area-inset-right, 0px)) calc(48px + env(safe-area-inset-bottom, 0px)) max(18px, env(safe-area-inset-left, 0px)); }
+#article .inner { max-width: 680px; margin: 0 auto; }
+#article .kicker { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--src); }
+#article h1 { font: 700 26px/1.2 var(--font-read); margin: 6px 0 4px; text-wrap: balance; }
+#article .date { color: var(--muted); font-size: 13px; margin-bottom: 18px; }
+#article .lead { font: 18px/1.5 var(--font-read); margin: 0 0 22px; }
+#article h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 26px 0 6px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+#article ul { list-style: none; margin: 0; padding: 0; }
+#article li { border-bottom: 1px solid var(--line); }
+#article li a, #article li span { display: block; padding: 11px 2px; color: var(--fg); text-decoration: none; font-size: 16px; line-height: 1.35; }
+#article li a::after { content: " \2197"; color: var(--accent); font-size: 14px; }
+#article li a:hover { color: var(--accent); }
+#article p { font: 17px/1.6 var(--font-read); margin: 0 0 14px; }
+.song { margin: 4px 0 22px; padding: 16px; border-radius: 12px; background: var(--bg); border: 1px solid var(--line); }
+.song .t { font: 700 22px/1.2 var(--font-read); }
+.song .a { color: var(--muted); margin: 2px 0 12px; }
+.btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 22px; background: var(--accent); color: var(--accent-fg) !important; text-decoration: none; font-weight: 600; }
+.btn.ghost { background: transparent; color: var(--accent) !important; border: 1px solid var(--accent); }
+.orig { margin-top: 28px; }
+
+/* Desktop: tre colonne */
+@media (min-width: 980px) {
+  #app { grid-template-columns: 250px 380px 1fr; }
+  #side { position: static; transform: none; width: auto; box-shadow: none; }
+  #scrim { display: none; }
+  #menu-btn, #back-btn { display: none; }
+  #read-pane { position: static; transform: none; visibility: visible; border-left: 1px solid var(--line); }
+  #read-pane .bar { min-height: 56px; }
+  #read-pane:not(.has) #article .inner { display: none; }
+  #read-pane:not(.has)::after { content: "Scegli una lettura"; margin: auto; color: var(--muted); }
+  .bar { padding-left: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+<div id="app">
+  <nav id="side" aria-label="Fonti">
+    <div class="brand">Harmoreader<small id="upd">Ultimo aggiornamento: &ndash;</small></div>
+    <div class="nav" id="nav"></div>
+    <div class="side-foot"><button id="theme-btn" type="button">Cambia tema</button></div>
+  </nav>
+  <div id="scrim"></div>
+
+  <main id="list-pane">
+    <header class="bar">
+      <button class="icon-btn" id="menu-btn" aria-label="Apri il menu" type="button">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <h1 id="title">Tutte le uscite</h1>
+      <button class="icon-btn" id="markall-btn" aria-label="Segna tutto come letto" type="button">
+        <svg viewBox="0 0 24 24"><path d="M2 12.5l5 5L17 7M13 16.5l2 1.5L23 8"/></svg>
+      </button>
+      <button class="icon-btn" id="refresh-btn" aria-label="Aggiorna" type="button">
+        <svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 10-2.3 5.7M20 4v7h-7"/></svg>
+      </button>
+    </header>
+    <div id="items" role="list"></div>
+  </main>
+
+  <section id="read-pane" aria-label="Lettura">
+    <header class="bar">
+      <button class="icon-btn" id="back-btn" aria-label="Torna all'elenco" type="button">
+        <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <span class="grow"></span>
+      <button class="icon-btn" id="unread-btn" aria-label="Segna come da leggere" type="button">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/></svg>
+      </button>
+      <button class="icon-btn" id="star-btn" aria-label="Preferito" aria-pressed="false" type="button">
+        <svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.9 6.8 19.7l1-5.9L3.5 9.7l5.9-.8z"/></svg>
+      </button>
+    </header>
+    <div id="article"><div class="inner" id="inner"></div></div>
+  </section>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var SOURCES = {
+    evening: { name: 'Evening Post', color: 'var(--evening)', nav: '#6d95ff' },
+    canzoni: { name: 'Le canzoni', color: 'var(--canzoni)', nav: '#f08468' },
+    charlie: { name: 'Charlie', color: 'var(--charlie)', nav: '#b693f0' },
+    streaming: { name: 'Cosa guardare', color: 'var(--streaming)', nav: '#4cc9a0' }
+  };
+  var DATA_URL = 'data/digests.json';
+  var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null };
+
+  // Stato personale (letto, preferiti) solo su questo telefono.
+  function load(key) { try { return new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch (e) { return new Set(); } }
+  function save(key, set) { try { localStorage.setItem(key, JSON.stringify(Array.from(set))); } catch (e) {} }
+  state.read = load('letture.read'); state.starred = load('letture.starred');
+
+  var $ = function (id) { return document.getElementById(id); };
+  var fmtDay = new Intl.DateTimeFormat('it-IT', { weekday: 'long', day: 'numeric', month: 'long' });
+  var fmtShort = new Intl.DateTimeFormat('it-IT', { weekday: 'short', day: 'numeric', month: 'short' });
+  var fmtTime = new Intl.DateTimeFormat('it-IT', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+  function parseDate(s) { var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+  function safeUrl(u) { return /^https?:\/\//i.test(u || '') ? u : null; }
+
+  function matches(e) {
+    var f = state.filter;
+    if (f.kind === 'unread') return !state.read.has(e.id);
+    if (f.kind === 'starred') return state.starred.has(e.id);
+    if (f.kind === 'source') return e.source === f.source;
+    return true;
+  }
+  function visible() {
+    return state.editions.filter(matches).sort(function (a, b) {
+      return a.date === b.date ? (a.source < b.source ? -1 : 1) : (a.date < b.date ? 1 : -1);
+    });
+  }
+  function snippet(e) {
+    if (e.song) return 'Canzone del giorno: ' + e.song.title + ', ' + e.song.artist + '. ' + (e.paragraphs && e.paragraphs[0] ? e.paragraphs[0] : '');
+    if (e.sections) {
+      var n = 0; e.sections.forEach(function (s) { n += s.items.length; });
+      return n + (e.source === 'evening' ? ' notizie e letture. ' : ' voci con link. ') + (e.intro || '');
+    }
+    return e.intro || '';
+  }
+
+  function renderNav() {
+    var nav = $('nav'); nav.textContent = '';
+    var unread = state.editions.filter(function (e) { return !state.read.has(e.id); }).length;
+    function item(label, filter, count, icon, color) {
+      var b = el('button'); b.type = 'button';
+      var cur = state.filter.kind === filter.kind && state.filter.source === filter.source;
+      b.setAttribute('aria-current', cur ? 'true' : 'false');
+      if (color) { var d = el('span', 'dot'); d.style.background = color; b.appendChild(d); }
+      else b.appendChild(el('span', 'ico', icon));
+      b.appendChild(el('span', null, label));
+      if (count != null) b.appendChild(el('span', 'count', String(count)));
+      b.addEventListener('click', function () { state.filter = filter; closeSide(); renderAll(); $('items').scrollTop = 0; });
+      nav.appendChild(b);
+    }
+    item('Tutte le uscite', { kind: 'all' }, state.editions.length, '☰');
+    item('Da leggere', { kind: 'unread' }, unread, '●');
+    item('Preferiti', { kind: 'starred' }, state.starred.size, '★');
+    nav.appendChild(el('h2', null, 'Newsletter'));
+    Object.keys(SOURCES).forEach(function (k) {
+      var n = state.editions.filter(function (e) { return e.source === k && !state.read.has(e.id); }).length;
+      item(SOURCES[k].name, { kind: 'source', source: k }, n, null, SOURCES[k].nav);
+    });
+  }
+
+  function renderList() {
+    var box = $('items'); box.textContent = '';
+    var f = state.filter;
+    $('title').textContent = f.kind === 'all' ? 'Tutte le uscite' : f.kind === 'unread' ? 'Da leggere' : f.kind === 'starred' ? 'Preferiti' : SOURCES[f.source].name;
+    var list = visible();
+    if (!list.length) {
+      var em = el('div', 'empty');
+      em.appendChild(el('strong', null, f.kind === 'unread' ? 'Tutto letto' : f.kind === 'starred' ? 'Nessun preferito' : 'Nessuna uscita'));
+      em.appendChild(el('span', null, f.kind === 'unread' ? 'Il prossimo riassunto arriva domattina.' : f.kind === 'starred' ? 'Tocca la stella dentro una lettura per tenerla qui.' : 'Controlla di nuovo più tardi.'));
+      box.appendChild(em); return;
+    }
+    var lastDay = null;
+    list.forEach(function (e) {
+      if (e.date !== lastDay) { lastDay = e.date; box.appendChild(el('div', 'day', fmtDay.format(parseDate(e.date)))); }
+      var c = el('button', 'card' + (state.read.has(e.id) ? ' read' : '')); c.type = 'button'; c.setAttribute('role', 'listitem');
+      c.style.setProperty('--src', SOURCES[e.source] ? SOURCES[e.source].color : 'var(--accent)');
+      if (state.openId === e.id) c.setAttribute('aria-current', 'true');
+      var m = el('div', 'meta');
+      m.appendChild(el('span', 'src', SOURCES[e.source] ? SOURCES[e.source].name : e.source));
+      m.appendChild(el('span', 'star', state.starred.has(e.id) ? '★' : ''));
+      c.appendChild(m);
+      c.appendChild(el('h3', null, e.title));
+      c.appendChild(el('p', null, snippet(e)));
+      c.addEventListener('click', function () { openEdition(e.id); });
+      box.appendChild(c);
+    });
+  }
+
+  function renderArticle() {
+    var pane = $('read-pane'), inner = $('inner'); inner.textContent = '';
+    var e = state.editions.filter(function (x) { return x.id === state.openId; })[0];
+    pane.classList.toggle('has', !!e);
+    if (!e) return;
+    inner.style.setProperty('--src', SOURCES[e.source] ? SOURCES[e.source].color : 'var(--accent)');
+    inner.appendChild(el('div', 'kicker', SOURCES[e.source] ? SOURCES[e.source].name : e.source));
+    inner.appendChild(el('h1', null, e.title));
+    inner.appendChild(el('div', 'date', fmtDay.format(parseDate(e.date))));
+    if (e.song) {
+      var s = el('div', 'song');
+      s.appendChild(el('div', 't', e.song.title));
+      s.appendChild(el('div', 'a', e.song.artist + (e.song.year ? ' · ' + e.song.year : '')));
+      var bs = el('div', 'btns');
+      (e.song.links || []).forEach(function (l) {
+        var u = safeUrl(l.url); if (!u) return;
+        var a = el('a', 'btn', l.label); a.href = u; a.target = '_blank'; a.rel = 'noopener noreferrer'; bs.appendChild(a);
+      });
+      s.appendChild(bs); inner.appendChild(s);
+    }
+    if (e.intro && !e.song) {
+      var lead = el('p', 'lead');
+      var iu = safeUrl(e.introUrl);
+      if (iu) { var ia = el('a', null, e.intro); ia.href = iu; ia.target = '_blank'; ia.rel = 'noopener noreferrer'; lead.appendChild(ia); }
+      else lead.textContent = e.intro;
+      inner.appendChild(lead);
+    }
+    (e.paragraphs || []).forEach(function (p) { inner.appendChild(el('p', null, p)); });
+    (e.sections || []).forEach(function (sec) {
+      inner.appendChild(el('h2', null, sec.heading));
+      var ul = el('ul');
+      sec.items.forEach(function (it) {
+        var li = el('li'), u = safeUrl(it.url);
+        if (u) { var a = el('a', null, it.text); a.href = u; a.target = '_blank'; a.rel = 'noopener noreferrer'; li.appendChild(a); }
+        else li.appendChild(el('span', null, it.text));
+        ul.appendChild(li);
+      });
+      inner.appendChild(ul);
+    });
+    var gu = safeUrl(e.gmailUrl);
+    if (gu) {
+      var o = el('div', 'orig'), oa = el('a', 'btn ghost', 'Apri l’email originale');
+      oa.href = gu; oa.target = '_blank'; oa.rel = 'noopener noreferrer'; o.appendChild(oa); inner.appendChild(o);
+    }
+    var star = $('star-btn'), on = state.starred.has(e.id);
+    star.setAttribute('aria-pressed', on ? 'true' : 'false');
+    star.setAttribute('aria-label', on ? 'Togli dai preferiti' : 'Aggiungi ai preferiti');
+    $('article').scrollTop = 0;
+  }
+
+  function renderAll() { renderNav(); renderList(); }
+
+  var wide = function () { return window.matchMedia('(min-width: 980px)').matches; };
+
+  function openEdition(id) {
+    state.openId = id;
+    state.read.add(id); save('letture.read', state.read);
+    renderArticle(); renderAll();
+    if (!wide()) { $('read-pane').classList.add('open'); if (location.hash !== '#' + id) location.hash = id; }
+    else history.replaceState(null, '', '#' + id);
+  }
+  function closeReader() {
+    $('read-pane').classList.remove('open');
+    if (!wide()) { state.openId = null; renderAll(); }
+  }
+  window.addEventListener('hashchange', function () {
+    var id = location.hash.slice(1);
+    if (!id) { closeReader(); return; }
+    if (state.editions.some(function (e) { return e.id === id; })) {
+      if (state.openId !== id || !$('read-pane').classList.contains('open')) {
+        state.openId = id; state.read.add(id); save('letture.read', state.read);
+        renderArticle(); renderAll(); if (!wide()) $('read-pane').classList.add('open');
+      }
+    }
+  });
+
+  function openSide() { $('side').classList.add('open'); $('scrim').classList.add('on'); }
+  function closeSide() { $('side').classList.remove('open'); $('scrim').classList.remove('on'); }
+  $('menu-btn').addEventListener('click', openSide);
+  $('scrim').addEventListener('click', closeSide);
+  $('back-btn').addEventListener('click', function () { if (location.hash) history.back(); else closeReader(); });
+
+  $('star-btn').addEventListener('click', function () {
+    var id = state.openId; if (!id) return;
+    if (state.starred.has(id)) state.starred.delete(id); else state.starred.add(id);
+    save('letture.starred', state.starred); renderArticle(); renderAll();
+  });
+  $('unread-btn').addEventListener('click', function () {
+    var id = state.openId; if (!id) return;
+    state.read.delete(id); save('letture.read', state.read);
+    if (!wide() && location.hash) history.back(); else closeReader();
+    renderAll();
+  });
+  $('markall-btn').addEventListener('click', function () {
+    visible().forEach(function (e) { state.read.add(e.id); });
+    save('letture.read', state.read); renderAll();
+  });
+  $('theme-btn').addEventListener('click', function () {
+    var cur = document.documentElement.getAttribute('data-theme');
+    var dark = cur ? cur === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var next = dark ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('letture.theme', next); } catch (e) {}
+  });
+  try { var th = localStorage.getItem('letture.theme'); if (th) document.documentElement.setAttribute('data-theme', th); } catch (e) {}
+
+  function fetchData(manual) {
+    var btn = $('refresh-btn'); btn.classList.add('spin');
+    return fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (d) {
+        state.editions = d.editions || [];
+        state.updated = d.updated || null;
+        $('upd').textContent = state.updated ? 'Aggiornato: ' + fmtTime.format(new Date(state.updated)) : '';
+        renderAll();
+        var id = location.hash.slice(1);
+        if (id && state.editions.some(function (e) { return e.id === id; })) openEdition(id);
+      })
+      .catch(function () { if (manual) $('upd').textContent = 'Non riesco ad aggiornare ora'; })
+      .then(function () { btn.classList.remove('spin'); });
+  }
+  $('refresh-btn').addEventListener('click', function () { fetchData(true); });
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) fetchData(false); });
+
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(function () {});
+  renderAll(); fetchData(false);
+})();
+</script>
+</body>
+</html>
