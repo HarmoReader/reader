@@ -69,20 +69,20 @@ a { color: var(--accent); }
 #side.open { transform: none; box-shadow: var(--shadow); }
 #scrim { position: fixed; inset: 0; background: rgba(5, 10, 20, .45); z-index: 20; opacity: 0; pointer-events: none; transition: opacity .2s; }
 #scrim.on { opacity: 1; pointer-events: auto; }
-.brand { padding: 18px 18px 10px; color: #fff; font-weight: 700; font-size: 17px; letter-spacing: .01em; }
-.brand small { display: block; font-weight: 400; font-size: 12px; color: var(--side-fg); margin-top: 2px; }
+.brand { padding: 18px 18px 10px; color: #fff; font-weight: 700; font-size: calc(19px * var(--t)); letter-spacing: .01em; }
+.brand small { display: block; font-weight: 400; font-size: calc(13px * var(--t)); color: var(--side-fg); margin-top: 2px; }
 .nav { padding: 6px 8px; display: flex; flex-direction: column; gap: 2px; overflow: auto; }
-.nav h2 { margin: 14px 10px 4px; font-size: 11px; text-transform: uppercase; letter-spacing: .09em; color: #7d89a6; font-weight: 600; }
+.nav h2 { margin: 14px 10px 4px; font-size: calc(12px * var(--t)); text-transform: uppercase; letter-spacing: .09em; color: #7d89a6; font-weight: 600; }
 .nav button {
-  display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 10px 10px; border-radius: 8px; color: var(--side-fg); min-height: 44px;
+  display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; padding: 10px 10px; border-radius: 8px; color: var(--side-fg); min-height: 44px; font-size: calc(17px * var(--t)); line-height: 1.25;
 }
 .nav button:hover { background: var(--side-active); }
 .nav button[aria-current="true"] { background: var(--side-active); color: #fff; font-weight: 600; }
 .nav .dot { width: 10px; height: 10px; border-radius: 3px; flex: none; }
-.nav .count { margin-left: auto; font-size: 12px; font-variant-numeric: tabular-nums; color: #8c98b4; }
+.nav .count { margin-left: auto; font-size: calc(14px * var(--t)); font-variant-numeric: tabular-nums; color: #8c98b4; }
 .nav .ico { width: 18px; text-align: center; flex: none; }
-.side-foot { margin-top: auto; padding: 10px 18px 16px; font-size: 12px; color: #7d89a6; border-top: 1px solid #263049; }
-.side-foot button { color: var(--side-fg); text-decoration: underline; min-height: 32px; }
+.side-foot { margin-top: auto; padding: 10px 18px 16px; font-size: calc(15px * var(--t)); color: #7d89a6; border-top: 1px solid #263049; }
+.side-foot button { color: var(--side-fg); text-decoration: underline; min-height: 36px; font-size: inherit; }
 .fs-row { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; }
 .fs-row span { margin-right: auto; }
 .side-foot .fs-row button { text-decoration: none; min-width: 36px; min-height: 36px; border: 1px solid #3a4666; border-radius: 8px; line-height: 1; }
@@ -100,20 +100,20 @@ a { color: var(--accent); }
 .icon-btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .icon-btn.spin svg { animation: rot .8s linear infinite; }
 @keyframes rot { to { transform: rotate(360deg); } }
-#items { overflow: auto; flex: 1; padding: 8px max(10px, env(safe-area-inset-right, 0px)) calc(24px + env(safe-area-inset-bottom, 0px)) max(10px, env(safe-area-inset-left, 0px)); display: flex; flex-direction: column; gap: 8px; }
-.day { margin: 10px 4px 0; font-size: 12px; font-weight: 650; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+#items { overflow: auto; flex: 1; padding: 8px max(10px, env(safe-area-inset-right, 0px)) calc(24px + env(safe-area-inset-bottom, 0px)) max(10px, env(safe-area-inset-left, 0px)); display: flex; flex-direction: column; gap: 4px; }
+.day { margin: 6px 4px 0; font-size: calc(12px * var(--t)); font-weight: 650; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
 .card {
   position: relative; display: block; width: 100%; text-align: left; background: var(--surface); border: 1px solid var(--line);
-  border-radius: 10px; padding: 12px 14px 12px 16px; min-height: 76px;
+  border-radius: 8px; padding: 7px 12px 7px 14px; min-height: 0;
 }
-.card::before { content: ""; position: absolute; left: 0; top: 10px; bottom: 10px; width: 4px; border-radius: 0 3px 3px 0; background: var(--src, var(--accent)); }
+.card::before { content: ""; position: absolute; left: 0; top: 7px; bottom: 7px; width: 4px; border-radius: 0 3px 3px 0; background: var(--src, var(--accent)); }
 .card:hover { border-color: var(--accent); }
 .card[aria-current="true"] { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
-.card .meta { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+.card .meta { display: flex; align-items: center; gap: 8px; font-size: calc(12px * var(--t)); color: var(--muted); margin-bottom: 1px; }
 .card .meta .src { font-weight: 650; color: var(--src, var(--accent)); }
 .card .meta .star { margin-left: auto; color: var(--star); }
-.card h3 { margin: 0; font-size: calc(16px * var(--t)); line-height: 1.3; font-weight: 700; }
-.card p { margin: 4px 0 0; font-size: calc(13.5px * var(--t)); color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.card h3 { margin: 0; font-size: calc(16px * var(--t)); line-height: 1.25; font-weight: 700; }
+.card p { margin: 1px 0 0; font-size: calc(13.5px * var(--t)); color: var(--muted); display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
 .card.read h3 { font-weight: 500; color: var(--muted); }
 .card:not(.read) .meta::after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); order: 5; margin-left: 4px; }
 .card .meta .star:not(:empty) { order: 6; margin-left: auto; }
@@ -179,7 +179,7 @@ a { color: var(--accent); }
         <button type="button" data-fs="1.15" aria-label="Testo grande" style="font-size:18px">A</button>
         <button type="button" data-fs="1.3" aria-label="Testo molto grande" style="font-size:22px">A</button>
       </div>
-      <button id="theme-btn" type="button">Cambia tema</button></div>
+      <button id="theme-btn" type="button">Tema: automatico</button></div>
   </nav>
   <div id="scrim"></div>
 
@@ -385,6 +385,21 @@ a { color: var(--accent); }
     }
   });
 
+  // Il tasto Indietro del telefono non deve far uscire dall'app: dalla lista chiude il menu o resta qui.
+  (function () {
+    var h0 = location.hash, base = location.pathname + location.search;
+    try {
+      history.replaceState({ root: 1 }, '', base);
+      history.pushState({ home: 1 }, '', base + h0);
+    } catch (e) {}
+    window.addEventListener('popstate', function (ev) {
+      if (ev.state && ev.state.root) {
+        try { history.pushState({ home: 1 }, '', base); } catch (e) {}
+        closeSide();
+      }
+    });
+  })();
+
   function openSide() { $('side').classList.add('open'); $('scrim').classList.add('on'); }
   function closeSide() { $('side').classList.remove('open'); $('scrim').classList.remove('on'); }
   $('menu-btn').addEventListener('click', openSide);
@@ -406,13 +421,6 @@ a { color: var(--accent); }
     visible().forEach(function (e) { state.read.add(e.id); });
     save('letture.read', state.read); renderAll();
   });
-  $('theme-btn').addEventListener('click', function () {
-    var cur = document.documentElement.getAttribute('data-theme');
-    var dark = cur ? cur === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-    var next = dark ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
-    try { localStorage.setItem('letture.theme', next); } catch (e) {}
-  });
   function setFs(v, keep) {
     document.documentElement.style.setProperty('--t', v);
     Array.prototype.forEach.call(document.querySelectorAll('.fs-row button'), function (b) {
@@ -426,7 +434,38 @@ a { color: var(--accent); }
   var fs0 = '1';
   try { var f = localStorage.getItem('letture.fs'); if (f && ['0.9', '1', '1.15', '1.3'].indexOf(f) >= 0) fs0 = f; } catch (e) {}
   setFs(fs0, true);
-  try { var th = localStorage.getItem('letture.theme'); if (th) document.documentElement.setAttribute('data-theme', th); } catch (e) {}
+  // Tema: automatico (chiaro di giorno, scuro dopo il tramonto, a Treviso), oppure scelto a mano.
+  var LAT = 45.667, LNG = 12.243, MODES = ['auto', 'light', 'dark'];
+  var MODE_LABEL = { auto: 'Tema: automatico', light: 'Tema: chiaro', dark: 'Tema: scuro' };
+  var themeMode = 'auto';
+  try { var tm = localStorage.getItem('letture.theme'); if (MODES.indexOf(tm) >= 0) themeMode = tm; } catch (e) {}
+  function sunTimes(now) {
+    var rad = Math.PI / 180, noon = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12);
+    var jd = noon.getTime() / 864e5 + 2440587.5, n = Math.ceil(jd - 2451545 + 0.0008);
+    var js = n + LNG / -360, M = (357.5291 + 0.98560028 * js) % 360;
+    var C = 1.9148 * Math.sin(M * rad) + 0.02 * Math.sin(2 * M * rad) + 0.0003 * Math.sin(3 * M * rad);
+    var lam = (M + C + 180 + 102.9372) % 360;
+    var tr = 2451545 + js + 0.0053 * Math.sin(M * rad) - 0.0069 * Math.sin(2 * lam * rad);
+    var dec = Math.asin(Math.sin(lam * rad) * Math.sin(23.44 * rad));
+    var c = (Math.sin(-0.833 * rad) - Math.sin(LAT * rad) * Math.sin(dec)) / (Math.cos(LAT * rad) * Math.cos(dec));
+    var w = Math.acos(Math.max(-1, Math.min(1, c))) / rad / 360;
+    return { rise: (tr - w - 2440587.5) * 864e5, set: (tr + w - 2440587.5) * 864e5 };
+  }
+  function applyTheme() {
+    var t = themeMode;
+    if (t === 'auto') { var st = sunTimes(new Date()), now = Date.now(); t = (now < st.rise || now > st.set) ? 'dark' : 'light'; }
+    document.documentElement.setAttribute('data-theme', t);
+    var m = document.querySelector('meta[name="theme-color"]'); if (m) m.setAttribute('content', t === 'dark' ? '#1b2233' : '#2457d6');
+    $('theme-btn').textContent = MODE_LABEL[themeMode];
+  }
+  $('theme-btn').addEventListener('click', function () {
+    themeMode = MODES[(MODES.indexOf(themeMode) + 1) % MODES.length];
+    try { localStorage.setItem('letture.theme', themeMode); } catch (e) {}
+    applyTheme();
+  });
+  setInterval(applyTheme, 60000);
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) applyTheme(); });
+  applyTheme();
 
   function fetchData(manual) {
     var btn = $('refresh-btn'); btn.classList.add('spin');
