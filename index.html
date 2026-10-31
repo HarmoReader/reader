@@ -139,6 +139,10 @@ a { color: var(--accent); }
 #article li { display: flex; align-items: center; }
 #article li a, #article li span { flex: 1; min-width: 0; }
 #article li a.seen, #article p a.seen { color: var(--muted); }
+@keyframes slideR { from { transform: translateX(48px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes slideL { from { transform: translateX(-48px); opacity: 0; } to { transform: none; opacity: 1; } }
+#article .inner.slide-r { animation: slideR .28s ease-out; }
+#article .inner.slide-l { animation: slideL .28s ease-out; }
 #article .pager { display: flex; gap: 10px; margin-top: 34px; }
 #article .pager .btn { flex: 1; justify-content: center; }
 #toast { position: fixed; left: 50%; bottom: calc(28px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: #1b2233; color: #fff; padding: 10px 16px; border-radius: 20px; font-size: 14px; z-index: 50; opacity: 0; pointer-events: none; transition: opacity .2s; }
@@ -263,9 +267,9 @@ a { color: var(--accent); }
     charlie: { name: 'Charlie', color: 'var(--charlie)', nav: '#b693f0' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '15 · 31 ottobre 2026';
+  var APP_VERSION = '16 · 31 ottobre 2026';
   var DATA_URL = 'data/digests.json';
-  var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null, q: '', seen: new Set() };
+  var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null, q: '', seen: new Set(), slide: 0 };
 
   // Stato personale (letto, preferiti) solo su questo telefono.
   function load(key) { try { return new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch (e) { return new Set(); } }
@@ -442,6 +446,7 @@ a { color: var(--accent); }
     var star = $('star-btn'), on = state.starred.has(e.id);
     star.setAttribute('aria-pressed', on ? 'true' : 'false');
     star.setAttribute('aria-label', on ? 'Togli dai preferiti' : 'Aggiungi ai preferiti');
+    if (state.slide) { inner.classList.remove('slide-l', 'slide-r'); void inner.offsetWidth; inner.classList.add(state.slide > 0 ? 'slide-r' : 'slide-l'); state.slide = 0; }
     $('article').scrollTop = 0;
   }
 
@@ -466,7 +471,7 @@ a { color: var(--accent); }
     return i < 0 ? null : list[i + dir] || null;
   }
   function goRel(dir) {
-    var e = neighbor(dir); if (!e) { toast(dir > 0 ? 'Sei all\u2019ultima uscita' : 'Sei alla prima uscita'); return; }
+    var e = neighbor(dir); if (e) state.slide = dir; if (!e) { toast(dir > 0 ? 'Sei all\u2019ultima uscita' : 'Sei alla prima uscita'); return; }
     if (wide()) openEdition(e.id); else location.replace('#' + e.id);
   }
   function pager() {
