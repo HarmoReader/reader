@@ -13,6 +13,7 @@
 <style>
 /* Layout: sidebar delle fonti, elenco delle uscite, pannello di lettura. Su telefono la sidebar è un cassetto e la lettura copre l'elenco. */
 :root {
+  --t: 1;
   --bg: #f4f5f7;
   --surface: #ffffff;
   --side: #1d2433;
@@ -82,6 +83,10 @@ a { color: var(--accent); }
 .nav .ico { width: 18px; text-align: center; flex: none; }
 .side-foot { margin-top: auto; padding: 10px 18px 16px; font-size: 12px; color: #7d89a6; border-top: 1px solid #263049; }
 .side-foot button { color: var(--side-fg); text-decoration: underline; min-height: 32px; }
+.fs-row { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; }
+.fs-row span { margin-right: auto; }
+.side-foot .fs-row button { text-decoration: none; min-width: 36px; min-height: 36px; border: 1px solid #3a4666; border-radius: 8px; line-height: 1; }
+.side-foot .fs-row button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-fg); }
 
 /* Elenco */
 #list-pane { display: flex; flex-direction: column; min-width: 0; height: 100%; background: var(--bg); }
@@ -107,8 +112,8 @@ a { color: var(--accent); }
 .card .meta { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
 .card .meta .src { font-weight: 650; color: var(--src, var(--accent)); }
 .card .meta .star { margin-left: auto; color: var(--star); }
-.card h3 { margin: 0; font-size: 16px; line-height: 1.3; font-weight: 700; }
-.card p { margin: 4px 0 0; font-size: 13.5px; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.card h3 { margin: 0; font-size: calc(16px * var(--t)); line-height: 1.3; font-weight: 700; }
+.card p { margin: 4px 0 0; font-size: calc(13.5px * var(--t)); color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .card.read h3 { font-weight: 500; color: var(--muted); }
 .card:not(.read) .meta::after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); order: 5; margin-left: 4px; }
 .card .meta .star:not(:empty) { order: 6; margin-left: auto; }
@@ -129,19 +134,19 @@ a { color: var(--accent); }
 #article { overflow: auto; flex: 1; padding: 20px max(18px, env(safe-area-inset-right, 0px)) calc(48px + env(safe-area-inset-bottom, 0px)) max(18px, env(safe-area-inset-left, 0px)); }
 #article .inner { max-width: 680px; margin: 0 auto; }
 #article .kicker { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--src); }
-#article h1 { font: 700 26px/1.2 var(--font-read); margin: 6px 0 4px; text-wrap: balance; }
+#article h1 { font: 700 calc(26px * var(--t))/1.2 var(--font-read); margin: 6px 0 4px; text-wrap: balance; }
 #article .date { color: var(--muted); font-size: 13px; margin-bottom: 18px; }
-#article .lead { font: 18px/1.5 var(--font-read); margin: 0 0 22px; }
+#article .lead { font: calc(18px * var(--t))/1.5 var(--font-read); margin: 0 0 22px; }
 #article h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 26px 0 6px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
 #article ul { list-style: none; margin: 0; padding: 0; }
 #article li { border-bottom: 1px solid var(--line); }
-#article li a, #article li span { display: block; padding: 11px 2px; color: var(--fg); text-decoration: none; font-size: 16px; line-height: 1.35; }
+#article li a, #article li span { display: block; padding: 11px 2px; color: var(--fg); text-decoration: none; font-size: calc(16px * var(--t)); line-height: 1.35; }
 #article li a::after { content: " \2197"; color: var(--accent); font-size: 14px; }
 #article li a:hover { color: var(--accent); }
-#article p { font: 17px/1.6 var(--font-read); margin: 0 0 14px; }
+#article p { font: calc(17px * var(--t))/1.6 var(--font-read); margin: 0 0 14px; }
 .song { margin: 4px 0 22px; padding: 16px; border-radius: 12px; background: var(--bg); border: 1px solid var(--line); }
-.song .t { font: 700 22px/1.2 var(--font-read); }
-.song .a { color: var(--muted); margin: 2px 0 12px; }
+.song .t { font: 700 calc(22px * var(--t))/1.2 var(--font-read); }
+.song .a { font-size: calc(16px * var(--t)); color: var(--muted); margin: 2px 0 12px; }
 .btns { display: flex; flex-wrap: wrap; gap: 8px; }
 .btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 22px; background: var(--accent); color: var(--accent-fg) !important; text-decoration: none; font-weight: 600; }
 .btn.ghost { background: transparent; color: var(--accent) !important; border: 1px solid var(--accent); }
@@ -167,7 +172,14 @@ a { color: var(--accent); }
   <nav id="side" aria-label="Fonti">
     <div class="brand">Harmoreader<small id="upd">Ultimo aggiornamento: &ndash;</small></div>
     <div class="nav" id="nav"></div>
-    <div class="side-foot"><button id="theme-btn" type="button">Cambia tema</button></div>
+    <div class="side-foot">
+      <div class="fs-row" role="group" aria-label="Dimensione del testo"><span>Testo</span>
+        <button type="button" data-fs="0.9" aria-label="Testo piccolo" style="font-size:12px">A</button>
+        <button type="button" data-fs="1" aria-label="Testo medio" style="font-size:15px">A</button>
+        <button type="button" data-fs="1.15" aria-label="Testo grande" style="font-size:18px">A</button>
+        <button type="button" data-fs="1.3" aria-label="Testo molto grande" style="font-size:22px">A</button>
+      </div>
+      <button id="theme-btn" type="button">Cambia tema</button></div>
   </nav>
   <div id="scrim"></div>
 
@@ -401,6 +413,19 @@ a { color: var(--accent); }
     document.documentElement.setAttribute('data-theme', next);
     try { localStorage.setItem('letture.theme', next); } catch (e) {}
   });
+  function setFs(v, keep) {
+    document.documentElement.style.setProperty('--t', v);
+    Array.prototype.forEach.call(document.querySelectorAll('.fs-row button'), function (b) {
+      b.setAttribute('aria-pressed', b.getAttribute('data-fs') === String(v) ? 'true' : 'false');
+    });
+    if (!keep) { try { localStorage.setItem('letture.fs', String(v)); } catch (e) {} }
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('.fs-row button'), function (b) {
+    b.addEventListener('click', function () { setFs(b.getAttribute('data-fs')); });
+  });
+  var fs0 = '1';
+  try { var f = localStorage.getItem('letture.fs'); if (f && ['0.9', '1', '1.15', '1.3'].indexOf(f) >= 0) fs0 = f; } catch (e) {}
+  setFs(fs0, true);
   try { var th = localStorage.getItem('letture.theme'); if (th) document.documentElement.setAttribute('data-theme', th); } catch (e) {}
 
   function fetchData(manual) {
