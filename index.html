@@ -267,7 +267,7 @@ a { color: var(--accent); }
     charlie: { name: 'Charlie', color: 'var(--charlie)', nav: '#b693f0' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '16 · 31 ottobre 2026';
+  var APP_VERSION = '17 · 31 ottobre 2026';
   var DATA_URL = 'data/digests.json';
   var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null, q: '', seen: new Set(), slide: 0 };
 
@@ -284,18 +284,23 @@ a { color: var(--accent); }
   function parseDate(s) { var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
   function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
   var LINK_RE = /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g;
-  function plain(t) { return String(t || '').replace(LINK_RE, '$1'); }
+  function plain(t) { return String(t || '').replace(LINK_RE, '$1').replace(/\*\*(.+?)\*\*/g, '$1'); }
   function richP(t) {
-    var p = el('p'), last = 0, m;
-    LINK_RE.lastIndex = 0;
-    while ((m = LINK_RE.exec(t))) {
-      if (m.index > last) p.appendChild(document.createTextNode(t.slice(last, m.index)));
-      var u = safeUrl(m[2]);
-      if (u) { var a = el('a', 'inl', m[1]); a.href = u; a.target = '_blank'; a.rel = 'noopener noreferrer'; p.appendChild(a); }
-      else p.appendChild(document.createTextNode(m[1]));
-      last = m.index + m[0].length;
-    }
-    if (last < t.length) p.appendChild(document.createTextNode(t.slice(last)));
+    var p = el('p');
+    String(t).split(/(\*\*.+?\*\*)/).forEach(function (seg) {
+      if (!seg) return;
+      var host = p;
+      if (/^\*\*.+\*\*$/.test(seg)) { host = el('strong'); p.appendChild(host); seg = seg.slice(2, -2); }
+      var last = 0, m; LINK_RE.lastIndex = 0;
+      while ((m = LINK_RE.exec(seg))) {
+        if (m.index > last) host.appendChild(document.createTextNode(seg.slice(last, m.index)));
+        var u = safeUrl(m[2]);
+        if (u) { var a = el('a', 'inl', m[1]); a.href = u; a.target = '_blank'; a.rel = 'noopener noreferrer'; host.appendChild(a); }
+        else host.appendChild(document.createTextNode(m[1]));
+        last = m.index + m[0].length;
+      }
+      if (last < seg.length) host.appendChild(document.createTextNode(seg.slice(last)));
+    });
     return p;
   }
   function safeUrl(u) { return /^https?:\/\//i.test(u || '') ? u : null; }
@@ -305,7 +310,8 @@ a { color: var(--accent); }
     var t = [e.title, e.intro];
     if (e.song) t.push(e.song.title, e.song.artist);
     (e.paragraphs || []).forEach(function (p) { t.push(plain(p)); });
-    (e.sections || []).forEach(function (sec) { t.push(sec.heading); sec.items.forEach(function (it) { t.push(it.text); }); });
+    (e.sections || []).forEach(function (sec) { t.push(sec.heading); (sec.items || []).forEach(function (it) { t.push(it.text); }); (sec.paragraphs || []).forEach(function (p) { t.push(plain(p)); }); });
+    if (e.brief) t.push(plain(e.brief));
     e._idx = t.join(' ').toLowerCase();
     return e._idx;
   }
@@ -324,8 +330,9 @@ a { color: var(--accent); }
   }
   function snippet(e) {
     if (e.song) return 'Canzone del giorno: ' + e.song.title + ', ' + e.song.artist + '. ' + (e.paragraphs && e.paragraphs[0] ? plain(e.paragraphs[0]) : '');
+    if (e.brief) return e.brief;
     if (e.sections) {
-      var n = 0; e.sections.forEach(function (s) { n += s.items.length; });
+      var n = 0; e.sections.forEach(function (s) { n += (s.items || []).length; });
       return n + (e.source === 'evening' ? ' notizie e letture. ' : ' voci con link. ') + (e.intro || '');
     }
     return e.intro || '';
@@ -431,15 +438,16 @@ a { color: var(--accent); }
     (e.paragraphs || []).forEach(function (p) { inner.appendChild(richP(p)); });
     (e.sections || []).forEach(function (sec) {
       inner.appendChild(el('h2', null, sec.heading));
+      (sec.paragraphs || []).forEach(function (p) { inner.appendChild(richP(p)); });
       var ul = el('ul');
-      sec.items.forEach(function (it) {
+      (sec.items || []).forEach(function (it) {
         var li = el('li'), u = safeUrl(it.url);
         if (u) {
           var a = el('a', null, it.text); a.href = u; a.target = '_blank'; a.rel = 'noopener noreferrer'; li.appendChild(a);
         } else li.appendChild(el('span', null, it.text));
         ul.appendChild(li);
       });
-      inner.appendChild(ul);
+      if (ul.children.length) inner.appendChild(ul);
     });
     inner.appendChild(pager());
     markSeen(inner);
@@ -548,9 +556,10 @@ a { color: var(--accent); }
   function shortLine(e) {
     var name = SOURCES[e.source] ? SOURCES[e.source].name : e.source;
     if (e.song) return name + ': \u00ab' + e.song.title + '\u00bb di ' + e.song.artist + '.';
+    if (e.brief) return name + ': ' + plain(e.brief);
     if (e.sections && e.sections.length) {
       var n = 0, top = [];
-      e.sections.forEach(function (sec) { n += sec.items.length; if (top.length < 3 && sec.items[0]) top.push(sec.items[0].text.replace(/[.;:?!]+$/, '')); });
+      e.sections.forEach(function (sec) { var its = sec.items || []; n += its.length; if (top.length < 3 && its[0]) top.push(its[0].text.replace(/[.;:?!]+$/, '')); });
       return name + ': ' + n + (e.source === 'evening' ? ' notizie e letture. ' : ' voci. ') + 'Tra le altre: ' + top.join('; ') + '.';
     }
     return name + ': ' + (e.intro || e.title);
@@ -590,9 +599,10 @@ a { color: var(--accent); }
         if (e.paragraphs && e.paragraphs[0]) box.appendChild(richP(e.paragraphs[0]));
       } else {
         if (e.intro) box.appendChild(el('p', 'lead', e.intro));
-        var ul = el('ul'), n = 0;
+        var ul = el('ul'), n = 0, np = 0;
         (e.sections || []).forEach(function (sec) {
-          sec.items.slice(0, 2).forEach(function (it) {
+          (sec.paragraphs || []).forEach(function (p) { if (np < 2) { np++; box.appendChild(richP(p)); } });
+          (sec.items || []).slice(0, 2).forEach(function (it) {
             if (n >= 6) return; n++;
             var li = el('li'), u = safeUrl(it.url);
             if (u) { var a = el('a', null, it.text); a.href = u; a.target = '_blank'; a.rel = 'noopener noreferrer'; li.appendChild(a); }
@@ -600,7 +610,7 @@ a { color: var(--accent); }
             ul.appendChild(li);
           });
         });
-        box.appendChild(ul);
+        if (ul.children.length) box.appendChild(ul);
       }
       var more = el('button', 'btn ghost', 'Leggi tutta l’uscita'); more.type = 'button';
       more.addEventListener('click', function () { openEdition(e.id); });
