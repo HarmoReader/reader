@@ -110,7 +110,7 @@ a { color: var(--accent); }
 .card::before { content: ""; position: absolute; left: 0; top: 7px; bottom: 7px; width: 4px; border-radius: 0 3px 3px 0; background: var(--src, var(--accent)); }
 .card:hover { border-color: var(--accent); }
 .card[aria-current="true"] { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
-.card .meta { display: flex; align-items: center; gap: 8px; font-size: calc(14.5px * var(--t)); color: var(--muted); margin-bottom: 1px; }
+.card .meta { display: flex; align-items: center; gap: 8px; font-size: calc(17px * var(--t)); color: var(--muted); margin-bottom: 1px; }
 .card .meta .src { font-weight: 700; color: var(--src, var(--accent)); }
 .card .meta .star { margin-left: auto; color: var(--star); }
 .card h3 { margin: 0; font-size: calc(16px * var(--t)); line-height: 1.25; font-weight: 700; }
@@ -245,7 +245,7 @@ a { color: var(--accent); }
     charlie: { name: 'Charlie', color: 'var(--charlie)', nav: '#b693f0' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '12 · 31 ottobre 2026';
+  var APP_VERSION = '13 · 31 ottobre 2026';
   var DATA_URL = 'data/digests.json';
   var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null };
 
