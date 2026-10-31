@@ -137,6 +137,12 @@ a { color: var(--accent); }
 #read-pane .icon-btn[aria-pressed="true"] svg { fill: currentColor; }
 #article { overflow: auto; flex: 1; padding: 20px max(18px, env(safe-area-inset-right, 0px)) calc(48px + env(safe-area-inset-bottom, 0px)) max(18px, env(safe-area-inset-left, 0px)); }
 #article .inner { max-width: 680px; margin: 0 auto; }
+#article .status { margin: 14px 0 6px; padding: 10px 12px; border-radius: 8px; border-left: 4px solid var(--muted); background: var(--bg); font-size: calc(15px * var(--t)); line-height: 1.4; }
+#article .status.ok { border-left-color: #2e9e6a; }
+#article .status.ok strong { color: #2e9e6a; }
+#article .status.bad { border-left-color: #d64545; }
+#article .status.bad strong { color: #d64545; }
+#article .status.wait { border-left-color: #d6a030; }
 #article .brief-ed { margin: 26px 0 0; padding-top: 18px; border-top: 1px solid var(--line); }
 #article .brief-ed .btn.ghost { margin-top: 6px; }
 #article .kicker { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--src); }
@@ -239,9 +245,9 @@ a { color: var(--accent); }
     charlie: { name: 'Charlie', color: 'var(--charlie)', nav: '#b693f0' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '10 · 31 ottobre 2026';
+  var APP_VERSION = '11 · 31 ottobre 2026';
   var DATA_URL = 'data/digests.json';
-  var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set() };
+  var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null };
 
   // Stato personale (letto, preferiti) solo su questo telefono.
   function load(key) { try { return new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch (e) { return new Set(); } }
@@ -423,14 +429,48 @@ a { color: var(--accent); }
     function pad(n) { return (n < 10 ? '0' : '') + n; }
     return { today: fmtNum.format(u), yesterday: prev.getFullYear() + '-' + pad(prev.getMonth() + 1) + '-' + pad(prev.getDate()) };
   }
+  function romeParts(d) {
+    var o = {}; new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' })
+      .formatToParts(d).forEach(function (p) { o[p.type] = p.value; });
+    return { ymd: o.year + '-' + o.month + '-' + o.day, hour: +o.hour, hm: o.hour + ':' + o.minute };
+  }
+  function briefStatus() {
+    var now = romeParts(new Date()), up = state.updated ? romeParts(new Date(state.updated)) : null;
+    var last = state.updated ? fmtTime.format(new Date(state.updated)) : '';
+    if (state.fetchOk === false) return { ok: false, text: 'Non riesco a scaricare i dati: ti mostro quelli salvati sul telefono' + (last ? ' (ultimo aggiornamento ' + last + ').' : '.') };
+    if (!up) return { ok: false, text: 'Non trovo la data dell\u2019ultimo aggiornamento.' };
+    if (up.ymd === now.ymd) return { ok: true, text: 'Aggiornamento di oggi riuscito, fatto alle ' + up.hm + '.' };
+    if (now.hour < 5) return { ok: null, text: 'L\u2019aggiornamento di oggi non \u00e8 ancora arrivato: di solito \u00e8 alle 4:30. L\u2019ultimo \u00e8 del ' + last + '.' };
+    return { ok: false, text: 'L\u2019aggiornamento di oggi non risulta fatto. L\u2019ultimo \u00e8 del ' + last + '.' };
+  }
+  function shortLine(e) {
+    var name = SOURCES[e.source] ? SOURCES[e.source].name : e.source;
+    if (e.song) return name + ': \u00ab' + e.song.title + '\u00bb di ' + e.song.artist + '.';
+    if (e.sections && e.sections.length) {
+      var n = 0, top = [];
+      e.sections.forEach(function (sec) { n += sec.items.length; if (top.length < 3 && sec.items[0]) top.push(sec.items[0].text.replace(/[.;:?!]+$/, '')); });
+      return name + ': ' + n + (e.source === 'evening' ? ' notizie e letture. ' : ' voci. ') + 'Tra le altre: ' + top.join('; ') + '.';
+    }
+    return name + ': ' + (e.intro || e.title);
+  }
   function renderBrief() {
     var inner = $('inner'); inner.textContent = '';
     inner.style.setProperty('--src', 'var(--accent)');
     var bd = briefDates();
     inner.appendChild(el('div', 'kicker', 'Riassunto'));
-    inner.appendChild(el('h1', null, 'Ciao Ennio, ecco il riassunto dell’aggiornamento di oggi, ' + bd.today + '.'));
+    inner.appendChild(el('h1', null, 'Ciao Ennio, ecco il riassunto dell\u2019aggiornamento di oggi, ' + fmtNum.format(new Date()) + '.'));
+    var st = briefStatus(), sb = el('div', 'status ' + (st.ok === true ? 'ok' : st.ok === false ? 'bad' : 'wait'));
+    sb.appendChild(el('strong', null, st.ok === true ? '\u2714 Tutto a posto' : st.ok === false ? '\u2716 Problema' : '\u23f3 In attesa'));
+    sb.appendChild(el('span', null, ' ' + st.text));
+    inner.appendChild(sb);
     var eds = state.editions.filter(function (e) { return e.date === bd.yesterday; }).sort(function (a, b) { return a.source < b.source ? -1 : 1; });
     inner.appendChild(el('div', 'date', eds.length ? 'Ieri, ' + fmtDay.format(parseDate(bd.yesterday)) + ', ' + (eds.length === 1 ? 'è arrivata 1 newsletter.' : 'sono arrivate ' + eds.length + ' newsletter.') : 'Ieri non è arrivata nessuna newsletter.'));
+    if (eds.length) {
+      inner.appendChild(el('h2', null, 'In breve'));
+      var sul = el('ul'); eds.forEach(function (e) { var li = el('li'); li.appendChild(el('span', null, shortLine(e))); sul.appendChild(li); });
+      inner.appendChild(sul);
+      inner.appendChild(el('h2', null, 'Nel dettaglio'));
+    }
     eds.forEach(function (e) {
       var box = el('section', 'brief-ed');
       box.style.setProperty('--src', SOURCES[e.source] ? SOURCES[e.source].color : 'var(--accent)');
@@ -603,16 +643,17 @@ a { color: var(--accent); }
     return fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (d) {
-        state.raw = d.editions || []; applyHidden();
+        state.fetchOk = true; state.raw = d.editions || []; applyHidden();
         state.updated = d.updated || null;
         state.unsub = d.unsubscribe || {};
         $('upd').textContent = state.updated ? 'Aggiornato: ' + fmtTime.format(new Date(state.updated)) : '';
         renderAll();
         var id = location.hash.slice(1);
         if (id === 'riassunto') openBrief();
+        else if (state.openId === 'riassunto') renderBrief();
         else if (id && state.editions.some(function (e) { return e.id === id; })) openEdition(id);
       })
-      .catch(function () { if (manual) $('upd').textContent = 'Non riesco ad aggiornare ora'; })
+      .catch(function () { state.fetchOk = false; if (manual) $('upd').textContent = 'Non riesco ad aggiornare ora'; if (state.openId === 'riassunto') renderBrief(); else if (location.hash === '#riassunto') openBrief(); })
       .then(function () { btn.classList.remove('spin'); });
   }
   $('refresh-btn').addEventListener('click', function () { fetchData(true); });
