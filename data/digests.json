@@ -493,5 +493,11 @@
    ],
    "gmailUrl": "https://mail.google.com/mail/?authuser=ennioberti@gmail.com#all/1a14dd2c4404b6b3"
   }
- ]
+ ],
+ "unsubscribe": {
+  "evening": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szI12ITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985",
+  "canzoni": "https://x.ilpost.it/re?l=D0I5w3p4mI1z679szI5hITmvvhl1mcI5si09w&s=FIICBFLILOKHEGND&req=dmc_cid%3D3683%26cv_id%3D370985",
+  "charlie": "https://x.ilpost.it/re?l=D0I5w3lgbI1z679szI11ITmvdhaevvI5si09w&s=GHEHHBOFLPIKKNME&req=dmc_cid%3D3683%26cv_id%3D370985",
+  "streaming": "https://x.ilpost.it/re?l=D0I5w3oowI1z679szIcITmvtjx44b&s=KNDAGIJIANECNNBO&req=dmc_cid%3D3683%26cv_id%3D370985"
+ }
 }

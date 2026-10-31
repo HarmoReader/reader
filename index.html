@@ -212,6 +212,9 @@ a { color: var(--accent); }
       <button class="icon-btn" id="unread-btn" aria-label="Segna come da leggere" type="button">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/></svg>
       </button>
+      <button class="icon-btn" id="unsub-btn" aria-label="Disiscriviti da questa newsletter" title="Disiscriviti da questa newsletter" type="button">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/><path d="M15 21l6-6M21 21l-6-6" transform="translate(-1 -3) scale(.9)"/></svg>
+      </button>
       <button class="icon-btn" id="star-btn" aria-label="Preferito" aria-pressed="false" type="button">
         <svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L12 16.9 6.8 19.7l1-5.9L3.5 9.7l5.9-.8z"/></svg>
       </button>
@@ -229,9 +232,9 @@ a { color: var(--accent); }
     charlie: { name: 'Charlie', color: 'var(--charlie)', nav: '#b693f0' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '8 · 31 ottobre 2026';
+  var APP_VERSION = '9 · 31 ottobre 2026';
   var DATA_URL = 'data/digests.json';
-  var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null };
+  var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {} };
 
   // Stato personale (letto, preferiti) solo su questo telefono.
   function load(key) { try { return new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch (e) { return new Set(); } }
@@ -426,6 +429,15 @@ a { color: var(--accent); }
   $('scrim').addEventListener('click', closeSide);
   $('back-btn').addEventListener('click', function () { if (location.hash) history.back(); else closeReader(); });
 
+  $('unsub-btn').addEventListener('click', function () {
+    var ed = state.editions.filter(function (x) { return x.id === state.openId; })[0];
+    if (!ed) return;
+    var u = safeUrl(state.unsub[ed.source]), name = SOURCES[ed.source] ? SOURCES[ed.source].name : 'questa newsletter';
+    if (!u) { window.alert('Per questa newsletter non ho un link di disiscrizione.'); return; }
+    if (window.confirm('Aprire la pagina di disiscrizione da «' + name + '»?\nLa disiscrizione si completa sul sito de Il Post, non qui.')) {
+      window.open(u, '_blank', 'noopener');
+    }
+  });
   $('star-btn').addEventListener('click', function () {
     var id = state.openId; if (!id) return;
     if (state.starred.has(id)) state.starred.delete(id); else state.starred.add(id);
@@ -495,6 +507,7 @@ a { color: var(--accent); }
       .then(function (d) {
         state.editions = d.editions || [];
         state.updated = d.updated || null;
+        state.unsub = d.unsubscribe || {};
         $('upd').textContent = state.updated ? 'Aggiornato: ' + fmtTime.format(new Date(state.updated)) : '';
         renderAll();
         var id = location.hash.slice(1);
