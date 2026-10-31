@@ -145,6 +145,7 @@ a { color: var(--accent); }
 #article li a, #article li span { display: block; padding: 11px 2px; color: var(--fg); text-decoration: none; font-size: calc(16px * var(--t)); line-height: 1.35; }
 #article li a::after { content: " \2197"; color: var(--accent); font-size: 14px; }
 #article li a:hover { color: var(--accent); }
+#article p a.inl { text-decoration: underline; text-underline-offset: 2px; }
 #article p { font: calc(17px * var(--t))/1.6 var(--font-read); margin: 0 0 14px; }
 .song { margin: 4px 0 22px; padding: 16px; border-radius: 12px; background: var(--bg); border: 1px solid var(--line); }
 .song .t { font: 700 calc(22px * var(--t))/1.2 var(--font-read); }
@@ -228,7 +229,7 @@ a { color: var(--accent); }
     charlie: { name: 'Charlie', color: 'var(--charlie)', nav: '#b693f0' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '7 · 31 ottobre 2026';
+  var APP_VERSION = '8 · 31 ottobre 2026';
   var DATA_URL = 'data/digests.json';
   var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null };
 
@@ -243,6 +244,21 @@ a { color: var(--accent); }
   var fmtTime = new Intl.DateTimeFormat('it-IT', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
   function parseDate(s) { var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
   function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+  var LINK_RE = /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g;
+  function plain(t) { return String(t || '').replace(LINK_RE, '$1'); }
+  function richP(t) {
+    var p = el('p'), last = 0, m;
+    LINK_RE.lastIndex = 0;
+    while ((m = LINK_RE.exec(t))) {
+      if (m.index > last) p.appendChild(document.createTextNode(t.slice(last, m.index)));
+      var u = safeUrl(m[2]);
+      if (u) { var a = el('a', 'inl', m[1]); a.href = u; a.target = '_blank'; a.rel = 'noopener noreferrer'; p.appendChild(a); }
+      else p.appendChild(document.createTextNode(m[1]));
+      last = m.index + m[0].length;
+    }
+    if (last < t.length) p.appendChild(document.createTextNode(t.slice(last)));
+    return p;
+  }
   function safeUrl(u) { return /^https?:\/\//i.test(u || '') ? u : null; }
 
   function matches(e) {
@@ -258,7 +274,7 @@ a { color: var(--accent); }
     });
   }
   function snippet(e) {
-    if (e.song) return 'Canzone del giorno: ' + e.song.title + ', ' + e.song.artist + '. ' + (e.paragraphs && e.paragraphs[0] ? e.paragraphs[0] : '');
+    if (e.song) return 'Canzone del giorno: ' + e.song.title + ', ' + e.song.artist + '. ' + (e.paragraphs && e.paragraphs[0] ? plain(e.paragraphs[0]) : '');
     if (e.sections) {
       var n = 0; e.sections.forEach(function (s) { n += s.items.length; });
       return n + (e.source === 'evening' ? ' notizie e letture. ' : ' voci con link. ') + (e.intro || '');
@@ -345,7 +361,7 @@ a { color: var(--accent); }
       else lead.textContent = e.intro;
       inner.appendChild(lead);
     }
-    (e.paragraphs || []).forEach(function (p) { inner.appendChild(el('p', null, p)); });
+    (e.paragraphs || []).forEach(function (p) { inner.appendChild(richP(p)); });
     (e.sections || []).forEach(function (sec) {
       inner.appendChild(el('h2', null, sec.heading));
       var ul = el('ul');
