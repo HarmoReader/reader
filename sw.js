@@ -1,5 +1,5 @@
 // Guscio dell'app in cache per l'uso offline; i dati sempre dalla rete, con la cache come ripiego.
-const SHELL = 'harmoreader-shell-v5';
+const SHELL = 'harmoreader-shell-v6';
 const DATA = 'harmoreader-data-v1';
 const FILES = ['./', './index.html', './manifest.json', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
 
