@@ -1,36 +1,219 @@
 {
- "updated": "2026-10-30T04:30:00+01:00",
+ "updated": "2026-10-31T03:30:00+01:00",
  "editions": [
   {
-   "id": "canzoni-2026-10-29",
+   "id": "evening-2026-10-30",
+   "source": "evening",
+   "date": "2026-10-30",
+   "title": "Evening Post, le storie di oggi",
+   "intro": "In apertura una riflessione sull'abitudine di salutarsi su Slack al mattino, da qualunque posto si lavori, e un invito al Talk di Napoli di domenica.",
+   "introUrl": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szI3ITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985",
+   "sections": [
+    {
+     "heading": "Italia",
+     "items": [
+      {
+       "text": "Sciopero generale: decine di migliaia di persone nelle manifestazioni in tutta Italia",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szI4ITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Le foto delle manifestazioni di oggi",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szI5ITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Terzo trimestre: l'economia italiana cresce meno del previsto",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szI6ITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "L'inflazione a ottobre è al 5,4 per cento, la più alta da tre anni",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szI7ITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Il \"campo largo\" farà le primarie entro febbraio 2027",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szI8ITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Meloni: condizionatori in tutte le scuole",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIcITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Elezioni del CSM: bene le correnti progressiste",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIdITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Adriano Galliani si candida alla presidenza della Federcalcio",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIeITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Ancora ignota la causa della caduta dell'elicottero militare italiano in Bosnia",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIfITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    },
+    {
+     "heading": "Mondo",
+     "items": [
+      {
+       "text": "Alphabet perde circa 500 miliardi di dollari di valore in borsa in un giorno",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szI9ITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "È morto a 86 anni l'attore Patrick Stewart",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIaITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Undici paesi UE sbloccano 42 milioni di barili dalle riserve di emergenza",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIbITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Israele: risultati definitivi, nessuna maggioranza assoluta",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIgITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Oleshky: evacuata la popolazione dopo quattro anni di occupazione russa",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIhITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Novaya Gazeta chiude l'edizione russa",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIiITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Zverev sarà numero 1 del tennis da lunedì, superando Sinner",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIjITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Binance: furto di 3 miliardi di dollari in criptovalute, il più grande di sempre",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIkITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Perché la posta è piena di avvisi sui \"pixel di tracciamento\"",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIlITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Presentato il progetto del nuovo stadio di Inter e Milan",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szImITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Le smart tv ci spiano, secondo alcune inchieste",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szInITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Midterm: i Democratici al Senato vanno bene negli stati conservatori",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIoITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Le dirette del Post sulle elezioni di metà mandato, martedì e mercoledì",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIpITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    },
+    {
+     "heading": "Da leggere",
+     "items": [
+      {
+       "text": "ArcelorMittal si prese l'Ilva per farla fallire?",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIrITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Quelli che spoilerano il Giro d'Italia",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szItITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Vicenza Comics, Parma Comics, Volterra Comics",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIuITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Mortalità per il caldo: il ministero dice \"contenuta\", uno studio no",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIwITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Alle riunioni del Partito Comunista Cinese ci sono sempre meno partecipanti",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szIyITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    },
+    {
+     "heading": "Eventi",
+     "items": [
+      {
+       "text": "Talk a Napoli, domenica: ancora qualche posto",
+       "url": "https://x.ilpost.it/re?l=D0I5w3p7hI1z679szI3ITmvv8v910&s=EAIDGFLMPLKMBNKI&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    }
+   ],
+   "gmailUrl": "https://mail.google.com/mail/?authuser=ennioberti@gmail.com#all/1a18dda7d0d27761"
+  },
+  {
+   "id": "canzoni-2026-10-30",
    "source": "canzoni",
-   "date": "2026-10-29",
+   "date": "2026-10-30",
    "title": "Le canzoni",
-   "intro": "I am a deejay I am what I play, di Luca Sofri.",
+   "intro": "Di Stefano Vizio.",
    "song": {
-    "title": "Bitter",
-    "artist": "Meshell Ndegeocello",
-    "year": 1999,
+    "title": "Jazz dreams",
+    "artist": "Fine",
+    "year": 2026,
     "links": [
      {
       "label": "Spotify",
-      "url": "https://x.ilpost.it/re?l=D0I5w3ow8I1z679szIdITmvu2630fI5si09w&s=AMJAIGOOMDGJHHGK&req=dmc_cid%3D3683%26cv_id%3D370985"
+      "url": "https://x.ilpost.it/re?l=D0I5w3p4mI1z679szI9ITmvvhl1mcI5si09w&s=FIICBFLILOKHEGND&req=dmc_cid%3D3683%26cv_id%3D370985"
      },
      {
       "label": "Apple Music",
-      "url": "https://x.ilpost.it/re?l=D0I5w3ow8I1z679szIeITmvu2630fI5si09w&s=AMJAIGOOMDGJHHGK&req=dmc_cid%3D3683%26cv_id%3D370985"
+      "url": "https://x.ilpost.it/re?l=D0I5w3p4mI1z679szI15ITmvvhl1mcI5si09w&s=FIICBFLILOKHEGND&req=dmc_cid%3D3683%26cv_id%3D370985"
      },
      {
       "label": "YouTube",
-      "url": "https://x.ilpost.it/re?l=D0I5w3ow8I1z679szIfITmvu2630fI5si09w&s=AMJAIGOOMDGJHHGK&req=dmc_cid%3D3683%26cv_id%3D370985"
+      "url": "https://x.ilpost.it/re?l=D0I5w3p4mI1z679szI44ITmvvhl1mcI5si09w&s=FIICBFLILOKHEGND&req=dmc_cid%3D3683%26cv_id%3D370985"
      }
     ]
    },
    "paragraphs": [
-    "Un brano notturno e dolce nei suoni, ma amaro nel testo, su una storia finita male. L'album fu molto lodato dalla critica senza diventare un successo da Festivalbar.",
-    "In apertura Sofri commenta le risposte dei lettori sui libri più belli degli ultimi cinque anni, quasi tutti romanzi. Racconta anche di aver ritrovato in un'agenda del 1988 la traccia di un concerto a Milano di cui non ricorda niente."
+    "Fine è Fine Glindvad Jensen, musicista danese che ha registrato e prodotto il disco da sola: 35 minuti notturni e delicati, che secondo l'autore piaceranno agli amanti della musica crepuscolare. Suona al C2C di Torino questo weekend.",
+    "In apertura: Sufjan Stevens ha suonato dal vivo per la prima volta in otto anni, i Turnstile saranno alla Prima Estate a giugno, e a gennaio esce il nuovo disco dei Flaming Lips."
+   ]
+  },
+  {
+   "id": "streaming-2026-10-29",
+   "source": "streaming",
+   "date": "2026-10-29",
+   "title": "Meglio legarsi per amore o a Kim Jong-un?",
+   "intro": "JustWatch, l'app per sapere dove vedere film e serie, è diventata anche una piattaforma di streaming e noleggio: la sezione JustWatchTV è attiva anche in Italia.",
+   "sections": [
+    {
+     "heading": "Ora in streaming",
+     "items": [
+      {
+       "text": "Noi, un po' meglio: il film di Luchetti con Elio Germano su una coppia che vuole adottare (Netflix)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3oowI1z679szI4ITmvtjx44b&s=KNDAGIJIANECNNBO&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Castle Walls: miniserie interamente generata con l'IA (Prime Video)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3oowI1z679szI6ITmvtjx44b&s=KNDAGIJIANECNNBO&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    },
+    {
+     "heading": "Arrivi e partenze",
+     "items": [
+      {
+       "text": "Nocturne: serie con Liev Schreiber e Stephen Graham, da venerdì (Apple TV)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3oowI1z679szI8ITmvtjx44b&s=KNDAGIJIANECNNBO&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    },
+    {
+     "heading": "Dalle profondità delle piattaforme",
+     "items": [
+      {
+       "text": "The Interview (2014): commedia satirica su Kim Jong-un (Prime Video)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3oowI1z679szI9ITmvtjx44b&s=KNDAGIJIANECNNBO&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    }
    ],
-   "gmailUrl": "https://mail.google.com/mail/?authuser=ennioberti@gmail.com#all/1a18993dfac3b138"
+   "gmailUrl": "https://mail.google.com/mail/?authuser=ennioberti@gmail.com#all/1a187c1a222192d9"
   },
   {
    "id": "evening-2026-10-29",
@@ -165,6 +348,87 @@
    "gmailUrl": "https://mail.google.com/mail/?authuser=ennioberti@gmail.com#all/1a188b29a6f1f7c9"
   },
   {
+   "id": "canzoni-2026-10-29",
+   "source": "canzoni",
+   "date": "2026-10-29",
+   "title": "Le canzoni",
+   "intro": "I am a deejay I am what I play, di Luca Sofri.",
+   "song": {
+    "title": "Bitter",
+    "artist": "Meshell Ndegeocello",
+    "year": 1999,
+    "links": [
+     {
+      "label": "Spotify",
+      "url": "https://x.ilpost.it/re?l=D0I5w3ow8I1z679szIdITmvu2630fI5si09w&s=AMJAIGOOMDGJHHGK&req=dmc_cid%3D3683%26cv_id%3D370985"
+     },
+     {
+      "label": "Apple Music",
+      "url": "https://x.ilpost.it/re?l=D0I5w3ow8I1z679szIeITmvu2630fI5si09w&s=AMJAIGOOMDGJHHGK&req=dmc_cid%3D3683%26cv_id%3D370985"
+     },
+     {
+      "label": "YouTube",
+      "url": "https://x.ilpost.it/re?l=D0I5w3ow8I1z679szIfITmvu2630fI5si09w&s=AMJAIGOOMDGJHHGK&req=dmc_cid%3D3683%26cv_id%3D370985"
+     }
+    ]
+   },
+   "paragraphs": [
+    "Un brano notturno e dolce nei suoni, ma amaro nel testo, su una storia finita male. L'album fu molto lodato dalla critica senza diventare un successo da Festivalbar.",
+    "In apertura Sofri commenta le risposte dei lettori sui libri più belli degli ultimi cinque anni, quasi tutti romanzi. Racconta anche di aver ritrovato in un'agenda del 1988 la traccia di un concerto a Milano di cui non ricorda niente."
+   ],
+   "gmailUrl": "https://mail.google.com/mail/?authuser=ennioberti@gmail.com#all/1a18993dfac3b138"
+  },
+  {
+   "id": "streaming-2026-10-22",
+   "source": "streaming",
+   "date": "2026-10-22",
+   "title": "La miglior serie cilena e Jake Gyllenhaal viscidissimo",
+   "intro": "Netflix vuole cambiare dopo il calo di visualizzazioni e il crollo in borsa: licenziati i tre dirigenti dei contenuti.",
+   "introUrl": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szI2ITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985",
+   "sections": [
+    {
+     "heading": "Ora in streaming",
+     "items": [
+      {
+       "text": "Mis muertos tristes: miniserie di Pablo Larraín con fantasmi a Buenos Aires (Netflix)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szI3ITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Lupin, stagione 4 (Netflix)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szI6ITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    },
+    {
+     "heading": "Arrivi e partenze",
+     "items": [
+      {
+       "text": "Nobody Wants This, terza stagione (Netflix)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szI8ITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Dov'è Wanda?, seconda stagione (Apple TV)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szI9ITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
+      },
+      {
+       "text": "Yaga: serie horror di Kat Sandler (HBO Max)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szIaITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    },
+    {
+     "heading": "Dalle profondità delle piattaforme",
+     "items": [
+      {
+       "text": "Lo sciacallo - Nightcrawler (2014), con Jake Gyllenhaal (Prime Video)",
+       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szIbITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
+      }
+     ]
+    }
+   ],
+   "gmailUrl": "https://mail.google.com/mail/?authuser=ennioberti@gmail.com#all/1a16385952d18523"
+  },
+  {
    "id": "charlie-2026-10-18",
    "source": "charlie",
    "date": "2026-10-18",
@@ -226,97 +490,6 @@
     }
    ],
    "gmailUrl": "https://mail.google.com/mail/?authuser=ennioberti@gmail.com#all/1a14dd2c4404b6b3"
-  },
-  {
-   "id": "streaming-2026-10-29",
-   "source": "streaming",
-   "date": "2026-10-29",
-   "title": "Meglio legarsi per amore o a Kim Jong-un?",
-   "intro": "JustWatch, l'app per sapere dove vedere film e serie, è diventata anche una piattaforma di streaming e noleggio: la sezione JustWatchTV è attiva anche in Italia.",
-   "sections": [
-    {
-     "heading": "Ora in streaming",
-     "items": [
-      {
-       "text": "Noi, un po' meglio: il film di Luchetti con Elio Germano su una coppia che vuole adottare (Netflix)",
-       "url": "https://x.ilpost.it/re?l=D0I5w3oowI1z679szI4ITmvtjx44b&s=KNDAGIJIANECNNBO&req=dmc_cid%3D3683%26cv_id%3D370985"
-      },
-      {
-       "text": "Castle Walls: miniserie interamente generata con l'IA (Prime Video)",
-       "url": "https://x.ilpost.it/re?l=D0I5w3oowI1z679szI6ITmvtjx44b&s=KNDAGIJIANECNNBO&req=dmc_cid%3D3683%26cv_id%3D370985"
-      }
-     ]
-    },
-    {
-     "heading": "Arrivi e partenze",
-     "items": [
-      {
-       "text": "Nocturne: serie con Liev Schreiber e Stephen Graham, da venerdì (Apple TV)",
-       "url": "https://x.ilpost.it/re?l=D0I5w3oowI1z679szI8ITmvtjx44b&s=KNDAGIJIANECNNBO&req=dmc_cid%3D3683%26cv_id%3D370985"
-      }
-     ]
-    },
-    {
-     "heading": "Dalle profondità delle piattaforme",
-     "items": [
-      {
-       "text": "The Interview (2014): commedia satirica su Kim Jong-un (Prime Video)",
-       "url": "https://x.ilpost.it/re?l=D0I5w3oowI1z679szI9ITmvtjx44b&s=KNDAGIJIANECNNBO&req=dmc_cid%3D3683%26cv_id%3D370985"
-      }
-     ]
-    }
-   ],
-   "gmailUrl": "https://mail.google.com/mail/?authuser=ennioberti@gmail.com#all/1a187c1a222192d9"
-  },
-  {
-   "id": "streaming-2026-10-22",
-   "source": "streaming",
-   "date": "2026-10-22",
-   "title": "La miglior serie cilena e Jake Gyllenhaal viscidissimo",
-   "intro": "Netflix vuole cambiare dopo il calo di visualizzazioni e il crollo in borsa: licenziati i tre dirigenti dei contenuti.",
-   "introUrl": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szI2ITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985",
-   "sections": [
-    {
-     "heading": "Ora in streaming",
-     "items": [
-      {
-       "text": "Mis muertos tristes: miniserie di Pablo Larraín con fantasmi a Buenos Aires (Netflix)",
-       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szI3ITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
-      },
-      {
-       "text": "Lupin, stagione 4 (Netflix)",
-       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szI6ITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
-      }
-     ]
-    },
-    {
-     "heading": "Arrivi e partenze",
-     "items": [
-      {
-       "text": "Nobody Wants This, terza stagione (Netflix)",
-       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szI8ITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
-      },
-      {
-       "text": "Dov'è Wanda?, seconda stagione (Apple TV)",
-       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szI9ITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
-      },
-      {
-       "text": "Yaga: serie horror di Kat Sandler (HBO Max)",
-       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szIaITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
-      }
-     ]
-    },
-    {
-     "heading": "Dalle profondità delle piattaforme",
-     "items": [
-      {
-       "text": "Lo sciacallo - Nightcrawler (2014), con Jake Gyllenhaal (Prime Video)",
-       "url": "https://x.ilpost.it/re?l=D0I5w3mv0I1z679szIbITmvji0gew&s=MBCNMALAAAKBENKC&req=dmc_cid%3D3683%26cv_id%3D370985"
-      }
-     ]
-    }
-   ],
-   "gmailUrl": "https://mail.google.com/mail/?authuser=ennioberti@gmail.com#all/1a16385952d18523"
   }
  ]
 }
