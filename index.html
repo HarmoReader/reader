@@ -138,8 +138,6 @@ a { color: var(--accent); }
 #items { overscroll-behavior-y: contain; }
 #article li { display: flex; align-items: center; }
 #article li a, #article li span { flex: 1; min-width: 0; }
-#article li .sh { flex: none; width: 44px; height: 44px; display: grid; place-items: center; color: var(--muted); border-radius: 50%; }
-#article li .sh svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 #article li a.seen, #article p a.seen { color: var(--muted); }
 #article .pager { display: flex; gap: 10px; margin-top: 34px; }
 #article .pager .btn { flex: 1; justify-content: center; }
@@ -265,7 +263,7 @@ a { color: var(--accent); }
     charlie: { name: 'Charlie', color: 'var(--charlie)', nav: '#b693f0' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '14 · 31 ottobre 2026';
+  var APP_VERSION = '15 · 31 ottobre 2026';
   var DATA_URL = 'data/digests.json';
   var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null, q: '', seen: new Set() };
 
@@ -434,7 +432,6 @@ a { color: var(--accent); }
         var li = el('li'), u = safeUrl(it.url);
         if (u) {
           var a = el('a', null, it.text); a.href = u; a.target = '_blank'; a.rel = 'noopener noreferrer'; li.appendChild(a);
-          li.appendChild(shareBtn(it.text, u));
         } else li.appendChild(el('span', null, it.text));
         ul.appendChild(li);
       });
@@ -463,15 +460,6 @@ a { color: var(--accent); }
   });
   var toastT;
   function toast(msg) { var t = $('toast'); t.textContent = msg; t.classList.add('on'); clearTimeout(toastT); toastT = setTimeout(function () { t.classList.remove('on'); }, 2200); }
-  function shareBtn(text, url) {
-    var b = el('button', 'sh'); b.type = 'button'; b.setAttribute('aria-label', 'Condividi'); b.title = 'Condividi';
-    b.innerHTML = '<svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.2 10.8l7.6-3.6M8.2 13.2l7.6 3.6"/></svg>';
-    b.addEventListener('click', function () {
-      if (navigator.share) { navigator.share({ title: text, text: text, url: url }).catch(function () {}); }
-      else if (navigator.clipboard) { navigator.clipboard.writeText(url).then(function () { toast('Link copiato'); }, function () { toast('Non riesco a copiare il link'); }); }
-    });
-    return b;
-  }
   function neighbor(dir) {
     var list = visible(), i = -1;
     list.forEach(function (e, k) { if (e.id === state.openId) i = k; });
