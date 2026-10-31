@@ -228,7 +228,7 @@ a { color: var(--accent); }
     charlie: { name: 'Charlie', color: 'var(--charlie)', nav: '#b693f0' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '6 · 31 ottobre 2026';
+  var APP_VERSION = '7 · 31 ottobre 2026';
   var DATA_URL = 'data/digests.json';
   var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null };
 
@@ -490,7 +490,11 @@ a { color: var(--accent); }
   $('refresh-btn').addEventListener('click', function () { fetchData(true); });
   document.addEventListener('visibilitychange', function () { if (!document.hidden) fetchData(false); });
 
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(function () {});
+  if ('serviceWorker' in navigator) {
+    var hadSw = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.addEventListener('controllerchange', function () { if (hadSw) location.reload(); });
+    navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).catch(function () {});
+  }
   renderAll(); fetchData(false);
 })();
 </script>
