@@ -341,11 +341,6 @@ a { color: var(--accent); }
       });
       inner.appendChild(ul);
     });
-    var gu = safeUrl(e.gmailUrl);
-    if (gu) {
-      var o = el('div', 'orig'), oa = el('a', 'btn ghost', 'Apri l’email originale');
-      oa.href = gu; oa.target = '_blank'; oa.rel = 'noopener noreferrer'; o.appendChild(oa); inner.appendChild(o);
-    }
     var star = $('star-btn'), on = state.starred.has(e.id);
     star.setAttribute('aria-pressed', on ? 'true' : 'false');
     star.setAttribute('aria-label', on ? 'Togli dai preferiti' : 'Aggiungi ai preferiti');
