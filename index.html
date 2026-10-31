@@ -129,12 +129,16 @@ a { color: var(--accent); }
 }
 #read-pane.open { transform: none; visibility: visible; }
 #read-pane .bar { background: var(--surface); color: var(--fg); border-bottom: 1px solid var(--line); }
+#del-btn[hidden] { display: none; }
+#read-pane.brief #unread-btn, #read-pane.brief #unsub-btn, #read-pane.brief #star-btn { display: none; }
 #read-pane .icon-btn:hover { background: var(--bg); }
 #read-pane .bar .grow { margin-right: auto; }
 #read-pane .icon-btn[aria-pressed="true"] { color: var(--star); }
 #read-pane .icon-btn[aria-pressed="true"] svg { fill: currentColor; }
 #article { overflow: auto; flex: 1; padding: 20px max(18px, env(safe-area-inset-right, 0px)) calc(48px + env(safe-area-inset-bottom, 0px)) max(18px, env(safe-area-inset-left, 0px)); }
 #article .inner { max-width: 680px; margin: 0 auto; }
+#article .brief-ed { margin: 26px 0 0; padding-top: 18px; border-top: 1px solid var(--line); }
+#article .brief-ed .btn.ghost { margin-top: 6px; }
 #article .kicker { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--src); }
 #article h1 { font: 700 calc(26px * var(--t))/1.2 var(--font-read); margin: 6px 0 4px; text-wrap: balance; }
 #article .date { color: var(--muted); font-size: 13px; margin-bottom: 18px; }
@@ -193,6 +197,9 @@ a { color: var(--accent); }
         <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
       <h1 id="title">Tutte le uscite</h1>
+      <button class="icon-btn" id="del-btn" aria-label="Cancella la newsletter" title="Cancella la newsletter" type="button" hidden>
+        <svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v6M14 11v6"/></svg>
+      </button>
       <button class="icon-btn" id="markall-btn" aria-label="Segna tutto come letto" type="button">
         <svg viewBox="0 0 24 24"><path d="M2 12.5l5 5L17 7M13 16.5l2 1.5L23 8"/></svg>
       </button>
@@ -232,14 +239,15 @@ a { color: var(--accent); }
     charlie: { name: 'Charlie', color: 'var(--charlie)', nav: '#b693f0' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '9 · 31 ottobre 2026';
+  var APP_VERSION = '10 · 31 ottobre 2026';
   var DATA_URL = 'data/digests.json';
-  var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {} };
+  var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set() };
 
   // Stato personale (letto, preferiti) solo su questo telefono.
   function load(key) { try { return new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch (e) { return new Set(); } }
   function save(key, set) { try { localStorage.setItem(key, JSON.stringify(Array.from(set))); } catch (e) {} }
-  state.read = load('letture.read'); state.starred = load('letture.starred');
+  state.read = load('letture.read'); state.starred = load('letture.starred'); state.hidden = load('letture.hidden');
+  function applyHidden() { state.editions = state.raw.filter(function (e) { return !state.hidden.has(e.source); }); }
 
   var $ = function (id) { return document.getElementById(id); };
   var fmtDay = new Intl.DateTimeFormat('it-IT', { weekday: 'long', day: 'numeric', month: 'long' });
@@ -299,20 +307,36 @@ a { color: var(--accent); }
       b.addEventListener('click', function () { state.filter = filter; closeSide(); renderAll(); $('items').scrollTop = 0; });
       nav.appendChild(b);
     }
+    var bb = el('button'); bb.type = 'button';
+    bb.setAttribute('aria-current', state.openId === 'riassunto' ? 'true' : 'false');
+    bb.appendChild(el('span', 'ico', '☀')); bb.appendChild(el('span', null, 'Riassunto'));
+    bb.addEventListener('click', function () { closeSide(); openBrief(); });
+    nav.appendChild(bb);
     item('Tutte le uscite', { kind: 'all' }, state.editions.length, '☰');
     item('Da leggere', { kind: 'unread' }, unread, '●');
     item('Preferiti', { kind: 'starred' }, state.starred.size, '★');
     nav.appendChild(el('h2', null, 'Newsletter'));
     Object.keys(SOURCES).forEach(function (k) {
+      if (state.hidden.has(k)) return;
       var n = state.editions.filter(function (e) { return e.source === k && !state.read.has(e.id); }).length;
       item(SOURCES[k].name, { kind: 'source', source: k }, n, null, SOURCES[k].nav);
     });
+    if (state.hidden.size) {
+      var rb = el('button'); rb.type = 'button';
+      rb.appendChild(el('span', 'ico', '↺')); rb.appendChild(el('span', null, 'Ripristina newsletter cancellate (' + state.hidden.size + ')'));
+      rb.addEventListener('click', function () {
+        if (!window.confirm('Rimettere nell\'app le newsletter cancellate?')) return;
+        state.hidden = new Set(); save('letture.hidden', state.hidden); applyHidden(); renderAll();
+      });
+      nav.appendChild(rb);
+    }
   }
 
   function renderList() {
     var box = $('items'); box.textContent = '';
     var f = state.filter;
     $('title').textContent = f.kind === 'all' ? 'Tutte le uscite' : f.kind === 'unread' ? 'Da leggere' : f.kind === 'starred' ? 'Preferiti' : SOURCES[f.source].name;
+    $('del-btn').hidden = f.kind !== 'source';
     var list = visible();
     if (!list.length) {
       var em = el('div', 'empty');
@@ -339,6 +363,8 @@ a { color: var(--accent); }
 
   function renderArticle() {
     var pane = $('read-pane'), inner = $('inner'); inner.textContent = '';
+    if (state.openId === 'riassunto') { pane.classList.add('brief'); renderBrief(); return; }
+    pane.classList.remove('brief');
     var e = state.editions.filter(function (x) { return x.id === state.openId; })[0];
     pane.classList.toggle('has', !!e);
     if (!e) return;
@@ -386,7 +412,71 @@ a { color: var(--accent); }
 
   var wide = function () { return window.matchMedia('(min-width: 980px)').matches; };
 
+
+  // Pagina "Riassunto": le uscite arrivate ieri, come nell'aggiornamento delle 4:30.
+  var fmtNum = new Intl.DateTimeFormat('it-IT', { timeZone: 'Europe/Rome', day: '2-digit', month: '2-digit', year: 'numeric' });
+  function briefDates() {
+    var u = state.updated ? new Date(state.updated) : new Date();
+    var parts = {}; new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', day: '2-digit', month: '2-digit', year: 'numeric' })
+      .formatToParts(u).forEach(function (p) { parts[p.type] = p.value; });
+    var y = +parts.year, m = +parts.month, d = +parts.day, prev = new Date(y, m - 1, d - 1);
+    function pad(n) { return (n < 10 ? '0' : '') + n; }
+    return { today: fmtNum.format(u), yesterday: prev.getFullYear() + '-' + pad(prev.getMonth() + 1) + '-' + pad(prev.getDate()) };
+  }
+  function renderBrief() {
+    var inner = $('inner'); inner.textContent = '';
+    inner.style.setProperty('--src', 'var(--accent)');
+    var bd = briefDates();
+    inner.appendChild(el('div', 'kicker', 'Riassunto'));
+    inner.appendChild(el('h1', null, 'Ciao Ennio, ecco il riassunto dell’aggiornamento di oggi, ' + bd.today + '.'));
+    var eds = state.editions.filter(function (e) { return e.date === bd.yesterday; }).sort(function (a, b) { return a.source < b.source ? -1 : 1; });
+    inner.appendChild(el('div', 'date', eds.length ? 'Ieri, ' + fmtDay.format(parseDate(bd.yesterday)) + ', ' + (eds.length === 1 ? 'è arrivata 1 newsletter.' : 'sono arrivate ' + eds.length + ' newsletter.') : 'Ieri non è arrivata nessuna newsletter.'));
+    eds.forEach(function (e) {
+      var box = el('section', 'brief-ed');
+      box.style.setProperty('--src', SOURCES[e.source] ? SOURCES[e.source].color : 'var(--accent)');
+      box.appendChild(el('div', 'kicker', SOURCES[e.source] ? SOURCES[e.source].name : e.source));
+      if (e.song) {
+        var sg = el('div', 'song');
+        sg.appendChild(el('div', 't', e.song.title));
+        sg.appendChild(el('div', 'a', e.song.artist + (e.song.year ? ' · ' + e.song.year : '')));
+        var bs = el('div', 'btns');
+        (e.song.links || []).forEach(function (l) {
+          var u = safeUrl(l.url); if (!u) return;
+          var a = el('a', 'btn', l.label); a.href = u; a.target = '_blank'; a.rel = 'noopener noreferrer'; bs.appendChild(a);
+        });
+        sg.appendChild(bs); box.appendChild(sg);
+        if (e.paragraphs && e.paragraphs[0]) box.appendChild(richP(e.paragraphs[0]));
+      } else {
+        if (e.intro) box.appendChild(el('p', 'lead', e.intro));
+        var ul = el('ul'), n = 0;
+        (e.sections || []).forEach(function (sec) {
+          sec.items.slice(0, 2).forEach(function (it) {
+            if (n >= 6) return; n++;
+            var li = el('li'), u = safeUrl(it.url);
+            if (u) { var a = el('a', null, it.text); a.href = u; a.target = '_blank'; a.rel = 'noopener noreferrer'; li.appendChild(a); }
+            else li.appendChild(el('span', null, it.text));
+            ul.appendChild(li);
+          });
+        });
+        box.appendChild(ul);
+      }
+      var more = el('button', 'btn ghost', 'Leggi tutta l’uscita'); more.type = 'button';
+      more.addEventListener('click', function () { openEdition(e.id); });
+      box.appendChild(more);
+      inner.appendChild(box);
+    });
+    $('article').scrollTop = 0;
+  }
+  function openBrief() {
+    state.openId = 'riassunto';
+    var pane = $('read-pane'); pane.classList.add('brief'); pane.classList.add('has');
+    renderBrief(); renderAll();
+    if (!wide()) { pane.classList.add('open'); if (location.hash !== '#riassunto') location.hash = 'riassunto'; }
+    else history.replaceState(null, '', '#riassunto');
+  }
+
   function openEdition(id) {
+    $('read-pane').classList.remove('brief');
     state.openId = id;
     state.read.add(id); save('letture.read', state.read);
     renderArticle(); renderAll();
@@ -400,6 +490,7 @@ a { color: var(--accent); }
   window.addEventListener('hashchange', function () {
     var id = location.hash.slice(1);
     if (!id) { closeReader(); return; }
+    if (id === 'riassunto') { if (state.openId !== id || !$('read-pane').classList.contains('open')) openBrief(); return; }
     if (state.editions.some(function (e) { return e.id === id; })) {
       if (state.openId !== id || !$('read-pane').classList.contains('open')) {
         state.openId = id; state.read.add(id); save('letture.read', state.read);
@@ -429,6 +520,13 @@ a { color: var(--accent); }
   $('scrim').addEventListener('click', closeSide);
   $('back-btn').addEventListener('click', function () { if (location.hash) history.back(); else closeReader(); });
 
+  $('del-btn').addEventListener('click', function () {
+    var f = state.filter; if (f.kind !== 'source') return;
+    var name = SOURCES[f.source].name;
+    if (!window.confirm('Cancellare «' + name + '» dall\'app?\nSpariscono la voce nel menu e le sue uscite da questo telefono. Puoi rimetterla da «Ripristina» nel menu.')) return;
+    state.hidden.add(f.source); save('letture.hidden', state.hidden);
+    state.filter = { kind: 'all' }; applyHidden(); closeReader(); renderAll();
+  });
   $('unsub-btn').addEventListener('click', function () {
     var ed = state.editions.filter(function (x) { return x.id === state.openId; })[0];
     if (!ed) return;
@@ -505,13 +603,14 @@ a { color: var(--accent); }
     return fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (d) {
-        state.editions = d.editions || [];
+        state.raw = d.editions || []; applyHidden();
         state.updated = d.updated || null;
         state.unsub = d.unsubscribe || {};
         $('upd').textContent = state.updated ? 'Aggiornato: ' + fmtTime.format(new Date(state.updated)) : '';
         renderAll();
         var id = location.hash.slice(1);
-        if (id && state.editions.some(function (e) { return e.id === id; })) openEdition(id);
+        if (id === 'riassunto') openBrief();
+        else if (id && state.editions.some(function (e) { return e.id === id; })) openEdition(id);
       })
       .catch(function () { if (manual) $('upd').textContent = 'Non riesco ad aggiornare ora'; })
       .then(function () { btn.classList.remove('spin'); });
