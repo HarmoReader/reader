@@ -211,6 +211,7 @@ a { color: var(--accent); }
         <button type="button" data-fs="1.3" aria-label="Testo molto grande" style="font-size:22px">A</button>
       </div>
       <button id="theme-btn" type="button">Tema: automatico</button>
+      <button id="push-btn" type="button" hidden>Notifiche: spente</button>
       <div class="ver" id="ver"></div></div>
   </nav>
   <div id="scrim"></div>
@@ -269,7 +270,7 @@ a { color: var(--accent); }
     sunday: { name: 'Sunday Post', color: 'var(--sunday)', nav: '#e8b04a' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '18 · 31 ottobre 2026';
+  var APP_VERSION = '19 · 1 novembre 2026';
   var DATA_URL = 'data/digests.json';
   var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null, q: '', seen: new Set(), slide: 0 };
 
@@ -774,6 +775,30 @@ a { color: var(--accent); }
   $('refresh-btn').addEventListener('click', function () { fetchData(true); });
   document.addEventListener('visibilitychange', function () { if (!document.hidden) fetchData(false); });
 
+  // Notifiche push: il telefono genera un codice personale da incollare su GitHub (segreto PUSH_SUB).
+  var VAPID_PUBLIC = 'BAd_Yge3vtG-3XPUfoydSh-DlLhE0g-xSr6C7RrNZmKU47zaxCB0Kl_kYU2mSegxN_rUBrl52iWoEB5c7iJaekw';
+  function b64u(s) { s = s.replace(/-/g, '+').replace(/_/g, '/'); while (s.length % 4) s += '='; var r = atob(s), a = new Uint8Array(r.length); for (var i = 0; i < r.length; i++) a[i] = r.charCodeAt(i); return a; }
+  function pushLabel(on) { $('push-btn').textContent = on ? 'Notifiche: attive · copia codice' : 'Notifiche: spente'; }
+  function copyCode(sub) {
+    var code = JSON.stringify(sub);
+    var done = function () { toast('Codice copiato: incollalo su GitHub come segreto PUSH_SUB'); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(code).then(done, function () { prompt('Copia questo codice', code); });
+    else prompt('Copia questo codice', code);
+  }
+  if ('serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window) {
+    $('push-btn').hidden = false;
+    navigator.serviceWorker.ready.then(function (reg) { return reg.pushManager.getSubscription(); }).then(function (s) { pushLabel(!!s); }).catch(function () {});
+    $('push-btn').addEventListener('click', function () {
+      Notification.requestPermission().then(function (p) {
+        if (p !== 'granted') { toast('Permesso negato: abilita le notifiche per Harmoreader nelle impostazioni di Chrome'); return; }
+        return navigator.serviceWorker.ready.then(function (reg) {
+          return reg.pushManager.getSubscription().then(function (s) {
+            return s || reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64u(VAPID_PUBLIC) });
+          });
+        }).then(function (sub) { pushLabel(true); copyCode(sub); });
+      }).catch(function (err) { toast('Non riesco ad attivare le notifiche: ' + (err && err.message || err)); });
+    });
+  }
   if ('serviceWorker' in navigator) {
     var hadSw = !!navigator.serviceWorker.controller;
     navigator.serviceWorker.addEventListener('controllerchange', function () { if (hadSw) location.reload(); });

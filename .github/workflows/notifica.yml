@@ -1,0 +1,20 @@
+# Dopo ogni aggiornamento dei riassunti manda una notifica al telefono (Web Push).
+name: Notifica aggiornamento
+on:
+  push:
+    branches: [main]
+    paths: ['data/digests.json']
+  workflow_dispatch:
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npm i --no-save web-push@3.6.7
+      - run: node scripts/notifica.js
+        env:
+          VAPID_PRIVATE: ${{ secrets.VAPID_PRIVATE }}
+          PUSH_SUB: ${{ secrets.PUSH_SUB }}
