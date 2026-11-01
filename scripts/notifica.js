@@ -17,9 +17,9 @@ const fresh = (now.editions || []).filter((e) => !old.has(e.id));
 let body;
 if (fresh.length) {
   const names = [...new Set(fresh.map((e) => NAMES[e.source] || e.source))];
-  body = 'Aggiornamento riuscito. Nuovi riassunti: ' + names.join(', ') + '.';
+  body = 'Nuovi riassunti: ' + names.join(', ') + '.';
 } else {
-  body = 'Aggiornamento riuscito. Nessuna newsletter nuova.';
+  console.log('Nessuna newsletter nuova: niente notifica.'); process.exit(0);
 }
 const payload = JSON.stringify({ title: 'Harmoreader', body, url: './#riassunto' });
 

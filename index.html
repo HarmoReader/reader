@@ -270,7 +270,7 @@ a { color: var(--accent); }
     sunday: { name: 'Sunday Post', color: 'var(--sunday)', nav: '#e8b04a' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '19 · 1 novembre 2026';
+  var APP_VERSION = '20 · 1 novembre 2026';
   var DATA_URL = 'data/digests.json';
   var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null, q: '', seen: new Set(), slide: 0 };
 
@@ -532,7 +532,7 @@ a { color: var(--accent); }
   var wide = function () { return window.matchMedia('(min-width: 980px)').matches; };
 
 
-  // Pagina "Riassunto": le uscite arrivate ieri, come nell'aggiornamento delle 4:30.
+  // Pagina "Riassunto": le uscite arrivate ieri e oggi.
   var fmtNum = new Intl.DateTimeFormat('it-IT', { timeZone: 'Europe/Rome', day: '2-digit', month: '2-digit', year: 'numeric' });
   function briefDates() {
     var u = state.updated ? new Date(state.updated) : new Date();
@@ -543,18 +543,37 @@ a { color: var(--accent); }
     return { today: fmtNum.format(u), yesterday: prev.getFullYear() + '-' + pad(prev.getMonth() + 1) + '-' + pad(prev.getDate()) };
   }
   function romeParts(d) {
-    var o = {}; new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' })
+    var o = {}; new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', weekday: 'short', hourCycle: 'h23' })
       .formatToParts(d).forEach(function (p) { o[p.type] = p.value; });
-    return { ymd: o.year + '-' + o.month + '-' + o.day, hour: +o.hour, hm: o.hour + ':' + o.minute };
+    return { ymd: o.year + '-' + o.month + '-' + o.day, hour: +o.hour, hm: o.hour + ':' + o.minute, dow: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(o.weekday) };
   }
+  // Aggiornamenti: ogni giorno alle 19:00 e alle 23:00, la domenica anche alle 9:30.
+  function slotsOf(ymd, dow) { var a = ['19:00', '23:00']; if (dow === 0) a.unshift('09:30'); return a.map(function (t) { return ymd + ' ' + t; }); }
+  function romeYmdOffset(days) { var d = new Date(Date.now() + days * 864e5); var r = romeParts(d); return { ymd: r.ymd, dow: r.dow }; }
+  function lastAndNextSlot() {
+    var now = romeParts(new Date()), nowKey = now.ymd + ' ' + now.hm, all = [];
+    [-1, 0, 1].forEach(function (k) { var d = romeYmdOffset(k); all = all.concat(slotsOf(d.ymd, d.dow)); });
+    all.sort();
+    var last = null, next = null;
+    all.forEach(function (sl) {
+      var t = sl.split(' ')[1].split(':'), mins = +t[0] * 60 + +t[1] + 20, hh = Math.floor(mins / 60), mm = mins % 60;
+      var due = sl.split(' ')[0] + ' ' + (hh < 10 ? '0' : '') + hh + ':' + (mm < 10 ? '0' : '') + mm;
+      if (due <= nowKey) last = sl; else if (!next && sl > nowKey) next = sl;
+    });
+    return { last: last, next: next, nowYmd: now.ymd };
+  }
+  function slotLabel(sl, nowYmd) { var p = sl.split(' '); return (p[0] === nowYmd ? 'oggi' : 'domani') + ' alle ' + p[1].replace(/^0/, ''); }
   function briefStatus() {
-    var now = romeParts(new Date()), up = state.updated ? romeParts(new Date(state.updated)) : null;
+    var up = state.updated ? romeParts(new Date(state.updated)) : null;
     var last = state.updated ? fmtTime.format(new Date(state.updated)) : '';
+    var s = lastAndNextSlot(), nxt = s.next ? ' Il prossimo è ' + slotLabel(s.next, s.nowYmd) + '.' : '';
     if (state.fetchOk === false) return { ok: false, text: 'Non riesco a scaricare i dati: ti mostro quelli salvati sul telefono' + (last ? ' (ultimo aggiornamento ' + last + ').' : '.') };
     if (!up) return { ok: false, text: 'Non trovo la data dell\u2019ultimo aggiornamento.' };
-    if (up.ymd === now.ymd) return { ok: true, text: 'Aggiornamento di oggi riuscito, fatto alle ' + up.hm + '.' };
-    if (now.hour < 5) return { ok: null, text: 'L\u2019aggiornamento di oggi non \u00e8 ancora arrivato: di solito \u00e8 alle 4:30. L\u2019ultimo \u00e8 del ' + last + '.' };
-    return { ok: false, text: 'L\u2019aggiornamento di oggi non risulta fatto. L\u2019ultimo \u00e8 del ' + last + '.' };
+    var upKey = up.ymd + ' ' + up.hm, when = (up.ymd === s.nowYmd ? 'oggi' : 'il ' + last.split(',')[0]) + ' alle ' + up.hm;
+    var lt = s.last ? s.last.split(' ') : null, lm = lt ? lt[1].split(':') : null;
+    var minKey = lt ? (function () { var m = +lm[0] * 60 + +lm[1] - 30; return lt[0] + ' ' + (m < 600 ? '0' : '') + Math.floor(m / 60) + ':' + ((m % 60) < 10 ? '0' : '') + (m % 60); })() : '';
+    if (!s.last || upKey >= minKey) return { ok: true, text: 'Ultimo aggiornamento riuscito, ' + when + '.' + nxt };
+    return { ok: false, text: 'L\u2019aggiornamento ' + (s.last.split(' ')[0] === s.nowYmd ? 'di oggi' : 'di ieri') + ' alle ' + s.last.split(' ')[1].replace(/^0/, '') + ' non risulta fatto. L\u2019ultimo è del ' + last + '.' + nxt };
   }
   function shortLine(e) {
     var name = SOURCES[e.source] ? SOURCES[e.source].name : e.source;
@@ -572,13 +591,14 @@ a { color: var(--accent); }
     inner.style.setProperty('--src', 'var(--accent)');
     var bd = briefDates();
     inner.appendChild(el('div', 'kicker', 'Riassunto'));
-    inner.appendChild(el('h1', null, 'Ciao Ennio, ecco il riassunto dell\u2019aggiornamento di oggi, ' + fmtNum.format(new Date()) + '.'));
+    inner.appendChild(el('h1', null, 'Ciao Ennio, ecco il riassunto di oggi, ' + fmtNum.format(new Date()) + '.'));
     var st = briefStatus(), sb = el('div', 'status ' + (st.ok === true ? 'ok' : st.ok === false ? 'bad' : 'wait'));
     sb.appendChild(el('strong', null, st.ok === true ? '\u2714 Tutto a posto' : st.ok === false ? '\u2716 Problema' : '\u23f3 In attesa'));
     sb.appendChild(el('span', null, ' ' + st.text));
     inner.appendChild(sb);
-    var eds = state.editions.filter(function (e) { return e.date === bd.yesterday; }).sort(function (a, b) { return a.source < b.source ? -1 : 1; });
-    inner.appendChild(el('div', 'date', eds.length ? 'Ieri, ' + fmtDay.format(parseDate(bd.yesterday)) + ', ' + (eds.length === 1 ? 'è arrivata 1 newsletter.' : 'sono arrivate ' + eds.length + ' newsletter.') : 'Ieri non è arrivata nessuna newsletter.'));
+    var tY = romeYmdOffset(0).ymd, yY = romeYmdOffset(-1).ymd;
+    var eds = state.editions.filter(function (e) { return e.date === tY || e.date === yY; }).sort(function (a, b) { return a.date !== b.date ? (a.date < b.date ? 1 : -1) : (a.source < b.source ? -1 : 1); });
+    inner.appendChild(el('div', 'date', eds.length ? 'Da ieri ' + (eds.length === 1 ? 'è arrivata 1 newsletter.' : 'sono arrivate ' + eds.length + ' newsletter.') : 'Da ieri non è arrivata nessuna newsletter.'));
     if (eds.length) {
       inner.appendChild(el('h2', null, 'In breve'));
       var sul = el('ul'); eds.forEach(function (e) { var li = el('li'); li.appendChild(el('span', null, shortLine(e))); sul.appendChild(li); });
