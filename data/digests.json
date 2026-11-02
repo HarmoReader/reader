@@ -1,6 +1,81 @@
 {
-  "updated": "2026-11-01T23:01:00+01:00",
+  "updated": "2026-11-02T19:05:00+01:00",
   "editions": [
+    {
+      "id": "evening-2026-11-02",
+      "source": "evening",
+      "date": "2026-11-02",
+      "title": "Evening Post, le storie di oggi",
+      "intro": "Lunedì 2 novembre: il Post torna da Napoli, attacchi informatici sulle app di allerta in Russia e Ucraina, Antonelli campione del mondo di Formula 1, e la vigilia delle elezioni di metà mandato americane.",
+      "brief": "Hackerate le app di emergenza in Russia e Ucraina, Israele lascia Hebron, Kimi Antonelli vince il Mondiale di F1 e domani si vota negli Stati Uniti; in Italia l'incendio a Trieste, l'ex ILVA e la morte di Nadia Santini.",
+      "sections": [
+        {
+          "heading": "In apertura",
+          "paragraphs": [
+            "La redazione racconta di essere rientrata da un weekend particolare: il Post è stato [a Napoli per Talk](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI3ITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985) per la terza volta, con più di mille persone agli incontri di sabato e domenica. Ci sono [le foto dell'evento](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI4ITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985) e un [calendario degli appuntamenti](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI5ITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985) per sapere dove ci si vedrà la prossima volta: il prossimo weekend [a Pescara](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI6ITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "Intanto il lavoro è già andato avanti: oggi è stato l'ultimo giorno di prove tecniche per le due dirette sulle elezioni americane di metà mandato. Si comincia domani sera alle 20 [sul canale YouTube Da Costa a Costa](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI7ITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985), e il resto delle informazioni è [qui](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI8ITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Le notizie",
+          "paragraphs": [
+            "Le app di emergenza in Russia e Ucraina sono state colpite da attacchi informatici e hanno mandato falsi messaggi d'allerta, [a poche ore di distanza](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI9ITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985). L'ambasciata statunitense in Russia ha emesso [un'allerta per un possibile attacco](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIaITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985) con molte vittime a Mosca, e i servizi russi hanno poi [arrestato un minorenne](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIbITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985) sospettato di voler compiere un attentato. L'esercito israeliano [si ritirerà da Hebron](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIcITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985), dove aveva avviato una grossa operazione come ritorsione per un attentato contro dei soldati. In Polonia ci sono [grandi proteste e scontri attorno alla Corte costituzionale](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIdITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985); la Bulgaria ha [una nuova presidente](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIeITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985) che vorrebbe riavvicinarsi alla Russia.",
+            "È entrata in vigore [una commissione di 2 euro](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIfITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985) sulle merci acquistate online da paesi fuori dall'Unione Europea. Ieri Kimi Antonelli [ha vinto il Mondiale di Formula 1](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIgITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985), diventando il più giovane campione di sempre."
+          ]
+        },
+        {
+          "heading": "Stati Uniti",
+          "paragraphs": [
+            "A un giorno dalle elezioni di metà mandato, in Michigan c'è stata una lite inaspettata nella campagna elettorale che per i Democratici [potrebbe essere un problema](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIhITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985). E per gli ispanici sedotti da Trump [è già cambiato tutto](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIiITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Altre notizie dall'Italia",
+          "paragraphs": [
+            "Due persone sono morte [in un incendio al Porto Vecchio di Trieste](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIjITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985), dove trovano spesso riparo migranti e senzatetto. Sono stati [rimpatriati i corpi](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIkITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985) dei quattro militari morti nell'incidente dell'elicottero in Bosnia Erzegovina. Resta aperta la domanda su cosa sarà [dei lavoratori dell'ex ILVA di Taranto](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIlITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985), e il Post ha provato a [fare ordine](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szImITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985) nel caos sull'aumento degli stipendi dei magistrati.",
+            "È [morta Nadia Santini](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szInITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985), la prima chef italiana a ottenere le tre stelle Michelin, e la procura di Roma ha aperto [una nuova indagine](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIoITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985) sull'omicidio di Pier Paolo Pasolini. Il governo sta provando a [limitare il rincaro dei libri scolastici](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIpITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985). Infine la curiosità: si pagherebbe per una [targa personalizzata](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIqITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985)? [Lui no](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIrITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985), anche se è stato proprio lui a riproporle."
+          ]
+        },
+        {
+          "heading": "Dal resto del mondo",
+          "paragraphs": [
+            "La Russia si è ritirata da un accordo del Consiglio d'Europa contro la tortura, [e non è certo un caso](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIsITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985). In Regno Unito Reform UK si sta facendo [i suoi media](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szItITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985). Per l'enorme furto di criptovalute a Binance [si sospetta la Corea del Nord](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIuITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985): nel primo giorno di prelievi riattivati i clienti hanno ritirato [più di 3 miliardi di euro](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIvITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "I genitori di una donna cinese morta per una crisi epilettica dopo aver ricevuto consigli pericolosi da ChatGPT [hanno fatto causa a OpenAI](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIwITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985). Un uomo ha completato il giro del mondo a piedi [in 28 anni](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIxITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985). E decine di supermercati europei hanno avuto problemi con i frigoriferi, forse a causa di [attacchi informatici](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIyITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "E a metà strada",
+          "paragraphs": [
+            "Sei milioni di italiani fra poco dovrebbero votare, [ma quasi nessuno lo sa](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szIzITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Cose da guardare",
+          "paragraphs": [
+            "Una serie giapponese di spionaggio [ha fatto arrabbiare molti in Cina](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI10ITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985). E per chi ama l'horror c'è la rassegna di [tutte le cose inventate dall'horror italiano](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI11ITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985), dai serial killer creativi agli zombie che corrono."
+          ]
+        },
+        {
+          "heading": "Sport",
+          "paragraphs": [
+            "Secondo un'inchiesta del New York Times e di Le Monde la FIFA ha pagato le tasse negli Stati Uniti [del suo presidente Gianni Infantino](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI12ITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985). Yeman Crippa è arrivato secondo nella maratona di New York in una gara [molto avvincente](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI13ITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985), e il Post suggerisce di conoscere meglio gli altri protagonisti: [è arrivato il momento](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI14ITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "La nazionale maschile di curling ha vinto l'argento agli Europei, [il suo miglior risultato di sempre](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI15ITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985); sono iniziate le Olimpiadi, [ma non quelle che pensate](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI16ITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985). Il Milan [ha battuto di nuovo](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI17ITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985) l'Inter, ed è soprattutto [merito suo](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI18ITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Dal vivo",
+          "paragraphs": [
+            "Dal 5 all'8 novembre una buona parte della redazione sarà al FLA di Pescara, con i direttori, Luca Misculin, Matteo Caccia e molti ospiti. Il programma completo è [qui](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI19ITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Cose da leggere",
+          "paragraphs": [
+            "Perché le elezioni di metà mandato sono [così importanti](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI1bITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985). Il caporalato è arrivato [anche in Trentino](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI1dITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985). Mamdani e Gualtieri [nello stesso video](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI1eITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985). Sta per [rompersi Internet](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI1gITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985)? E la storia [dell'invenzione della techno](https://x.ilpost.it/re?l=D0I5w3pt7I1z679szI1jITmvzisqdl&s=IKMGIPAAEBANMHFL&req=dmc_cid%3D3683%26cv_id%3D370985) a Detroit, oltre quarant'anni fa, e soprattutto di chi la inventò."
+          ]
+        }
+      ]
+    },
     {
       "id": "sunday-2026-11-01",
       "source": "sunday",
