@@ -1,6 +1,37 @@
 {
-  "updated": "2026-11-03T23:01:00+01:00",
+  "updated": "2026-11-04T06:50:00+01:00",
   "editions": [
+    {
+      "id": "canzoni-2026-11-03",
+      "source": "canzoni",
+      "date": "2026-11-03",
+      "title": "Le canzoni: Ecco tutto qui",
+      "intro": "Di Luca Sofri.",
+      "brief": "Canzone del giorno: Ecco tutto qui di Enzo Jannacci, una canzone lunga e triste di cui Sofri apprezza l'assenza di ogni scorciatoia sentimentale.",
+      "song": {
+        "title": "Ecco tutto qui",
+        "artist": "Enzo Jannacci",
+        "links": [
+          {
+            "label": "Spotify",
+            "url": "https://x.ilpost.it/re?l=D0I5w3q3nI1z679szI6ITmw19vivqI5si09w&s=NDCKBEJGBCDAKHHA&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "Apple Music",
+            "url": "https://x.ilpost.it/re?l=D0I5w3q3nI1z679szI7ITmw19vivqI5si09w&s=NDCKBEJGBCDAKHHA&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "YouTube",
+            "url": "https://x.ilpost.it/re?l=D0I5w3q3nI1z679szI8ITmw19vivqI5si09w&s=NDCKBEJGBCDAKHHA&req=dmc_cid%3D3683%26cv_id%3D370985"
+          }
+        ]
+      },
+      "paragraphs": [
+        "Prima della canzone, Luca Sofri segnala qualche notizia. Grazie al ventennale del disco e a una ristampa per i fan, [nelle classifiche americane](https://x.ilpost.it/re?l=D0I5w3q3nI1z679szI2ITmw19vivqI5si09w&s=NDCKBEJGBCDAKHHA&req=dmc_cid%3D3683%26cv_id%3D370985) è tornato al primo posto [Welcome to the black parade](https://x.ilpost.it/re?l=D0I5w3q3nI1z679szI3ITmw19vivqI5si09w&s=NDCKBEJGBCDAKHHA&req=dmc_cid%3D3683%26cv_id%3D370985) dei My Chemical Romance: nel 2006 si era fermato al numero 2. Giovedì sera Sofri andrà a vedere i [Bleachers](https://x.ilpost.it/re?l=D0I5w3q3nI1z679szI4ITmw19vivqI5si09w&s=NDCKBEJGBCDAKHHA&req=dmc_cid%3D3683%26cv_id%3D370985), che iniziano a Milano il loro tour europeo, con un'unica data italiana: [il loro disco](https://x.ilpost.it/re?l=D0I5w3q3nI1z679szI5ITmw19vivqI5si09w&s=NDCKBEJGBCDAKHHA&req=dmc_cid%3D3683%26cv_id%3D370985) è il suo preferito dell'anno, anche se non è affatto quieto e notturno, e dai video del tour americano dal vivo sembrano molto divertenti.",
+        "Mentre scriveva della canzone di oggi aveva in sottofondo una sua playlist di Jannacci, e ascoltandola si è commosso e divertito ancora una volta. Ora pensa che, se ricapiteranno delle presentazioni di Playlist, le farà tutte sulle canzoni di Jannacci, sperando che l'effetto sia condiviso.",
+        "La canzone è Ecco tutto qui, di Enzo Jannacci: triste e lunga, e triste per tutta la sua lunghezza. Sofri la lega alla malinconia che Jannacci aggiunge sempre, anche quando fa genialmente lo spiritoso, e al fatto che con lui l'espressione \"ci manca\" ha un valore non retorico. La tristezza, insomma, trabocca. Eppure Jannacci riesce a costruire sette minuti di canzone triste senza mai sbracare: niente di prevedibile, artificioso, telefonato o ruffiano. È commovente per tutto il tempo, nelle parole, nella musica e nel modo di \"interpretarle\" (parola ormai così abusata che chi canta viene chiamato \"interprete\" a prescindere), e persino nel titolo, che Sofri trova stupendo."
+      ]
+    },
     {
       "id": "evening-2026-11-03",
       "source": "evening",
