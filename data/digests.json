@@ -1,6 +1,39 @@
 {
-  "updated": "2026-11-04T19:05:00+01:00",
+  "updated": "2026-11-05T00:05:00+01:00",
   "editions": [
+    {
+      "id": "canzoni-2026-11-04",
+      "source": "canzoni",
+      "date": "2026-11-04",
+      "title": "Le canzoni: The last resort",
+      "intro": "Di Luca Sofri.",
+      "brief": "Canzone del giorno: The last resort degli Eagles (1976); Sofri parte da un pranzo sull'intelligenza artificiale per riflettere su quanto abbiamo barattato la qualità dell'informazione con la comodità.",
+      "song": {
+        "title": "The last resort",
+        "artist": "Eagles",
+        "year": 1976,
+        "links": [
+          {
+            "label": "Spotify",
+            "url": "https://x.ilpost.it/re?l=D0I5w3qduI1z679szI8ITmw2mt9paI5si09w&s=BCNCEBLJHAJIKMKH&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "Apple Music",
+            "url": "https://x.ilpost.it/re?l=D0I5w3qduI1z679szI9ITmw2mt9paI5si09w&s=BCNCEBLJHAJIKMKH&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "YouTube",
+            "url": "https://x.ilpost.it/re?l=D0I5w3qduI1z679szIaITmw2mt9paI5si09w&s=BCNCEBLJHAJIKMKH&req=dmc_cid%3D3683%26cv_id%3D370985"
+          }
+        ]
+      },
+      "paragraphs": [
+        "Prima della canzone, Luca Sofri racconta di essere entrato nel bar vicino a casa mentre suonava [She's a star](https://x.ilpost.it/re?l=D0I5w3qduI1z679szI2ITmw2mt9paI5si09w&s=BCNCEBLJHAJIKMKH&req=dmc_cid%3D3683%26cv_id%3D370985) dei James: per un attimo ha pensato di aver influenzato i gusti musicali locali, ma era solo una playlist anni Novanta di Spotify (almeno una buona). Poi parla del nuovo [spot natalizio](https://x.ilpost.it/re?l=D0I5w3qduI1z679szI3ITmw2mt9paI5si09w&s=BCNCEBLJHAJIKMKH&req=dmc_cid%3D3683%26cv_id%3D370985) del grande magazzino britannico John Lewis, una tradizione stagionale locale: nonostante Kristin Scott Thomas il risultato è piuttosto debole e finisce per convincere del contrario di ciò che vorrebbe, cioè che sia meglio la busta coi soldi. La musica è You can't always get what you want, scelta banale ma sicura, [cantata da Sam Fender](https://x.ilpost.it/re?l=D0I5w3qduI1z679szI4ITmw2mt9paI5si09w&s=BCNCEBLJHAJIKMKH&req=dmc_cid%3D3683%26cv_id%3D370985) con un coro di bambini (canzone che peraltro nega il messaggio dello spot). Intanto lo spot sta [ricevendo](https://x.ilpost.it/re?l=D0I5w3qduI1z679szI5ITmw2mt9paI5si09w&s=BCNCEBLJHAJIKMKH&req=dmc_cid%3D3683%26cv_id%3D370985) ogni [possibile](https://x.ilpost.it/re?l=D0I5w3qduI1z679szI6ITmw2mt9paI5si09w&s=BCNCEBLJHAJIKMKH&req=dmc_cid%3D3683%26cv_id%3D370985) severa [critica](https://x.ilpost.it/re?l=D0I5w3qduI1z679szI7ITmw2mt9paI5si09w&s=BCNCEBLJHAJIKMKH&req=dmc_cid%3D3683%26cv_id%3D370985), come è tipico dei tempi.",
+        "Il tema nasce da un pranzo con l'amico Giacomo Papi, in cui hanno parlato dei software di \"intelligenza artificiale\": per Sofri è come \"internet\" trent'anni fa, e anche questa [passerà](https://x.ilpost.it/re?l=D0I5w3qduI1z679szIbITmw2mt9paI5si09w&s=BCNCEBLJHAJIKMKH&req=dmc_cid%3D3683%26cv_id%3D370985). Hanno notato quanto sia diventato familiare usare lo spazio di Gemini nelle pagine di ricerca di Google, pur sapendo che questo sta [schiantando](https://x.ilpost.it/re?l=D0I5w3qduI1z679szIcITmw2mt9paI5si09w&s=BCNCEBLJHAJIKMKH&req=dmc_cid%3D3683%26cv_id%3D370985) da un paio d'anni il traffico di moltissimi siti (il Post si era organizzato per tempo per dipendere meno da Google e più dalla fiducia dei lettori, ma ne risente comunque). Giacomo ha osservato che bisogna abituarsi a pensare che non tutto ciò che si legge sia vero, e Sofri concorda: abbiamo barattato la qualità dell'informazione, già scaduta, con praticità, rapidità e abbondanza, come fecimmo con la musica a cavallo del millennio, rinunciando alla qualità del suono e dei supporti per averla facile e a poco prezzo. Poi abbiamo fatto lo stesso con l'informazione giornalistica, trattando ogni fonte come equivalente e preferendo quelle gratuite o attraenti, e secondo Sofri così si è finiti a Trump, alla Brexit e ai morti di Covid convinti da sciocchezze. Alcuni sono tornati a pagare per un'informazione accurata, ma sono minoranze privilegiate, le stesse che ricomprano i vinili.",
+        "Adesso, dice, facciamo lo stesso con le risposte di Gemini: sappiamo che a volte sono invenzioni (le \"allucinazioni\", eufemismo di marketing come \"cloud\"), ma ci raccontiamo di essere guardinghi e ci abitueremo a non controllare. Sofri ricorda che le nostre convivenze si basano sull'idea implicita e immotivata che ci si dica la verità: nessuna regola lo prescrive, e nessuno è obbligato a darvi la direzione giusta se la chiedete a un passante. Forse non saranno le AI a diventare più affidabili, ma noi ad adeguarci, mescolando cose che sappiamo e cose che inventiamo, e a raccogliere ogni informazione con dubbio. Lo chiude come un'idea divertente da pranzo, che probabilmente non si avvererà, ma \"nessuno sa niente\".",
+        "Nel testo della canzone ci sono due preoccupazioni che Sofri accosta a quelle di oggi: i guasti degli interventi umani sulla natura e l'influenza della fede religiosa sulle prevaricazioni degli uomini. È interessante, nota, che le due più discusse paure di apocalisse contemporanee riguardino le forze della natura sconvolte dall'uomo e le \"intelligenze artificiali\". The last resort degli Eagles chiude il disco [Hotel California](https://x.ilpost.it/re?l=D0I5w3qduI1z679szIeITmw2mt9paI5si09w&s=BCNCEBLJHAJIKMKH&req=dmc_cid%3D3683%26cv_id%3D370985), che compie cinquant'anni tra un mese: Sofri lo ha appena fatto partire con tre clic, e lo trova un bel disco, tutto. Gli Eagles sono [qui](https://x.ilpost.it/re?l=D0I5w3qduI1z679szIdITmw2mt9paI5si09w&s=BCNCEBLJHAJIKMKH&req=dmc_cid%3D3683%26cv_id%3D370985) nella loro pagina di riferimento."
+      ]
+    },
     {
       "id": "evening-2026-11-04",
       "source": "evening",
