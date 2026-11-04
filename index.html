@@ -270,7 +270,7 @@ a { color: var(--accent); }
     sunday: { name: 'Sunday Post', color: 'var(--sunday)', nav: '#e8b04a' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '20 · 1 novembre 2026';
+  var APP_VERSION = '21 · 4 novembre 2026';
   var DATA_URL = 'data/digests.json';
   var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null, q: '', seen: new Set(), slide: 0 };
 
@@ -547,8 +547,8 @@ a { color: var(--accent); }
       .formatToParts(d).forEach(function (p) { o[p.type] = p.value; });
     return { ymd: o.year + '-' + o.month + '-' + o.day, hour: +o.hour, hm: o.hour + ':' + o.minute, dow: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(o.weekday) };
   }
-  // Aggiornamenti: ogni giorno alle 19:00 e alle 23:00, la domenica anche alle 9:30.
-  function slotsOf(ymd, dow) { var a = ['19:00', '23:00']; if (dow === 0) a.unshift('09:30'); return a.map(function (t) { return ymd + ' ' + t; }); }
+  // Aggiornamenti: ogni giorno alle 19:00 e alle 23:55, la domenica anche alle 9:30.
+  function slotsOf(ymd, dow) { var a = ['19:00', '23:55']; if (dow === 0) a.unshift('09:30'); return a.map(function (t) { return ymd + ' ' + t; }); }
   function romeYmdOffset(days) { var d = new Date(Date.now() + days * 864e5); var r = romeParts(d); return { ymd: r.ymd, dow: r.dow }; }
   function lastAndNextSlot() {
     var now = romeParts(new Date()), nowKey = now.ymd + ' ' + now.hm, all = [];
