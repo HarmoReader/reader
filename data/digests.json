@@ -1,6 +1,118 @@
 {
-  "updated": "2026-11-05T00:05:00+01:00",
+  "updated": "2026-11-05T19:10:00+01:00",
   "editions": [
+    {
+      "id": "evening-2026-11-05",
+      "source": "evening",
+      "date": "2026-11-05",
+      "title": "Evening Post, le storie di oggi",
+      "intro": "Giovedì 5 novembre: allarmi bomba su una ventina di voli in Europa, ergastolo per Francis Kaufmann, sciopero generale in Francia e una confessione sulle bozze \"flaggate\" della redazione.",
+      "brief": "Nuovi allarmi bomba su voli europei, ergastolo a Kaufmann per il delitto di Villa Pamphili, sciopero generale in Francia, riforma dei finanziamenti al cinema; in apertura il trucchetto aritmetico per pubblicare gli articoli delicati.",
+      "sections": [
+        {
+          "heading": "In apertura",
+          "paragraphs": [
+            "Tra le bozze della redazione ce ne sono alcune \"flaggate\", cioè contrassegnate con una spunta: riguardano la morte di qualcuno, argomenti delicati o notizie sotto embargo che non possono uscire prima di una certa ora. Sono quelle che non devono assolutamente essere pubblicate per sbaglio.",
+            "Per questo la spunta attiva un meccanismo di sicurezza: mentre un articolo normale si pubblica con un clic, uno flaggato obbliga a risolvere prima una semplicissima operazione aritmetica in un pop up, per dimostrare di esserci con la testa. Il sistema funziona; forse, viste le coraggiose confessioni di oggi, andrebbe rivista solo la definizione di \"semplicissima\"."
+          ]
+        },
+        {
+          "heading": "Le notizie",
+          "paragraphs": [
+            "Ci sono stati [allarmi bomba su una ventina di voli in Europa](https://x.ilpost.it/re?l=D0I5w3qphI1z679szI4ITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985), per la seconda volta in pochi giorni: diversi aerei sono stati deviati. Francis Kaufmann [è stato condannato all’ergastolo](https://x.ilpost.it/re?l=D0I5w3qphI1z679szI5ITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985) per aver ucciso la compagna e la figlia, i cui corpi furono trovati nel parco di Villa Pamphili, a Roma, nel 2025.",
+            "In Francia [c’è sciopero generale](https://x.ilpost.it/re?l=D0I5w3qphI1z679szI6ITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985), dopo tre sabati di proteste: era stato convocato prima delle manifestazioni, contro il carovita e la legge di bilancio, e in mattinata i cortei sono stati per lo più pacifici. La polizia [ha eseguito 16 misure cautelari](https://x.ilpost.it/re?l=D0I5w3qphI1z679szI7ITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985) per gli scontri alla fine del corteo di gennaio per l'Askatasuna a Torino.",
+            "Dall'Italia: gli aiuti urgenti per i Campi Flegrei [non sono ancora arrivati](https://x.ilpost.it/re?l=D0I5w3qphI1z679szI8ITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985). I finanziamenti al cinema [saranno gestiti in modo diverso](https://x.ilpost.it/re?l=D0I5w3qphI1z679szI9ITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985), con una riforma molto attesa che punta a sbloccare una situazione di cui il settore si lamenta da anni. A Venezia il Mose funziona, ma per questo sono aumentati i ratti ([possiamo spiegare](https://x.ilpost.it/re?l=D0I5w3qphI1z679szIaITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985)).",
+            "Dal resto del mondo: [Qualcosa sta già cambiando in Serbia](https://x.ilpost.it/re?l=D0I5w3qphI1z679szIbITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985), nella polizia, nelle televisioni e a capo di un'importante banca, effetti della vittoria del movimento degli studenti alle elezioni. Il Venezuela [usa il pugno duro](https://x.ilpost.it/re?l=D0I5w3qphI1z679szIcITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985) con il gruppo armato che proteggeva. E uno chef italiano è stato licenziato in Australia [per essersi rifiutato di mettere l’ananas sulla pizza](https://x.ilpost.it/re?l=D0I5w3qphI1z679szIdITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Una cosa da ascoltare",
+          "paragraphs": [
+            "Dieci anni fa il problema di Napoli era che i turisti non ci venivano, cinque anni fa la città era a un passo dal fallimento; oggi, secondo molti, il problema è che i turisti ci vengono: strade del centro piene, Quartieri Spagnoli tra i posti più affollati d'Italia, migliaia di appartamenti diventati case vacanza. L'economia è cresciuta, con soldi, lavoro e investimenti, ma sono arrivati anche nuovi problemi. [Nella puntata di Wilson di questa settimana](https://x.ilpost.it/re?l=D0I5w3qphI1z679szIeITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985), registrata durante Talk, Francesco Costa ne parla con il sindaco Gaetano Manfredi."
+          ]
+        },
+        {
+          "heading": "Musica, cinema, acquisti",
+          "paragraphs": [
+            "A ottobre la redazione ha comprato [cinque cose che ci hanno soddisfatto](https://x.ilpost.it/re?l=D0I5w3qphI1z679szIfITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985). In Cina è uscito [il primo film fatto quasi interamente con l’intelligenza artificiale](https://x.ilpost.it/re?l=D0I5w3qphI1z679szIgITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985): è costato tanto e sta incassando poco, insomma un successo. Quanto ai concerti di Bob Dylan di questi giorni, il Post chiede se qualcuno li ha visti e cosa ne pensa: [Ecco, appunto](https://x.ilpost.it/re?l=D0I5w3qphI1z679szIhITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Tre cose di sport",
+          "paragraphs": [
+            "Cristiano Ronaldo [si è ritirato dalla nazionale portoghese](https://x.ilpost.it/re?l=D0I5w3qphI1z679szIiITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985). Poi un po' di [storie di vittorie tanto a poco](https://x.ilpost.it/re?l=D0I5w3qphI1z679szIjITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985) nel calcio, con risultati come 149 a zero. Infine la Route du Rhum, regata transoceanica in solitaria dalla Francia alla Guadalupa, in cui possono esserci [tempeste, balene e allucinazioni](https://x.ilpost.it/re?l=D0I5w3qphI1z679szIkITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Un po' di cose che facciamo",
+          "paragraphs": [
+            "Il tema delle prossime Istruzioni del Post, tre incontri online a partire da questo novembre con Marco Simoni, è perché la politica si è rotta e cosa c'entra l'economia: [qui](https://x.ilpost.it/re?l=D0I5w3qphI1z679szIlITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985) il programma e le istruzioni per iscriversi. Di Pescara [vi abbiamo già detto](https://x.ilpost.it/re?l=D0I5w3qphI1z679szImITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985); la prossima settimana invece il direttore editoriale sarà a Milano, da LCA studio, a parlare del true crime come concetto e come libro, a ingresso libero ([ci si prenota qui](https://x.ilpost.it/re?l=D0I5w3qphI1z679szInITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985))."
+          ]
+        },
+        {
+          "heading": "Cose da leggere",
+          "paragraphs": [
+            "[Come si capisce se un surgelato è da buttare](https://x.ilpost.it/re?l=D0I5w3qphI1z679szIpITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985), per chi se l'è chiesto dopo gli attacchi hacker ai supermercati. Dopo la sconfitta, [Trump è in difficoltà anche in Medio Oriente](https://x.ilpost.it/re?l=D0I5w3qphI1z679szIrITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985). Il secolo scorso, [sembra ieri](https://x.ilpost.it/re?l=D0I5w3qphI1z679szIsITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985). Dov'è finito [il cinema erotico](https://x.ilpost.it/re?l=D0I5w3qphI1z679szIuITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985)? E i politici [hanno sempre più bisogno degli influencer](https://x.ilpost.it/re?l=D0I5w3qphI1z679szIwITmw3ty8yv&s=EOJDFPHLHPICFABF&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Saluti",
+          "paragraphs": [
+            "Il Post torna domani alla stessa ora, con il consiglio di ripassare la tabellina del 7."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "streaming-2026-11-05",
+      "source": "streaming",
+      "date": "2026-11-05",
+      "title": "Amori possibili e mostri impossibili",
+      "intro": "Uno dei film migliori dell'anno, Possible Love di Lee Chang-dong su Netflix, e una puntata speciale a sorpresa di Welcome to Derry.",
+      "sections": [
+        {
+          "heading": "In apertura",
+          "paragraphs": [
+            "Il processo di avvicinamento al Natale si vede dai \"ceppi di Natale\" che ogni piattaforma sta caricando: video di circa un'ora, a volte fino a otto, in cui si vede solo un caminetto che brucia. È un trend nato nella televisione americana [a fine anni Sessanta](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szI3ITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985) e ripreso da [alcuni canali YouTube](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szI4ITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985): una maniera semplice e a costi irrisori di ottenere ore di visione, e YouTube ha costruito il proprio dominio nello streaming anche su video così. Ora le altre piattaforme cercano di fare lo stesso, spingendosi più in là nella brandizzazione.",
+            "Netflix ha iniziato per prima, già nel 2011, e offre più varietà: oltre al [modello base](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szI5ITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985), caminetti nelle scenografie di [Stranger Things](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szI6ITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985), [Squid Game](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szI7ITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985) e [KPop Demon Hunters](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szI8ITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985). Prime Video ha [quello base](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szI9ITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985), quello [di Rick and Morty](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIaITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985) e uno in stile [casa infestata](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIbITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985). Su Disney+ c'è quello del regno innevato [di Frozen](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIcITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Ora in streaming",
+          "paragraphs": [
+            "**Possible Love** (2026, [Netflix](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIdITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985)): la produzione di un documentario sui licenziamenti e sugli scioperi in una fabbrica sudcoreana mette in contatto due coppie, quella di un licenziato e di sua moglie e quella della documentarista e del suo ricco marito. I secondi vogliono frequentare i primi per sentirsi più progressisti, i primi i secondi per guadagnarci in status.",
+            "Esce domani ed è il secondo film del progetto \"Decalogo\" di Netflix, che rifà la serie antologica del 1988-1989 di Krzysztof Kieślowski affidando ogni comandamento a un autore noto. Qui il comandamento è \"Non desiderare la roba d'altri\" ed è stata una grande idea darlo a Lee Chang-dong (Oasis, Burning), tra i maggiori cineasti sudcoreani: come in Parasite, racconta la forte divisione tra classi e il peso di un fallimento più che una coscienza di classe.",
+            "La scrittura è perfetta, con trovate sorprendenti e a tratti molto divertenti e immagini potentissime. Il primo capitolo, Storie parallele di Asghar Farhadi, non è ancora disponibile perché deve prima uscire al cinema il 26 novembre. [Trailer](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIeITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Qualcosa dietro le quinte",
+          "paragraphs": [
+            "**Making Marie Antoinette** (2026, [MUBI](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIfITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985)): durante le riprese di Marie Antoinette di Sofia Coppola, sua madre Eleanor girò 80 ore di backstage, ora riassunte in un film. Sofia girò quel film all'apice del suo potere, dopo Lost in Translation, con accesso a Versailles, la costumista Milena Canonero e un budget dieci volte superiore. Eleanor aveva iniziato a lavorare al materiale durante la pandemia ed è morta nel 2024; per i vent'anni dall'uscita la figlia ha completato il lavoro, anche come celebrazione delle registe. Disponibile da domani. Il film Marie Antoinette è invece [su Prime Video](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIgITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985). [Trailer](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIhITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Qualcosa a sorpresa",
+          "paragraphs": [
+            "**It Welcome to Derry: A Story of Derry** (2026, [HBO Max](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIiITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985) e [Now](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIjITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985)): centinaia di anni prima della serie, Pennywise viene imprigionato nella foresta di Derry e lo scoprono tre ragazzine in cerca di cibo. L'episodio speciale è comparso senza preavviso nel weekend di Halloween: è un prequel del prequel, e racconta la storia \"che non insegniamo\" della tribù Sqoteawapskot, di cui fa parte Necani, intravisto in un flashback della prima stagione e ora protagonista."
+          ]
+        },
+        {
+          "heading": "Arrivi e partenze",
+          "paragraphs": [
+            "**Black Doves**, grande successo di spionaggio britannico rimasto a lungo nella top 10 [su Netflix](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIkITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985), torna con la seconda stagione, ancora con Keira Knightley. **The Gilded Age** ha già il primo episodio della quarta stagione [su HBO Max](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIlITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985). **The Greatest** racconta in otto puntate, tutte [su Prime Video](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szImITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985) da ieri, Cassius Clay/Muhammad Ali dalle Olimpiadi di Roma 1960: produzione convenzionale, fatta con gli eredi.",
+            "Da domani [su HBO Max](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szInITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985) c'è **Melania Rea**, serie italiana di Stefano Mordini sul caso di femminicidio, con Maria Esposito. **Stick**, serie comica sul golf con Owen Wilson, è alla seconda stagione [su Apple TV](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIoITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985). **All's Fair** di Ryan Murphy, con Kim Kardashian avvocata, torna [su Disney+](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIpITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985) con rivalità ancora più esagerate. **Campus Drivers**, succedaneo francese di Off Campus, esce da domani con sei episodi [su Prime Video](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIqITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "**The Mongoose**, thriller automobilistico con Liam Neeson del filone \"[dad tv](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIrITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985)\", è da ieri [su Prime Video](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIsITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985). E è iniziato il periodo dei [film di Natale a basso costo e alta ripetitività](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szItITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985): apre Dennis Quaid con **Un cucciolo per Natale** [su Netflix](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIuITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985), dove si sentono i pensieri di un cane che aiuta il padrone a tenere insieme la famiglia."
+          ]
+        },
+        {
+          "heading": "Dalle profondità delle piattaforme",
+          "paragraphs": [
+            "**Lo spaccacuori** (2007, [Disney+](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIvITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985)): Eddie, quarantenne single, sposa dopo poche settimane la bellissima Laila e in luna di miele in Messico scopre quanto siano incompatibili. Remake di Il rompicuori (1972, Neil Simon), con Ben Stiller che subisce da Malin Åkerman una vita di coppia non voluta, nello stile dei fratelli Farrelly: probabilmente l'ultimo film riuscito di quell'era dell'umorismo. [Trailer](https://x.ilpost.it/re?l=D0I5w3qnbI1z679szIwITmw3k46lr&s=NLCHAIFJDDCIINHL&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        }
+      ]
+    },
     {
       "id": "canzoni-2026-11-04",
       "source": "canzoni",
