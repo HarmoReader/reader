@@ -1,6 +1,65 @@
 {
-  "updated": "2026-11-06T00:02:00+01:00",
+  "updated": "2026-11-06T19:08:00+01:00",
   "editions": [
+    {
+      "id": "evening-2026-11-06",
+      "source": "evening",
+      "date": "2026-11-06",
+      "title": "Evening Post, le storie di oggi",
+      "intro": "Venerdì 6 novembre: quarto giorno di allarmi bomba in Europa, l'accordo Trump-Putin sul gasolio che non funziona, Nithya Raman sindaca di Los Angeles e l'addio di Cahill a Sinner.",
+      "brief": "Allarmi bomba anche alle redazioni irlandesi, l'accordo Trump-Putin sul gasolio non funziona, Nithya Raman sindaca di Los Angeles, Gadi Eisenkot verso l'incarico in Israele e Cahill lascia Sinner.",
+      "sections": [
+        {
+          "heading": "In apertura",
+          "paragraphs": [
+            "Negli ultimi anni è capitato sempre più spesso di scrivere di [attacchi informatici](https://x.ilpost.it/re?l=D0I5w3r06I1z679szI3ITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985), ma non sono tutti uguali e scegliere le parole giuste non è semplice come sembra. Il caso di oggi è [questo](https://x.ilpost.it/re?l=D0I5w3r06I1z679szI5ITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985), e la redazione ha cercato di capire [se quelli dietro gli attacchi siano davvero](https://x.ilpost.it/re?l=D0I5w3r06I1z679szI6ITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985) [hacker filorussi](https://x.ilpost.it/re?l=D0I5w3r06I1z679szI7ITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985), dato che molte cose nelle loro dichiarazioni non tornano."
+          ]
+        },
+        {
+          "heading": "Le notizie",
+          "paragraphs": [
+            "È stato il [quarto giorno di allarmi bomba in Europa](https://x.ilpost.it/re?l=D0I5w3r06I1z679szI8ITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985): oltre ad aerei e aeroporti, oggi sono arrivati anche alle redazioni di importanti media irlandesi. L'accordo di Trump e Putin per il gasolio [non sta funzionando](https://x.ilpost.it/re?l=D0I5w3r06I1z679szI9ITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985): le prime petroliere partite dai porti russi e dirette negli Stati Uniti hanno cambiato destinazione e per i consumatori non c'è stato alcun ribasso dei prezzi.",
+            "L'uomo che il 25 aprile a Roma aveva ferito due persone con una pistola ad aria compressa [è stato condannato a 4 mesi](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIaITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Altre notizie dall'Italia",
+          "paragraphs": [
+            "Giusi Bartolozzi, ex capa di gabinetto del ministero della Giustizia, [potrà essere processata](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIbITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985) con l'accusa di aver dato informazioni false al tribunale dei ministri sul caso Almasri. I lavoratori della Fenice di Venezia [hanno confermato il doppio sciopero](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIcITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985) del 13 e del 28 novembre. E se avete un profilo Facebook o Instagram potreste aver ricevuto una mail che vi dice di essere stati «migrati a un account Meta»: [cosa vuol dire?](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIdITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985)"
+          ]
+        },
+        {
+          "heading": "Oltreoceano",
+          "paragraphs": [
+            "La nuova sindaca di Los Angeles sarà [Nithya Raman, dell’ala socialista dei Democratici](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIeITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985). I Democratici sono messi bene persino in Mississippi, cosa impensabile fino a poche settimane fa, poi c'è stato [uno spot sulla carne](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIfITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985). Giovedì le azioni di molte aziende tecnologiche, soprattutto legate all'intelligenza artificiale, [sono scese parecchio](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIgITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985) dopo la vittoria democratica. E [Meta, TikTok e Google hanno fatto causa alla California](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIhITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985): sostengono che una legge sulla tutela dei minori, in vigore da gennaio, violi il primo emendamento."
+          ]
+        },
+        {
+          "heading": "Dal resto del mondo",
+          "paragraphs": [
+            "Con ogni probabilità domenica il presidente israeliano Isaac Herzog darà [l’incarico di](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIiITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985) [formare il governo al capo dell’opposizione, il generale Gadi Eisenkot](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIjITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985). Il governo di Péter Magyar in Ungheria [ha pubblicato migliaia di documenti riservati](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIkITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985), tra cui archivi della dittatura comunista e contratti opachi, nello smantellamento del sistema di potere di Orbán. Alle elezioni locali in Sudafrica l'ANC, il partito di Mandela, [ha perso quasi tutte le città più grandi](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIlITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Non solo calcio",
+          "paragraphs": [
+            "Il commissario tecnico Roberto Mancini ha diffuso la lista dei convocati per le prossime due partite dell'Italia: [eccola](https://x.ilpost.it/re?l=D0I5w3r06I1z679szImITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985). Si può vincere una partita senza alcun tiro in porta? [A quanto pare sì](https://x.ilpost.it/re?l=D0I5w3r06I1z679szInITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985). [Ha senso far giocare squadre femminili contro squadre maschili?](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIoITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985) Se ne riparla per due squadre del Milan. Il miglior giocatore dell'NBA [è un problema per la sua squadra](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIpITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985)? Forse un po'. Infine [Darren Cahill non allenerà più Jannik Sinner](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIqITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985): lo sostituirà Magnus Norman."
+          ]
+        },
+        {
+          "heading": "Un'ultima cosa",
+          "paragraphs": [
+            "Nel fine settimana il Post torna a Pescara per la ventiquattresima edizione del festival FLA: la rassegna stampa «I giornali spiegati bene» con Francesco Costa e Luca Sofri, una puntata dal vivo di Orazio con Matteo Caccia, il racconto di Luca Misculin «Gaza prima di Gaza» e la lezione di Sofri sulle cose imparate sui libri. [Tutti i dettagli qui](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIrITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Cose da leggere",
+          "paragraphs": [
+            "[Cosa succede](https://x.ilpost.it/re?l=D0I5w3r06I1z679szItITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985) quando c'è un allarme bomba su un aereo? [Ne sappiamo di nuovo un po’ di meno](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIvITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985) sulle pietre di Stonehenge. [La bella storia](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIwITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985) dietro il nuovo miglior ristorante al mondo. Lo Spazio è sempre più un affare [di Elon Musk e della sua SpaceX](https://x.ilpost.it/re?l=D0I5w3r06I1z679szIyITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985). Cosa vuol dire che [un videogioco è di Shigeru Miyamoto](https://x.ilpost.it/re?l=D0I5w3r06I1z679szI10ITmw58xx9x&s=DGMICNFMEOODEIIH&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        }
+      ]
+    },
     {
       "id": "canzoni-2026-11-05",
       "source": "canzoni",
