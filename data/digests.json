@@ -1,6 +1,68 @@
 {
-  "updated": "2026-11-10T00:02:00+01:00",
+  "updated": "2026-11-10T19:08:00+01:00",
   "editions": [
+    {
+      "id": "evening-2026-11-10",
+      "source": "evening",
+      "date": "2026-11-10",
+      "title": "Evening Post, le storie di oggi",
+      "intro": "Martedì 10 novembre: il caso del CEO di Nvidia e della presunta spia cinese, le richieste di archiviazione per Beppe Sala, la condanna di Russell Brand e l'addio di Gunn e Safran a DC Studios.",
+      "brief": "Il caso Nvidia-Jensen Huang tra FBI e crollo in borsa, impeachment contro Hegseth, richiesta di archiviazione per Sala, Novaya Gazeta chiude l'edizione russa, Gunn e Safran lasciano DC Studios.",
+      "sections": [
+        {
+          "heading": "In apertura",
+          "paragraphs": [
+            "La storia su cui il Post ha pubblicato più articoli negli ultimi giorni è la relazione del CEO di Nvidia, Jensen Huang, con una donna sospettata dagli Stati Uniti di essere una spia cinese. Offre molti aggiornamenti ma poche occasioni di originalità con le immagini in evidenza, che sono tutte foto di Huang. Oggi si è aperto uno spiraglio creativo con [un pezzo sulle «trappole al miele»](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szI3ITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985) più famose della Storia: la redazione ha scelto [questa](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szI4ITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985) immagine, ammettendo di aver vacillato davanti a un salto creativo ancora maggiore.",
+            "Chi non sa cos'è una trappola al miele è il motivo per cui, nonostante la tentazione, si è scelto di non usare un vero barattolo di miele per illustrare {l('un articolo',2)} su trappole al miele solo metaforiche."
+          ]
+        },
+        {
+          "heading": "Le notizie",
+          "paragraphs": [
+            "Sul caso Nvidia, Trump ha detto che sta [indagando anche l’FBI](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szI7ITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985), e intanto l'azienda ha avuto [un netto calo in borsa](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szI8ITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985). Sempre negli Stati Uniti, un deputato Repubblicano ha avviato una procedura di impeachment contro il segretario alla Difesa Pete Hegseth, anch'egli Repubblicano: è [un assaggio di quello che potrebbe succedere nei prossimi due anni](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szI9ITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "È stata chiesta [l’archiviazione per Beppe Sala e i principali indagati](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIaITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985) nell'inchiesta sull'urbanistica a Milano. Negli Emirati Arabi Uniti sono ripresi i negoziati per la pace in Ucraina, con anche la sicurezza europea in agenda, [ma l’Europa non è coinvolta](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIbITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985). Ieri la Francia [ha accusato l’Iran](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIcITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985) per gli attacchi informatici ai supermercati, e il giornale indipendente Novaya Gazeta [ha chiuso definitivamente](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIdITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985) la sua edizione russa."
+          ]
+        },
+        {
+          "heading": "Qui in Italia",
+          "paragraphs": [
+            "Per detenere qualcuno in un Cpr ora [non sarà più necessario accertare che sia in un buono stato di salute](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIeITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985). Il governo ha approvato [una piccola riduzione](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIfITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985) del prezzo dell'energia elettrica. L'ex senatore Tommaso Casillo è in custodia cautelare in carcere [con l’accusa di aver ricevuto tangenti](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIgITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985). L'università di Torino è occupata dagli studenti [da due settimane](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIhITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "Ci sono state molte polemiche intorno a [un corteo funebre a Palermo](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIiITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985), e si parla di [due nuove opere di Caravaggio](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIjITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985). La procura di Livorno ha chiesto l'archiviazione dell'ultima indagine sulla strage della Moby Prince, [avvenuta nel 1991](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIkITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985). E la guerra in Ucraina ha avuto effetti [anche su Piombino](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIlITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Nelle Americhe",
+          "paragraphs": [
+            "Nella villa dell'ex presidente del Paraguay Santiago Peña, destituito e arrestato nei giorni scorsi, [c’è un bunker che non si riesce ad aprire](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szImITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985). Il presidente nicaraguense Daniel Ortega è riapparso in pubblico [dopo 68 giorni](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szInITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985). In California [è stato respinto il referendum](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIoITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985) per tassare i patrimoni delle persone più ricche."
+          ]
+        },
+        {
+          "heading": "Dal resto del mondo",
+          "paragraphs": [
+            "Secondo i dati trafugati in un attacco hacker, i soldati russi uccisi in Ucraina [sarebbero più di 400mila](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIpITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985). Il comico inglese Russell Brand è stato condannato a [oltre dieci anni di carcere per stupro](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIqITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985). In Bulgaria ci sono stati due incidenti stradali [molto gravi](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIrITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985). È stato arrestato il fratello dell'ex primo ministro ungherese Viktor Orbán, [indagato per traffico di migranti](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIsITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "L'azienda di AI Anthropic punta a raggiungere [un valore di 1.410 miliardi di dollari](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szItITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985) con la quotazione in Borsa. E c'è il canale tv che [spinge le idee dell’estrema destra](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIuITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985) in Francia."
+          ]
+        },
+        {
+          "heading": "Cinema e sport",
+          "paragraphs": [
+            "James Gunn e Peter Safran [hanno lasciato](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIvITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985) la guida e la presidenza di DC Studios. Nello sport: è l'anno buono per la squadra [più tormentata del football americano](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIwITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985)? La Corea del Nord è fortissima, [letteralmente](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIxITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985). La Formula 1 si concluderà in Medio Oriente ([e quindi Imola?](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIyITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985))."
+          ]
+        },
+        {
+          "heading": "Da ascoltare e da vedere",
+          "paragraphs": [
+            "Nella nuova puntata di Altre Indagini, Stefano Nazzi racconta l'omicidio di Antonio Custra e la storia di una foto: si può [ascoltare](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szIzITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985) ma anche [guardare](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szI10ITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985). Domani alle 18:30, a Milano, il direttore editoriale Luca Sofri presenta La tragedia del true crime, il penultimo libro di Altrecose, da LCA: [ci si può registrare qui](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szI11ITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Cose da leggere",
+          "paragraphs": [
+            "Cosa vuole la Cina da Nvidia? [Un articolo con una foto poco creativa](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szI13ITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985) ma utile. Anche le regioni di destra [ce l’hanno col governo sulla sanità](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szI15ITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985). Anche un calendario dell'avvento può essere [disastroso](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szI16ITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985). C'è davvero [un’epidemia di solitudine](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szI18ITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985)? Un'espressione che si usa spesso, soprattutto per i giovani, ma che richiede cautela. E quasi tutte le interviste in mezzo alle partite [sono inconcludenti](https://x.ilpost.it/re?l=D0I5w3rwxI1z679szI1aITmwaz5l3w&s=FKANHKJEEOMGNMNI&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        }
+      ]
+    },
     {
       "id": "canzoni-2026-11-09",
       "source": "canzoni",
