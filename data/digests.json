@@ -1,6 +1,37 @@
 {
-  "updated": "2026-11-10T19:08:00+01:00",
+  "updated": "2026-11-11T00:02:00+01:00",
   "editions": [
+    {
+      "id": "canzoni-2026-11-10",
+      "source": "canzoni",
+      "date": "2026-11-10",
+      "title": "Le canzoni: Goodbye",
+      "intro": "Di Luca Sofri.",
+      "brief": "Canzone del giorno: Goodbye dei Catherine Wheel, un lungo pezzo rock di sette minuti; prima, il nuovo disco dei Get Well Soon e la storia di Marquee Moon dei Television.",
+      "song": {
+        "title": "Goodbye",
+        "artist": "Catherine Wheel",
+        "links": [
+          {
+            "label": "Spotify",
+            "url": "https://x.ilpost.it/re?l=D0I5w3rx6I1z679szI6ITmwb96z8rI5si09w&s=PEGDBFALNDLPAJHE&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "Apple Music",
+            "url": "https://x.ilpost.it/re?l=D0I5w3rx6I1z679szI7ITmwb96z8rI5si09w&s=PEGDBFALNDLPAJHE&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "YouTube",
+            "url": "https://x.ilpost.it/re?l=D0I5w3rx6I1z679szI8ITmwb96z8rI5si09w&s=PEGDBFALNDLPAJHE&req=dmc_cid%3D3683%26cv_id%3D370985"
+          }
+        ]
+      },
+      "paragraphs": [
+        "Nelle «altre cose» prima della canzone, Sofri segnala un [disco nuovo](https://x.ilpost.it/re?l=D0I5w3rx6I1z679szI2ITmwb96z8rI5si09w&s=PEGDBFALNDLPAJHE&req=dmc_cid%3D3683%26cv_id%3D370985) dei Get Well Soon, il secondo di quest'anno: sono tedeschi (anche se in realtà è un progetto di una sola persona) e di loro aveva già usato [una canzone](https://x.ilpost.it/re?l=D0I5w3rx6I1z679szI3ITmwb96z8rI5si09w&s=PEGDBFALNDLPAJHE&req=dmc_cid%3D3683%26cv_id%3D370985) in questa newsletter. Gli pare buono, e [qua e là](https://x.ilpost.it/re?l=D0I5w3rx6I1z679szI4ITmwb96z8rI5si09w&s=PEGDBFALNDLPAJHE&req=dmc_cid%3D3683%26cv_id%3D370985) fingono, bene, di essere i National. Ricorda inoltre che il Post ha [raccontato](https://x.ilpost.it/re?l=D0I5w3rx6I1z679szI5ITmwb96z8rI5si09w&s=PEGDBFALNDLPAJHE&req=dmc_cid%3D3683%26cv_id%3D370985) la storia di Marquee Moon, leggendario disco dei Television.",
+        "La canzone di oggi è Goodbye dei Catherine Wheel: un gran pezzo rock di sette minuti in cui succedono molte delle cose che possono succedere in un brano rock, dai passaggi dolci a quelli agguerriti, dagli assoli ai versi che scivolano via, dalle accelerazioni alle pause alle rime azzeccate.",
+        "Il gruppo durò un decennio alla fine del millennio; il cantante poi mise su un'azienda di restauro di vecchie Porsche ed è cugino di Bruce Dickinson degli Iron Maiden. Sofri aveva già citato [un anno fa](https://x.ilpost.it/re?l=D0I5w3rx6I1z679szI9ITmwb96z8rI5si09w&s=PEGDBFALNDLPAJHE&req=dmc_cid%3D3683%26cv_id%3D370985) un'altra bella canzone dello stesso disco. Per lui è una canzone «da chiuderci il film»: la telecamera segue il protagonista che esce e va, poi si allontana col drone sulla strada nella campagna inglese, i dirupi sul mare a destra e la macchina che si allontana, titoli di coda."
+      ]
+    },
     {
       "id": "evening-2026-11-10",
       "source": "evening",
