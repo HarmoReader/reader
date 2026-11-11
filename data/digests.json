@@ -1,6 +1,60 @@
 {
-  "updated": "2026-11-11T00:02:00+01:00",
+  "updated": "2026-11-11T19:08:00+01:00",
   "editions": [
+    {
+      "id": "evening-2026-11-11",
+      "source": "evening",
+      "date": "2026-11-11",
+      "title": "Evening Post, le storie di oggi",
+      "intro": "Mercoledì 11 novembre: allarme bomba via mail a migliaia di scuole italiane, sciopero generale in Spagna, fallito l'impeachment di Hegseth e Cappato indagato a Trieste.",
+      "brief": "Migliaia di scuole italiane ricevono un allarme bomba via mail ma nessuna bomba è stata trovata; sciopero generale in Spagna, tempesta Charles in Portogallo, fallito l'impeachment di Hegseth, esce in Italia Enshittification di Doctorow.",
+      "sections": [
+        {
+          "heading": "In apertura",
+          "paragraphs": [
+            "Stamattina [migliaia di scuole in tutta Italia](https://x.ilpost.it/re?l=D0I5w3s84I1z679szI3ITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985) hanno ricevuto [un allarme bomba via mail](https://x.ilpost.it/re?l=D0I5w3s84I1z679szI4ITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985), firmata da un certo Mikhail Andropov, sedicente leader di «Vilayat di Misoginistan». Le segnalazioni sono arrivate a scuole di quasi tutte le regioni e molte hanno sospeso le lezioni e disposto evacuazioni precauzionali.",
+            "Le forze dell'ordine stanno facendo verifiche per accertare eventuali esplosivi e risalire all'origine delle minacce: al momento non è stata trovata nessuna bomba e il ministro dell'Istruzione Giuseppe Valditara ha detto che con questi numeri il rischio che gli allarmi abbiano concretezza è «inesistente». Per stabilirlo con un po' di certezza è servito però qualche ora, in un contesto di confusione e comprensibile preoccupazione di genitori, ragazzi e personale scolastico. Pensando a migliaia di ragazzi radunati fuori dalle scuole in una giornata di scompiglio, alla redazione è venuto però un piccolo pensiero ottimista."
+          ]
+        },
+        {
+          "heading": "Le altre notizie",
+          "paragraphs": [
+            "Allarmi bomba ci sono stati anche [in molte scuole di Scozia, Irlanda e Irlanda del Nord](https://x.ilpost.it/re?l=D0I5w3s84I1z679szI5ITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985). In Spagna [c’è il primo sciopero generale in 14 anni](https://x.ilpost.it/re?l=D0I5w3s84I1z679szI6ITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985), contro la crisi abitativa, con scontri tra manifestanti e polizia e 40 arresti. Friedrich Merz [ha legato il bilancio europeo all’Ucraina](https://x.ilpost.it/re?l=D0I5w3s84I1z679szI7ITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985): la Germania lo terrà bloccato finché tutti i paesi non contribuiranno a un nuovo prestito, e alcuni sono molto arrabbiati. In Portogallo [le scuole sono state chiuse](https://x.ilpost.it/re?l=D0I5w3s84I1z679szI8ITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985) e più di 360 voli sono stati cancellati per la tempesta Charles. In Israele [è già Eisenkot contro Netanyahu](https://x.ilpost.it/re?l=D0I5w3s84I1z679szI9ITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Altro dall'Italia",
+          "paragraphs": [
+            "Marco Cappato [è indagato dalla procura di Trieste](https://x.ilpost.it/re?l=D0I5w3s84I1z679szIaITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985) per aver aiutato una donna ad accedere al suicidio assistito in Svizzera. L'uomo che uccise Martina Scialdone è stato condannato all'ergastolo nell'appello bis, [in cui è stata riconosciuta la premeditazione](https://x.ilpost.it/re?l=D0I5w3s84I1z679szIbITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985). A Torino i mezzi in sharing [non si potranno più parcheggiare ovunque](https://x.ilpost.it/re?l=D0I5w3s84I1z679szIcITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "E dal mondo",
+          "paragraphs": [
+            "Il tentativo di destituire il segretario alla Difesa Pete Hegseth [è fallito](https://x.ilpost.it/re?l=D0I5w3s84I1z679szIdITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985): la Camera, a maggioranza Repubblicana fino a gennaio, ha di fatto bloccato la richiesta di impeachment. Nove membri della famiglia Kennedy hanno chiesto di unirsi a una causa legale [contro la costruzione, voluta da Trump, di un arco di trionfo](https://x.ilpost.it/re?l=D0I5w3s84I1z679szIeITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985) vicino alla tomba di John Fitzgerald Kennedy. Un tribunale della Florida [ha autorizzato la prosecuzione](https://x.ilpost.it/re?l=D0I5w3s84I1z679szIfITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985) della causa per diffamazione di Trump contro la BBC, e un tribunale britannico [ha annullato](https://x.ilpost.it/re?l=D0I5w3s84I1z679szIgITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985) la legge di Trinidad e Tobago che criminalizzava i rapporti omosessuali.",
+            "A quattro anni dall'istituzione, il fondo per i danni climatici [non ha ancora ripagato nessuno](https://x.ilpost.it/re?l=D0I5w3s84I1z679szIhITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985). Parigi [conta sempre di più](https://x.ilpost.it/re?l=D0I5w3s84I1z679szIiITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985) nel mercato dell'arte. E la chiusura dell'ambasciata finlandese a Canberra [è diventata virale senza un vero motivo](https://x.ilpost.it/re?l=D0I5w3s84I1z679szIjITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Cose di sport e attorno",
+          "paragraphs": [
+            "Nelle città danesi di Esbjerg e Herning è in corso il Mondiale femminile di hockey su ghiaccio, di cui si parla soprattutto perché Stati Uniti e Canada giocano con maglie «brutte e generiche» ([c’è una storia, dietro](https://x.ilpost.it/re?l=D0I5w3s84I1z679szIkITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985)). I tifosi del Barcellona [potranno avere una tomba dentro lo stadio](https://x.ilpost.it/re?l=D0I5w3s84I1z679szIlITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985). Sara Errani e Jasmine Paolini [sono in semifinale](https://x.ilpost.it/re?l=D0I5w3s84I1z679szImITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985) alle WTA Finals di tennis."
+          ]
+        },
+        {
+          "heading": "Una cosa da leggere",
+          "paragraphs": [
+            "Esce oggi in libreria l'edizione italiana di [Enshittification](https://x.ilpost.it/re?l=D0I5w3s84I1z679szInITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985), uno dei libri più discussi sulle trasformazioni digitali degli ultimi anni: spiega e ordina i peggioramenti di molti servizi online. L'edizione, pubblicata da Altrecose, ha una postfazione aggiornata dell'autore, Cory Doctorow, sul suo successo e sui suoi sviluppi: [si può leggere qui](https://x.ilpost.it/re?l=D0I5w3s84I1z679szIoITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Cose da leggere",
+          "paragraphs": [
+            "Come funziona [la tassa sui ricchi che se ne vanno dall’Italia](https://x.ilpost.it/re?l=D0I5w3s84I1z679szIqITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985) proposta dal governo. I paesi che guidano la conferenza sul clima hanno una cosa in comune: [il carbone](https://x.ilpost.it/re?l=D0I5w3s84I1z679szIsITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985). 50 federazioni sportive, [49 presidenti maschi](https://x.ilpost.it/re?l=D0I5w3s84I1z679szItITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985), con un'età media di 63 anni. Sappiamo [poco](https://x.ilpost.it/re?l=D0I5w3s84I1z679szIvITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985) della donna al centro dello scandalo di Nvidia. E il [bizzarro ritorno](https://x.ilpost.it/re?l=D0I5w3s84I1z679szIxITmwcea2gp&s=OLKOJBGGAAEDNINK&req=dmc_cid%3D3683%26cv_id%3D370985) di Pitbull."
+          ]
+        }
+      ]
+    },
     {
       "id": "canzoni-2026-11-10",
       "source": "canzoni",
