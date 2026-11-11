@@ -1,6 +1,38 @@
 {
-  "updated": "2026-11-11T19:08:00+01:00",
+  "updated": "2026-11-12T00:02:00+01:00",
   "editions": [
+    {
+      "id": "canzoni-2026-11-11",
+      "source": "canzoni",
+      "date": "2026-11-11",
+      "title": "Le canzoni: Lives left out to dry",
+      "intro": "Di Luca Sofri.",
+      "brief": "Canzone del giorno: Lives left out to dry di David Keenan, cantautore irlandese dal disco uscito a fine 2025; prima, Robbie Williams e il plagio, Pavement per Pitchfork, il concerto di Malika Ayane e i nuovi Howl Owl Howl.",
+      "song": {
+        "title": "Lives left out to dry",
+        "artist": "David Keenan",
+        "links": [
+          {
+            "label": "Spotify",
+            "url": "https://x.ilpost.it/re?l=D0I5w3s86I1z679szI7ITmwcmvvesI5si09w&s=GFKMCEGGFKKAIOEI&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "Apple Music",
+            "url": "https://x.ilpost.it/re?l=D0I5w3s86I1z679szI8ITmwcmvvesI5si09w&s=GFKMCEGGFKKAIOEI&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "YouTube",
+            "url": "https://x.ilpost.it/re?l=D0I5w3s86I1z679szI9ITmwcmvvesI5si09w&s=GFKMCEGGFKKAIOEI&req=dmc_cid%3D3683%26cv_id%3D370985"
+          }
+        ]
+      },
+      "paragraphs": [
+        "Nelle «altre cose» prima della canzone, Sofri racconta che Robbie Williams sta facendo sempre più casino con la storia della canzone di Olivia Rodrigo che somiglia alla sua: dopo le critiche di chi ha notato che [il suo primo messaggio](https://x.ilpost.it/re?l=D0I5w3s86I1z679szI2ITmwcmvvesI5si09w&s=GFKMCEGGFKKAIOEI&req=dmc_cid%3D3683%26cv_id%3D370985) conciliante sembrava sottolineare il plagio e prendersi la scena, ne ha scritto [un altro](https://x.ilpost.it/re?l=D0I5w3s86I1z679szI3ITmwcmvvesI5si09w&s=GFKMCEGGFKKAIOEI&req=dmc_cid%3D3683%26cv_id%3D370985) mostrando una presunta conversazione con la figlia, peggiorando la situazione. [Secondo Pitchfork](https://x.ilpost.it/re?l=D0I5w3s86I1z679szI4ITmwcmvvesI5si09w&s=GFKMCEGGFKKAIOEI&req=dmc_cid%3D3683%26cv_id%3D370985) il miglior disco «indie rock» di sempre è Crooked Rain, Crooked Rain dei Pavement.",
+        "Ieri sera era a un grande teatro milanese, affollato di persone adoranti, per il concerto di Malika Ayane, molto capace di farsi adorare; guardando i musicisti sul palco pensava a quante cose ancora non sa di musica, e si è consolato con la versione nobilitante di essere una specie di [Emilio Salgari](https://x.ilpost.it/re?l=D0I5w3s86I1z679szI5ITmwcmvvesI5si09w&s=GFKMCEGGFKKAIOEI&req=dmc_cid%3D3683%26cv_id%3D370985) delle canzoni. Domani esce [una canzone](https://x.ilpost.it/re?l=D0I5w3s86I1z679szI6ITmwcmvvesI5si09w&s=GFKMCEGGFKKAIOEI&req=dmc_cid%3D3683%26cv_id%3D370985) degli Howl Owl Howl, band di Mike Mills dei REM con Darius Rucker degli Hootie and the Blowfish e Steve Gorman dei Black Crowes: sembra abbastanza un pezzo dei REM, anche dalla copertina.",
+        "La canzone di oggi è Lives left out to dry di David Keenan. Sofri parte da una frase di Marino Sinibaldi che [non smette di citare](https://x.ilpost.it/re?l=D0I5w3s86I1z679szIaITmwcmvvesI5si09w&s=GFKMCEGGFKKAIOEI&req=dmc_cid%3D3683%26cv_id%3D370985), sul fatto di essersi messo a leggere perché ci si era resi conto di non sapere nulla: gli è tornata in mente leggendo che Keenan, a scuola così così e senza università, ha iniziato a leggere nelle biblioteche irlandesi ogni volta che voleva imparare qualcosa. È un tema che sente vicino anche per i libri di non fiction di [Altrecose](https://x.ilpost.it/re?l=D0I5w3s86I1z679szIbITmwcmvvesI5si09w&s=GFKMCEGGFKKAIOEI&req=dmc_cid%3D3683%26cv_id%3D370985).",
+        "Il disco è uscito a fine 2025, Sofri lo ha scoperto a inizio anno e lo mette tra i bei dischi del 2026, soprattutto della prima metà. Keenan è irlandese «a forma di cantautore irlandese»: un po' di folk, un po' di soul, altri suoni e una scrittura più radicata nella poesia di quanto si usi di solito la parola; ha seguito e inseguito Glen Hansard, ha fatto cinque dischi in sei anni e questo è pieno di buoni pezzi cantati con grande eclettismo. La canzone racconta di vendette e affermazioni femminili ed è nata, dice lui, da una conversazione ascoltata su un treno spagnolo. Il 5 dicembre suona a [Kilkenny](https://x.ilpost.it/re?l=D0I5w3s86I1z679szIcITmwcmvvesI5si09w&s=GFKMCEGGFKKAIOEI&req=dmc_cid%3D3683%26cv_id%3D370985); Sofri non può andare perché sarà a Peccioli, «una specie di Irlanda»."
+      ]
+    },
     {
       "id": "evening-2026-11-11",
       "source": "evening",
