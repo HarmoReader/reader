@@ -1,5 +1,5 @@
 // Guscio dell'app in cache per l'uso offline; i dati sempre dalla rete, con la cache come ripiego.
-const SHELL = 'harmoreader-shell-v21';
+const SHELL = 'harmoreader-shell-v22';
 const DATA = 'harmoreader-data-v1';
 const FILES = ['./', './index.html', './manifest.json', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
 
@@ -53,7 +53,8 @@ self.addEventListener('push', (e) => {
     body: d.body || 'Ci sono nuovi riassunti.',
     icon: './icons/icon-192.png',
     badge: './icons/icon-192.png',
-    tag: 'harmoreader-aggiornamento',
+    tag: 'harmoreader-' + Date.now(),
+    renotify: true,
     data: { url: d.url || './#riassunto' }
   }));
 });

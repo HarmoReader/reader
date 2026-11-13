@@ -270,7 +270,7 @@ a { color: var(--accent); }
     sunday: { name: 'Sunday Post', color: 'var(--sunday)', nav: '#e8b04a' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '21 · 4 novembre 2026';
+  var APP_VERSION = '22 · 13 novembre 2026';
   var DATA_URL = 'data/digests.json';
   var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null, q: '', seen: new Set(), slide: 0 };
 
@@ -460,6 +460,14 @@ a { color: var(--accent); }
     if (state.slide) { inner.classList.remove('slide-l', 'slide-r'); void inner.offsetWidth; inner.classList.add(state.slide > 0 ? 'slide-r' : 'slide-l'); state.slide = 0; }
     $('article').scrollTop = 0;
   }
+
+  (function () {
+    var t = null;
+    $('article').addEventListener('scroll', function () {
+      if (t) return;
+      t = setTimeout(function () { t = null; try { if (state.openId) localStorage.setItem('letture.scroll', JSON.stringify({ id: state.openId, y: $('article').scrollTop })); } catch (e) {} }, 300);
+    }, { passive: true });
+  })();
 
   function renderAll() { renderNav(); renderList(); }
 
@@ -783,11 +791,14 @@ a { color: var(--accent); }
         state.updated = d.updated || null;
         state.unsub = d.unsubscribe || {};
         $('upd').textContent = state.updated ? 'Aggiornato: ' + fmtTime.format(new Date(state.updated)) : '';
+        var art = $('article'), y = art.scrollTop, same = state.openId;
+        if (!same) { try { var sv = JSON.parse(localStorage.getItem('letture.scroll') || 'null'); if (sv && sv.id === location.hash.slice(1)) { y = sv.y; same = sv.id; } } catch (e) {} }
         renderAll();
         var id = location.hash.slice(1);
         if (id === 'riassunto') openBrief();
         else if (state.openId === 'riassunto') renderBrief();
         else if (id && state.editions.some(function (e) { return e.id === id; })) openEdition(id);
+        if (same && same === id && y > 0) { art.scrollTop = y; requestAnimationFrame(function () { art.scrollTop = y; }); }
       })
       .catch(function () { state.fetchOk = false; if (manual) $('upd').textContent = 'Non riesco ad aggiornare ora'; if (state.openId === 'riassunto') renderBrief(); else if (location.hash === '#riassunto') openBrief(); })
       .then(function () { btn.classList.remove('spin'); });

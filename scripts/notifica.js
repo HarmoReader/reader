@@ -25,6 +25,6 @@ const payload = JSON.stringify({ title: 'Harmoreader', body, url: './#riassunto'
 
 webpush.setVapidDetails('mailto:noreply@harmoreader.invalid', PUBLIC, process.env.VAPID_PRIVATE);
 const subs = [].concat(JSON.parse(process.env.PUSH_SUB));
-Promise.all(subs.map((s) => webpush.sendNotification(s, payload, { TTL: 43200, urgency: 'normal' })
+Promise.all(subs.map((s) => webpush.sendNotification(s, payload, { TTL: 86400, urgency: 'high' })
   .then((r) => console.log('Inviata:', r.statusCode))
   .catch((e) => { console.error('Errore:', e.statusCode, e.body); process.exitCode = 1; })));
