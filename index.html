@@ -148,11 +148,12 @@ a { color: var(--accent); }
 #article .pager .btn { flex: 1; justify-content: center; }
 #toast { position: fixed; left: 50%; bottom: calc(28px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: #1b2233; color: #fff; padding: 10px 16px; border-radius: 20px; font-size: 14px; z-index: 50; opacity: 0; pointer-events: none; transition: opacity .2s; }
 #toast.on { opacity: .95; }
-#read-pane.brief #unread-btn, #read-pane.brief #unsub-btn, #read-pane.brief #star-btn { display: none; }
+#read-pane.brief #speak-btn, #read-pane.brief #unread-btn, #read-pane.brief #unsub-btn, #read-pane.brief #star-btn { display: none; }
 #read-pane .icon-btn:hover { background: var(--bg); }
 #read-pane .bar .grow { margin-right: auto; }
-#read-pane .icon-btn[aria-pressed="true"] { color: var(--star); }
-#read-pane .icon-btn[aria-pressed="true"] svg { fill: currentColor; }
+#read-pane .icon-btn[aria-pressed="true"]:not(#speak-btn) { color: var(--star); }
+#read-pane #speak-btn[aria-pressed="true"] { color: var(--accent); background: var(--bg); }
+#read-pane .icon-btn[aria-pressed="true"]:not(#speak-btn) svg { fill: currentColor; }
 #article { overflow: auto; flex: 1; padding: 20px max(18px, env(safe-area-inset-right, 0px)) calc(48px + env(safe-area-inset-bottom, 0px)) max(18px, env(safe-area-inset-left, 0px)); }
 #article .inner { max-width: 680px; margin: 0 auto; }
 #article .status { margin: 14px 0 6px; padding: 10px 12px; border-radius: 8px; border-left: 4px solid var(--muted); background: var(--bg); font-size: calc(15px * var(--t)); line-height: 1.4; }
@@ -246,6 +247,9 @@ a { color: var(--accent); }
         <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
       </button>
       <span class="grow"></span>
+      <button class="icon-btn" id="speak-btn" aria-label="Ascolta l'articolo" title="Ascolta l'articolo" aria-pressed="false" type="button" hidden>
+        <svg viewBox="0 0 24 24"><path d="M4 9.5v5h4l5 4v-13l-5 4z"/><path d="M16.5 9a4.2 4.2 0 0 1 0 6"/><path d="M19 6.5a8 8 0 0 1 0 11"/></svg>
+      </button>
       <button class="icon-btn" id="unread-btn" aria-label="Segna come da leggere" type="button">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/></svg>
       </button>
@@ -270,7 +274,7 @@ a { color: var(--accent); }
     sunday: { name: 'Sunday Post', color: 'var(--sunday)', nav: '#e8b04a' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '22 · 13 novembre 2026';
+  var APP_VERSION = '23 · 15 novembre 2026';
   var DATA_URL = 'data/digests.json';
   var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null, q: '', seen: new Set(), slide: 0 };
 
@@ -410,6 +414,7 @@ a { color: var(--accent); }
   }
 
   function renderArticle() {
+    if (window.__speech && window.__speech.id !== state.openId) window.__speech.stop();
     var pane = $('read-pane'), inner = $('inner'); inner.textContent = '';
     if (state.openId === 'riassunto') { pane.classList.add('brief'); renderBrief(); return; }
     pane.classList.remove('brief');
@@ -668,6 +673,7 @@ a { color: var(--accent); }
     else history.replaceState(null, '', '#' + id);
   }
   function closeReader() {
+    if (window.__speech) window.__speech.stop();
     $('read-pane').classList.remove('open');
     if (!wide()) { state.openId = null; renderAll(); }
   }
@@ -805,6 +811,62 @@ a { color: var(--accent); }
   }
   $('refresh-btn').addEventListener('click', function () { fetchData(true); });
   document.addEventListener('visibilitychange', function () { if (!document.hidden) fetchData(false); });
+
+
+  // Ascolto dell'articolo con la sintesi vocale del telefono.
+  var speech = (function () {
+    var syn = window.speechSynthesis, btn = $('speak-btn'), gen = 0, on = false;
+    var api = window.__speech = { id: null, stop: function () {} };
+    if (!syn || !window.SpeechSynthesisUtterance) return api;
+    btn.hidden = false;
+    function textOf(e) {
+      var t = [e.title];
+      if (e.song) t.push(e.song.title + ', di ' + e.song.artist + '.');
+      else if (e.intro) t.push(e.intro);
+      (e.paragraphs || []).forEach(function (p) { t.push(plain(p)); });
+      (e.sections || []).forEach(function (sec) {
+        if (sec.heading) t.push(sec.heading + '.');
+        (sec.items || []).forEach(function (it) { t.push(it.text); });
+        (sec.paragraphs || []).forEach(function (p) { t.push(plain(p)); });
+      });
+      return t.join('\n');
+    }
+    function chunks(text) {
+      var out = [];
+      text.split(/\n+/).forEach(function (para) {
+        var cur = '';
+        (para.match(/[^.!?;:]+[.!?;:]*\s*/g) || [para]).forEach(function (sn) {
+          if ((cur + sn).length > 180 && cur) { out.push(cur); cur = ''; }
+          cur += sn;
+        });
+        if (cur.trim()) out.push(cur);
+      });
+      return out;
+    }
+    function voice() {
+      var v = syn.getVoices() || [];
+      return v.filter(function (x) { return /^it/i.test(x.lang); })[0] || null;
+    }
+    function set(v) { on = v; btn.setAttribute('aria-pressed', v ? 'true' : 'false'); btn.setAttribute('aria-label', v ? 'Ferma l\u2019ascolto' : 'Ascolta l\u2019articolo'); }
+    function stop() { gen++; api.id = null; set(false); try { syn.cancel(); } catch (e) {} }
+    function start() {
+      var e = state.editions.filter(function (x) { return x.id === state.openId; })[0];
+      if (!e) return;
+      var q = chunks(textOf(e)), my = ++gen, i = 0, v = voice(); api.id = e.id;
+      set(true);
+      (function next() {
+        if (my !== gen || i >= q.length) { if (my === gen) set(false); return; }
+        var u = new SpeechSynthesisUtterance(q[i++]);
+        u.lang = 'it-IT'; if (v) u.voice = v; u.rate = 1;
+        u.onend = next; u.onerror = function () { if (my === gen) set(false); };
+        syn.speak(u);
+      })();
+    }
+    btn.addEventListener('click', function () { if (on) stop(); else { try { syn.cancel(); } catch (e) {} start(); } });
+    window.addEventListener('pagehide', stop);
+    api.stop = stop;
+    return api;
+  })();
 
   // Notifiche push: il telefono genera un codice personale da incollare su GitHub (segreto PUSH_SUB).
   var VAPID_PUBLIC = 'BAd_Yge3vtG-3XPUfoydSh-DlLhE0g-xSr6C7RrNZmKU47zaxCB0Kl_kYU2mSegxN_rUBrl52iWoEB5c7iJaekw';
