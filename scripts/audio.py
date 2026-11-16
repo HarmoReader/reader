@@ -1,10 +1,10 @@
 # Genera l'audio (voce neurale Microsoft via edge-tts) delle uscite recenti di data/digests.json.
 # Crea audio/<id>.mp3 per quelle che non l'hanno, toglie quelle vecchie e scrive audio/index.json.
-import asyncio, json, os, re, sys, datetime
+import asyncio, json, os, re, shutil, subprocess, sys, datetime
 import edge_tts
 
 VOICE = os.environ.get('VOICE', 'it-IT-IsabellaNeural')
-KEEP_DAYS = 30
+KEEP_DAYS = 14
 LINK = re.compile(r'\[([^\]]+)\]\([^)]*\)')
 
 def plain(t):
@@ -24,12 +24,24 @@ def text_of(e):
         t += [plain(p) for p in s.get('paragraphs', [])]
     return '\n\n'.join(x for x in t if x)
 
+def shrink(path):
+    # voce parlata: mono a 32 kbit/s basta e dimezza quasi il peso del file
+    if not shutil.which('ffmpeg'):
+        return
+    tmp = path + '.tmp.mp3'
+    r = subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', path, '-ac', '1', '-b:a', '32k', tmp])
+    if r.returncode == 0 and os.path.getsize(tmp) > 2000:
+        os.replace(tmp, path)
+    elif os.path.exists(tmp):
+        os.remove(tmp)
+
 async def make(e, path):
     last = None
     for attempt in range(3):
         try:
             await asyncio.wait_for(edge_tts.Communicate(text_of(e), VOICE, rate='+0%').save(path), timeout=120)
             if os.path.getsize(path) > 2000:
+                shrink(path)
                 print('Creato', path, os.path.getsize(path), flush=True)
                 return True
         except BaseException as ex:  # rete, blocco del servizio o tempo scaduto

@@ -23,7 +23,7 @@ jobs:
       - run: python scripts/audio.py
         timeout-minutes: 20
         env:
-          MAX_NEW: ${{ github.event_name == 'workflow_dispatch' && '3' || '0' }}
+          MAX_NEW: '0'
       - name: Pubblica gli audio
         run: |
           git config user.name "harmoreader-audio"
