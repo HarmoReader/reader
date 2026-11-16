@@ -1,6 +1,54 @@
 {
-  "updated": "2026-11-15T23:57:00+01:00",
+  "updated": "2026-11-16T19:08:00+01:00",
   "editions": [
+    {
+      "id": "evening-2026-11-16",
+      "source": "evening",
+      "date": "2026-11-16",
+      "title": "Evening Post, le storie di oggi",
+      "intro": "Lunedì 16 novembre: la crisi di Nvidia, il premier britannico contro la Brexit, la sconfitta dell'Italia con il Belgio e Pattinson nel prossimo film di James Bond.",
+      "brief": "Il Post spiega come corregge e migliora gli articoli nel tempo; tra le notizie la crisi di Nvidia, i messaggi minacciosi alle scuole, Revolut in amministrazione giudiziaria, Italia-Belgio e il nuovo James Bond.",
+      "sections": [
+        {
+          "heading": "In apertura",
+          "paragraphs": [
+            "Una delle cose che il Post cerca di fare da sempre, con un approccio che supera la vecchia abitudine pre digitale per cui un articolo pubblicato è definitivo e diventa insignificante l'indomani, è correggere e migliorare gli articoli quando serve, considerandoli duraturi come ogni cosa su internet. Non li «aggiorna» cambiandone la data, ma li rende più chiari ed esatti. In questo aiutano le segnalazioni di lettori e lettrici, ma anche la redazione stessa è fatta ogni giorno di lettori e lettrici del Post."
+          ]
+        },
+        {
+          "heading": "Le notizie",
+          "paragraphs": [
+            "La crisi di Nvidia [influisce](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szI4ITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985) sugli sviluppi delle intelligenze artificiali, e intanto Huang [non esclude il ritorno](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szI5ITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985). Il primo ministro britannico sta [superando ogni cautela](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szI6ITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985) nella critica alla Brexit. Ci sono stati messaggi minacciosi [verso le scuole italiane](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szI7ITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985) anche oggi, ma le scuole si sono fatte furbe. Com'è che il negoziatore europeo per l'Ucraina [è diventato sette negoziatori](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szI8ITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985). Negli Stati Uniti si stanno esaurendo gli strascichi [della sospensione dei voli di venerdì](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szI9ITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985). [Revolut è stata messa](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIaITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985) in amministrazione giudiziaria in Italia. Grosse manifestazioni in difesa dei [finanziamenti ai media pubblici in Cechia](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIbITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "Al culmine di un eccesso di entusiasmo la nazionale maschile di calcio [ha preso una scoppola](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIcITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985) dal Belgio in Nations League. Invece [l’Inghilterra ha battuto la Spagna](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIdITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985), e non ci riusciva nessuno da due anni e mezzo."
+          ]
+        },
+        {
+          "heading": "Dal resto del mondo",
+          "paragraphs": [
+            "L'Iran sta imparando a [fare a meno della Guida Suprema](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIeITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985). Se i ragazzi in Cisgiordania non possono andare in un museo di Gerusalemme, [il museo di Gerusalemme va dai ragazzi in Cisgiordania](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIfITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985). C'è un posto dove non funziona il GPS [per via di una guerra](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIgITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985). Tra due settimane [ci sono le elezioni in Spagna](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIhITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Altre notizie",
+          "paragraphs": [
+            "Molte parti di internet sono tuttora tenute in piedi [da preziosi volontari](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIiITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985). Le aziende costruttrici [di data center](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIjITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985) ora non vanno benissimo. Le università telematiche italiane [non potrebbero](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIkITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985) fare esami a distanza. Forse l'enorme [yacht russo](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIlITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985) sequestrato a Trieste verrà spostato da lì. C'è poi la storia della donna italiana che è stata assolta [dopo dodici anni in carcere](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szImITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "L'informazione che tanto attendevate, se non altro per vedere che i giornali la piantassero con questa agonia, è arrivata: nel prossimo film di James Bond [Robert Pattinson farà James Bond](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szInITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985). Le [squadre di calcio femminili](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIoITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985) in Italia giocano in stadi così e così. Un calciatore della nazionale di San Marino [ha fatto una doppietta. Già](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIpITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985). E [intelligenze artificiali e uncinetto](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIqITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985): un rapporto tormentato."
+          ]
+        },
+        {
+          "heading": "Saluti e annunci",
+          "paragraphs": [
+            "No, [non ci sarà un blackout di tre giorni](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIrITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985) da domani. Anche perché giovedì iniziano le [Istruzioni](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIsITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985) di Marco Simoni col Post. Poi per un paio di weekend il Post lascia liberi da impegni, ma a dicembre [sarà a Peccioli](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szItITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985), con una cospicua presenza nel tradizionale programma natalizio di presentazioni di libri e spazi di librerie, compresa quella del Post. Ciao, a domani."
+          ]
+        },
+        {
+          "heading": "Cose da leggere",
+          "paragraphs": [
+            "Che può fare l'Unione Europea con l'europeissimo [problema della casa](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIvITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985)? Ci sono [nuove indagini sulle indagini](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIxITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985) sulla strage di via D'Amelio, con sviluppi non da poco: l'ex capo della polizia Gianni De Gennaro è indagato per depistaggio. Una storia [di una nonna e di un anello](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szIyITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985). La cucina inglese, [diamole una seconda chance](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szI10ITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985). E in Italia si fa ancora X Factor: [non è così normale](https://x.ilpost.it/re?l=D0I5w3t3iI1z679szI12ITmwjipar9&s=AIPPAJEJFJHKEIHF&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        }
+      ]
+    },
     {
       "id": "sunday-2026-11-15",
       "source": "sunday",
