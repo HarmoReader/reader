@@ -1,5 +1,5 @@
 // Guscio dell'app in cache per l'uso offline; i dati sempre dalla rete, con la cache come ripiego.
-const SHELL = 'harmoreader-shell-v24';
+const SHELL = 'harmoreader-shell-v25';
 const DATA = 'harmoreader-data-v1';
 const FILES = ['./', './index.html', './manifest.json', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png'];
 
@@ -20,6 +20,8 @@ self.addEventListener('fetch', (e) => {
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
   if (url.origin !== location.origin) return;
+
+  if (url.pathname.indexOf('/audio/') !== -1) return;
 
   if (url.pathname.endsWith('/digests.json')) {
     e.respondWith(

@@ -1,0 +1,33 @@
+# Dopo ogni aggiornamento dei riassunti prepara gli audio con la voce neurale.
+name: Audio degli articoli
+on:
+  push:
+    branches: [main]
+    paths: ['data/digests.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: audio
+  cancel-in-progress: false
+jobs:
+  audio:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install edge-tts
+      - run: python scripts/audio.py
+      - name: Pubblica gli audio
+        run: |
+          git config user.name "harmoreader-audio"
+          git config user.email "noreply@github.com"
+          git add -A audio
+          if git diff --cached --quiet; then echo "Nessun audio nuovo"; exit 0; fi
+          git commit -qm "Audio degli articoli"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
+          gh api -X POST repos/${{ github.repository }}/pages/builds >/dev/null || echo "Pages: richiesta di build non riuscita"
+        env:
+          GH_TOKEN: ${{ github.token }}

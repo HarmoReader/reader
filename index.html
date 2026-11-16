@@ -283,7 +283,7 @@ a { color: var(--accent); }
     sunday: { name: 'Sunday Post', color: 'var(--sunday)', nav: '#e8b04a' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '24 · 16 novembre 2026';
+  var APP_VERSION = '25 · 16 novembre 2026';
   var DATA_URL = 'data/digests.json';
   var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null, q: '', seen: new Set(), slide: 0 };
 
@@ -797,7 +797,14 @@ a { color: var(--accent); }
   document.addEventListener('visibilitychange', function () { if (!document.hidden) applyTheme(); });
   applyTheme();
 
+  function fetchAudio() {
+    return fetch('audio/index.json?t=' + Date.now(), { cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (a) { state.audioIds = new Set(a.ids || []); })
+      .catch(function () { if (!state.audioIds) state.audioIds = new Set(); });
+  }
   function fetchData(manual) {
+    fetchAudio();
     var btn = $('refresh-btn'); btn.classList.add('spin');
     return fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
@@ -871,17 +878,38 @@ a { color: var(--accent); }
     rsel.value = lsGet('letture.rate') || '1'; if (!rsel.value) rsel.value = '1';
     fillVoices();
     if (syn.addEventListener) syn.addEventListener('voiceschanged', fillVoices); else syn.onvoiceschanged = fillVoices;
-    vsel.addEventListener('change', function () { lsSet('letture.voice', vsel.value); if (on) { stop(); start(); } });
-    rsel.addEventListener('change', function () { lsSet('letture.rate', rsel.value); if (on) { stop(); start(); } });
+    vsel.addEventListener('change', function () { lsSet('letture.voice', vsel.value); if (on && !au) { stop(); start(); } });
+    rsel.addEventListener('change', function () { lsSet('letture.rate', rsel.value); if (au) { au.playbackRate = parseFloat(rsel.value) || 1; } else if (on) { stop(); start(); } });
     function voice() {
       var cur = lsGet('letture.voice'), list = itVoices();
       return list.filter(function (x) { return (x.voiceURI || x.name) === cur; })[0] || list[0] || null;
     }
     function set(v) { on = v; btn.setAttribute('aria-pressed', v ? 'true' : 'false'); btn.setAttribute('aria-label', v ? 'Ferma l\u2019ascolto' : 'Ascolta l\u2019articolo'); }
-    function stop() { gen++; api.id = null; set(false); try { syn.cancel(); } catch (e) {} }
+    var au = null;
+    function stopAudio() { if (au) { try { au.pause(); } catch (e) {} au.src = ''; au = null; } }
+    function stop() { gen++; api.id = null; stopAudio(); set(false); try { syn.cancel(); } catch (e) {} }
+    function playAudio(e) {
+      gen++; stopAudio(); try { syn.cancel(); } catch (x) {}
+      au = new Audio('audio/' + encodeURIComponent(e.id) + '.mp3');
+      au.playbackRate = parseFloat(lsGet('letture.rate')) || 1;
+      au.onplay = function () { set(true); };
+      au.onpause = function () { set(false); };
+      au.onended = function () { set(false); api.id = null; };
+      au.onerror = function () { stopAudio(); set(false); toast('Audio non disponibile: uso la voce del telefono'); state.audioIds.delete(e.id); };
+      api.id = e.id;
+      try {
+        if ('mediaSession' in navigator) {
+          navigator.mediaSession.metadata = new MediaMetadata({ title: e.title, artist: 'Harmoreader' });
+          navigator.mediaSession.setActionHandler('play', function () { if (au) au.play(); });
+          navigator.mediaSession.setActionHandler('pause', function () { if (au) au.pause(); });
+        }
+      } catch (x) {}
+      au.play().catch(function () { set(false); });
+    }
     function start() {
       var e = state.editions.filter(function (x) { return x.id === state.openId; })[0];
       if (!e) return;
+      if (state.audioIds && state.audioIds.has(e.id)) { playAudio(e); return; }
       var q = chunks(textOf(e)), my = ++gen, i = 0, v = voice(); api.id = e.id;
       set(true);
       (function next() {
@@ -892,7 +920,10 @@ a { color: var(--accent); }
         syn.speak(u);
       })();
     }
-    btn.addEventListener('click', function () { if (on) stop(); else { try { syn.cancel(); } catch (e) {} start(); } });
+    btn.addEventListener('click', function () {
+      if (au && api.id === state.openId) { if (au.paused) au.play().catch(function () {}); else au.pause(); return; }
+      if (on) stop(); else { try { syn.cancel(); } catch (e) {} start(); }
+    });
     window.addEventListener('pagehide', stop);
     api.stop = stop;
     return api;
