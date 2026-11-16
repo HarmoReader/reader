@@ -1,6 +1,38 @@
 {
-  "updated": "2026-11-16T19:08:00+01:00",
+  "updated": "2026-11-16T23:58:00+01:00",
   "editions": [
+    {
+      "id": "canzoni-2026-11-16",
+      "source": "canzoni",
+      "date": "2026-11-16",
+      "title": "Le canzoni: Father popcorn",
+      "intro": "Di Luca Sofri.",
+      "brief": "Oggi Father popcorn dei Fog, raccontata da Luca Sofri con un ricordo di Toni Capuozzo nel giorno del funerale; prima, il concerto di Joe Jackson a Milano, gli Ocean Colour Scene e l'addio di Roger Taylor ai Duran Duran.",
+      "song": {
+        "title": "Father popcorn",
+        "artist": "Fog",
+        "links": [
+          {
+            "label": "Spotify",
+            "url": "https://x.ilpost.it/re?l=D0I5w3t3mI1z679szI5ITmwjs35v4I5si09w&s=MPEFABPLFPKAOIAJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "Apple Music",
+            "url": "https://x.ilpost.it/re?l=D0I5w3t3mI1z679szI6ITmwjs35v4I5si09w&s=MPEFABPLFPKAOIAJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "YouTube",
+            "url": "https://x.ilpost.it/re?l=D0I5w3t3mI1z679szI7ITmwjs35v4I5si09w&s=MPEFABPLFPKAOIAJ&req=dmc_cid%3D3683%26cv_id%3D370985"
+          }
+        ]
+      },
+      "paragraphs": [
+        "In apertura Luca Sofri racconta il concerto di Joe Jackson in un teatro milanese, sabato, terza e ultima data del suo tour italiano. I concerti di Jackson si somigliano da parecchi anni, ma ci si va soprattutto per affetto, nonostante la sua insistenza su alcuni dei pezzi più molesti del repertorio; e quell'affetto diventa parte dello spettacolo, con un pubblico appassionato e rumoroso, più riconoscente che adorante. Di «Steppin' Out» ha fatto la versione veloce, quella originaria. Il Guardian [ha dato](https://x.ilpost.it/re?l=D0I5w3t3mI1z679szI2ITmwjs35v4I5si09w&s=MPEFABPLFPKAOIAJ&req=dmc_cid%3D3683%26cv_id%3D370985) cinque stelle al tour degli [Ocean Colour Scene](https://x.ilpost.it/re?l=D0I5w3t3mI1z679szI3ITmwjs35v4I5si09w&s=MPEFABPLFPKAOIAJ&req=dmc_cid%3D3683%26cv_id%3D370985) per i trent'anni dell'album Moseley Shoals, e Roger Taylor, batterista dei Duran Duran da quarantasette anni, [lascerà la band](https://x.ilpost.it/re?l=D0I5w3t3mI1z679szI4ITmwjs35v4I5si09w&s=MPEFABPLFPKAOIAJ&req=dmc_cid%3D3683%26cv_id%3D370985) per un peggioramento dei suoi problemi alle orecchie.",
+        "La canzone di oggi è «Father popcorn» dei Fog, ma lo spazio è dedicato a un ricordo di Toni Capuozzo, il giornalista morto giovedì, di cui oggi si sono tenuti i funerali a Udine. Sofri ha poche cose sue, e proprio per questo gli sono molto familiari: sa in quali due scatole stanno. Una contiene fotografie: in tre, in bianco e nero, i due sono seduti dietro un tavolo a guardare Jovan Divjak, generale bosniaco noto per la difesa di Sarajevo, che parla a un pubblico. Le scattò il fotoreporter Claudio Olivato a Sarajevo, e sul retro c'è la data [11 aprile 1997](https://x.ilpost.it/re?l=D0I5w3t3mI1z679szI8ITmwjs35v4I5si09w&s=MPEFABPLFPKAOIAJ&req=dmc_cid%3D3683%26cv_id%3D370985): erano entrambi più giovani di trent'anni, e si vede molto di più in lui che in Toni.",
+        "Nell'altra scatola c'è una pagina strappata da un numero di Linus, quando il mensile aveva un formato ridotto: una pubblicità del quotidiano LC, disegnata da Vincino, che aveva preso quel nome come ridisegno della precedente testata Lotta Continua. Di quel periodo del giornale in rete non c'è traccia, e Sofri ha chiesto a Enrico Deaglio, che ne era direttore, che l'ha collocato tra il 1981 e il 1982. Vincino fece una delle sue minuziose successioni di vignette: la testata circondata da mezzi militari, e sotto lo slogan cinque protagonisti del giornale, tra cui il direttore Deaglio, il capotipografo Giovannone, che aveva regalato a Sofri bambino i caratteri in piombo del suo nome, e infine «l'inviato Tony Capuozzo», con la «y» sbagliata, un refuso immancabile in Vincino, la barba e i baffi a coprire il volto e una giacca militare con due lettere su una maglietta.",
+        "Sofri chiude ricordando la quantità di persone premurose, affettuose e generose che ha avuto intorno nell'infanzia e nell'adolescenza, alcune delle quali lo sono rimaste anche quando lo hanno ritrovato adulto, alle prese con certe persecuzioni contro la sua famiglia, o poi nelle redazioni. Toni era una di loro, e oggi c'è stato il suo funerale a Udine. La canzone, conclude, è [ancora dei Fog](https://x.ilpost.it/re?l=D0I5w3t3mI1z679szI9ITmwjs35v4I5si09w&s=MPEFABPLFPKAOIAJ&req=dmc_cid%3D3683%26cv_id%3D370985)."
+      ]
+    },
     {
       "id": "evening-2026-11-16",
       "source": "evening",
