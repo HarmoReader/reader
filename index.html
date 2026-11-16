@@ -85,6 +85,9 @@ a { color: var(--accent); }
 .side-foot { margin-top: auto; padding: 10px 18px 16px; font-size: calc(15px * var(--t)); color: #7d89a6; border-top: 1px solid #263049; }
 .side-foot button { color: var(--side-fg); text-decoration: underline; min-height: 36px; font-size: inherit; }
 .side-foot .ver { margin-top: 6px; font-size: calc(12px * var(--t)); color: #7d89a6; }
+.voice-row { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; }
+.voice-row span { margin-right: auto; }
+.voice-row select { max-width: 150px; min-height: 36px; background: #1b2438; color: var(--side-fg); border: 1px solid #3a4666; border-radius: 8px; padding: 0 6px; font-size: inherit; }
 .fs-row { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; }
 .fs-row span { margin-right: auto; }
 .side-foot .fs-row button { text-decoration: none; min-width: 36px; min-height: 36px; border: 1px solid #3a4666; border-radius: 8px; line-height: 1; }
@@ -211,6 +214,12 @@ a { color: var(--accent); }
         <button type="button" data-fs="1.15" aria-label="Testo grande" style="font-size:18px">A</button>
         <button type="button" data-fs="1.3" aria-label="Testo molto grande" style="font-size:22px">A</button>
       </div>
+      <div class="voice-row" id="voice-row" hidden><span>Voce</span>
+        <select id="voice-sel" aria-label="Voce di lettura"></select>
+        <select id="rate-sel" aria-label="Velocità di lettura">
+          <option value="0.85">0,85×</option><option value="1">1×</option><option value="1.15">1,15×</option><option value="1.3">1,3×</option>
+        </select>
+      </div>
       <button id="theme-btn" type="button">Tema: automatico</button>
       <button id="push-btn" type="button" hidden>Notifiche: spente</button>
       <div class="ver" id="ver"></div></div>
@@ -274,7 +283,7 @@ a { color: var(--accent); }
     sunday: { name: 'Sunday Post', color: 'var(--sunday)', nav: '#e8b04a' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '23 · 15 novembre 2026';
+  var APP_VERSION = '24 · 16 novembre 2026';
   var DATA_URL = 'data/digests.json';
   var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null, q: '', seen: new Set(), slide: 0 };
 
@@ -843,9 +852,30 @@ a { color: var(--accent); }
       });
       return out;
     }
+    var vsel = $('voice-sel'), rsel = $('rate-sel');
+    function itVoices() { return (syn.getVoices() || []).filter(function (x) { return /^it/i.test(x.lang.replace('_', '-')); }); }
+    function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+    function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+    function fillVoices() {
+      var list = itVoices(), cur = lsGet('letture.voice') || '';
+      vsel.textContent = '';
+      var o = document.createElement('option'); o.value = ''; o.textContent = 'Automatica'; vsel.appendChild(o);
+      list.forEach(function (x, i) {
+        var op = document.createElement('option'); op.value = x.voiceURI || x.name;
+        op.textContent = 'Voce ' + (i + 1) + (x.localService ? '' : ' (online)') + ' · ' + x.name.replace(/^.*?-\s*/, '').slice(0, 24);
+        vsel.appendChild(op);
+      });
+      vsel.value = list.some(function (x) { return (x.voiceURI || x.name) === cur; }) ? cur : '';
+      $('voice-row').hidden = !list.length;
+    }
+    rsel.value = lsGet('letture.rate') || '1'; if (!rsel.value) rsel.value = '1';
+    fillVoices();
+    if (syn.addEventListener) syn.addEventListener('voiceschanged', fillVoices); else syn.onvoiceschanged = fillVoices;
+    vsel.addEventListener('change', function () { lsSet('letture.voice', vsel.value); if (on) { stop(); start(); } });
+    rsel.addEventListener('change', function () { lsSet('letture.rate', rsel.value); if (on) { stop(); start(); } });
     function voice() {
-      var v = syn.getVoices() || [];
-      return v.filter(function (x) { return /^it/i.test(x.lang); })[0] || null;
+      var cur = lsGet('letture.voice'), list = itVoices();
+      return list.filter(function (x) { return (x.voiceURI || x.name) === cur; })[0] || list[0] || null;
     }
     function set(v) { on = v; btn.setAttribute('aria-pressed', v ? 'true' : 'false'); btn.setAttribute('aria-label', v ? 'Ferma l\u2019ascolto' : 'Ascolta l\u2019articolo'); }
     function stop() { gen++; api.id = null; set(false); try { syn.cancel(); } catch (e) {} }
@@ -857,7 +887,7 @@ a { color: var(--accent); }
       (function next() {
         if (my !== gen || i >= q.length) { if (my === gen) set(false); return; }
         var u = new SpeechSynthesisUtterance(q[i++]);
-        u.lang = 'it-IT'; if (v) u.voice = v; u.rate = 1;
+        u.lang = 'it-IT'; if (v) u.voice = v; u.rate = parseFloat(lsGet('letture.rate')) || 1;
         u.onend = next; u.onerror = function () { if (my === gen) set(false); };
         syn.speak(u);
       })();
