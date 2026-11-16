@@ -14,12 +14,16 @@ concurrency:
 jobs:
   audio:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
       - run: pip install edge-tts
       - run: python scripts/audio.py
+        timeout-minutes: 20
+        env:
+          MAX_NEW: ${{ github.event_name == 'workflow_dispatch' && '3' || '0' }}
       - name: Pubblica gli audio
         run: |
           git config user.name "harmoreader-audio"

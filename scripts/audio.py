@@ -28,11 +28,15 @@ async def make(e, path):
     last = None
     for attempt in range(3):
         try:
-            await edge_tts.Communicate(text_of(e), VOICE, rate='+0%').save(path)
+            await asyncio.wait_for(edge_tts.Communicate(text_of(e), VOICE, rate='+0%').save(path), timeout=120)
             if os.path.getsize(path) > 2000:
+                print('Creato', path, os.path.getsize(path), flush=True)
                 return True
-        except Exception as ex:  # rete o servizio non disponibile
-            last = ex
+        except BaseException as ex:  # rete, blocco del servizio o tempo scaduto
+            last = repr(ex)
+            print('Tentativo', attempt + 1, 'fallito per', e['id'], last, flush=True)
+            if isinstance(ex, (KeyboardInterrupt, SystemExit)):
+                raise
             await asyncio.sleep(3 * (attempt + 1))
     print('Audio non generato per', e['id'], last, file=sys.stderr)
     if os.path.exists(path):
@@ -44,11 +48,19 @@ async def main():
     os.makedirs('audio', exist_ok=True)
     limit = (datetime.date.today() - datetime.timedelta(days=KEEP_DAYS)).isoformat()
     wanted = [e for e in d['editions'] if e['date'] >= limit]
+    maxn = int(os.environ.get('MAX_NEW', '0')) or None
+    made = 0
+    fails = 0
     ids = []
     for e in wanted:
         path = 'audio/%s.mp3' % e['id']
-        if os.path.exists(path) or await make(e, path):
+        if os.path.exists(path):
             ids.append(e['id'])
+        elif (maxn is None or made < maxn) and fails < 3:
+            if await make(e, path):
+                ids.append(e['id']); made += 1
+            else:
+                fails += 1
     for f in os.listdir('audio'):
         if f.endswith('.mp3') and f[:-4] not in ids:
             os.remove(os.path.join('audio', f))
