@@ -1,6 +1,39 @@
 {
-  "updated": "2026-11-17T19:12:00+01:00",
+  "updated": "2026-11-17T23:58:00+01:00",
   "editions": [
+    {
+      "id": "canzoni-2026-11-17",
+      "source": "canzoni",
+      "date": "2026-11-17",
+      "title": "Le canzoni: Angel's share",
+      "intro": "Di Luca Sofri.",
+      "brief": "Oggi Angel's share di PremRock, con una riflessione di Luca Sofri sui libri di auto aiuto e sul senso della vita di ciascuno; prima, Del Casher e il wah-wah, un documentario su Robert Christgau e un tour britannico.",
+      "song": {
+        "title": "Angel's share",
+        "artist": "PremRock",
+        "year": 2025,
+        "links": [
+          {
+            "label": "Spotify",
+            "url": "https://x.ilpost.it/re?l=D0I5w3tcfI1z679szI5ITmwl7j7z2I5si09w&s=KAGJCEJNIHCOIEEI&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "Apple Music",
+            "url": "https://x.ilpost.it/re?l=D0I5w3tcfI1z679szI6ITmwl7j7z2I5si09w&s=KAGJCEJNIHCOIEEI&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "YouTube",
+            "url": "https://x.ilpost.it/re?l=D0I5w3tcfI1z679szI7ITmwl7j7z2I5si09w&s=KAGJCEJNIHCOIEEI&req=dmc_cid%3D3683%26cv_id%3D370985"
+          }
+        ]
+      },
+      "paragraphs": [
+        "In apertura, il New York Times ha [raccontato](https://x.ilpost.it/re?l=D0I5w3tcfI1z679szI2ITmwl7j7z2I5si09w&s=KAGJCEJNIHCOIEEI&req=dmc_cid%3D3683%26cv_id%3D370985) Del Casher, morto il mese scorso e considerato coinventore del pedale del wah-wah. C'è poi un [documentario](https://x.ilpost.it/re?l=D0I5w3tcfI1z679szI3ITmwl7j7z2I5si09w&s=KAGJCEJNIHCOIEEI&req=dmc_cid%3D3683%26cv_id%3D370985) su [Robert Christgau](https://x.ilpost.it/re?l=D0I5w3tcfI1z679szI4ITmwl7j7z2I5si09w&s=KAGJCEJNIHCOIEEI&req=dmc_cid%3D3683%26cv_id%3D370985), leggendario e temuto critico musicale, e Sofri non sa dove sarà possibile vederlo in Italia. Infine annuncia che dopodomani parte per un tour britannico fatto di appuntamenti da editore e concerti da autore di newsletter, e promette di raccontarlo.",
+        "La riflessione di oggi parte dal lavoro di editore: da quando sfoglia cataloghi di uscite del mercato librario angloamericano e legge recensioni per valutare cosa tradurre con Altrecose, Sofri è colpito dalla quantità di pubblicazioni nella vasta categoria del «self help». Ci sono stranezze improbabili e guru da due soldi come ne abbiamo anche in Italia, ma anche psicologi e sociologi di qualche competenza che hanno trovato un business nel far sentire le persone comprese, e riflessioni più articolate su amicizia, relazioni, lavoro e persino sul senso della vita. Queste ultime lo incuriosiscono, anche se sa di non avere le competenze per distinguere sempre le semplificazioni superficiali dalle riflessioni fondate su solide culture filosofiche.",
+        "L'espressione «il senso della vita» suona così pomposa da essere ormai usata solo ironicamente, ma sarebbe interessante, pensa, capire quali siano le ambizioni principali di ciascuno, cosa concentri le sue speranze e priorità, cosa crede lo renderà felice quando farà i bilanci. Il punto sarebbe dimostrare che non esiste un senso della vita unico, e che la bellezza sta proprio nella varietà dei sensi della vita di ognuno, di cui essere curiosi per non cadere nell'inganno pigro di pensare che gli altri abbiano le nostre stesse priorità. Per questo vorrebbe vedere i feed Instagram di altre persone, e immagina un'app che, come Chatroulette, ti porti a caso sull'account di sconosciuti, a cui l'algoritmo mostra cose che noi non vediamo mai, per uscire dalle solite bolle.",
+        "PremRock è un musicista hip hop della East Coast statunitense, noto anche per essere metà del duo ShrapKnel, ed è uno di quei rari casi in cui l'hip hop sa essere quieto e notturno (quindici anni fa ha fatto anche [un disco](https://x.ilpost.it/re?l=D0I5w3tcfI1z679szI8ITmwl7j7z2I5si09w&s=KAGJCEJNIHCOIEEI&req=dmc_cid%3D3683%26cv_id%3D370985) di rielaborazioni di Tom Waits). Il brano era all'inizio del suo disco del 2025 e comincia con un colloquio di lavoro in cui la candidata elenca come curriculum attività creative lontane dalle esperienze strutturate che di solito si citano: una specie di «faccio cose, vedo gente», rivendicata senza ironia, probabilmente il suo senso della vita. Poi parte il pezzo, con un formidabile vocalizzo sotto il garbato rappare di PremRock, che Sofri direbbe essere un campione di qualcosa ma non sa di cosa."
+      ]
+    },
     {
       "id": "evening-2026-11-17",
       "source": "evening",
