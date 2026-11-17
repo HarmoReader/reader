@@ -1,6 +1,65 @@
 {
-  "updated": "2026-11-16T23:58:00+01:00",
+  "updated": "2026-11-17T19:12:00+01:00",
   "editions": [
+    {
+      "id": "evening-2026-11-17",
+      "source": "evening",
+      "date": "2026-11-17",
+      "title": "Evening Post, le storie di oggi",
+      "intro": "Martedì 17 novembre: nuovi problemi con i voli negli Stati Uniti, un ponte russo colpito dall'Ucraina, lo sciopero generale di venerdì e le Istruzioni sulla verità scientifica.",
+      "brief": "Problemi con i voli e le banche negli Stati Uniti, il ponte russo distrutto dall'Ucraina, lo sciopero generale di venerdì 20 novembre, l'ex Ilva e Huang pronto a tornare a Nvidia; nello sport Cobolli e Alonso alla Dakar.",
+      "sections": [
+        {
+          "heading": "In apertura",
+          "paragraphs": [
+            "La newsletter si apre con un esempio di conversazione che si avvia pur sapendo benissimo come andrà a finire: il punto, spiega, non è dove si arriva ma come ci si arriva, di solito imparando qualcosa. Segue una serie di immagini e la battuta finale: «ve l'avevamo detto che sapevamo come sarebbe andata a finire»."
+          ]
+        },
+        {
+          "heading": "Le notizie",
+          "paragraphs": [
+            "Negli Stati Uniti ci sono stati [nuovi problemi con i voli](https://x.ilpost.it/re?l=D0I5w3tceI1z679szI4ITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985). L'Ucraina [ha distrutto parte di un ponte fondamentale](https://x.ilpost.it/re?l=D0I5w3tceI1z679szI5ITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985) per la Russia. L'amministrazione Trump sta litigando su [come gestire i rapporti con la Cina](https://x.ilpost.it/re?l=D0I5w3tceI1z679szI6ITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985), proprio mentre Trump si trova in Cina, e intanto ha approvato [nuove restrizioni](https://x.ilpost.it/re?l=D0I5w3tceI1z679szI7ITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985) per impedirle di usare i chip più avanzati. È stata pubblicata un'enorme inchiesta sui [molti scandali di Deutsche Bank](https://x.ilpost.it/re?l=D0I5w3tceI1z679szI8ITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985). Per la Commissione europea nel 2026 l'economia dell'Unione [potrebbe crescere più del previsto](https://x.ilpost.it/re?l=D0I5w3tceI1z679szI9ITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985), nonostante la crisi energetica.",
+            "Nell'inchiesta sui controlli ambientali dell'ex Ilva [c’è una grossa novità](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIaITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985). Venerdì 20 novembre è previsto [uno sciopero generale nazionale](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIbITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Un paio di altre cose dall'Italia",
+          "paragraphs": [
+            "A Trieste un'attivista di 71 anni [è stata multata per aver medicato i piedi di alcune persone migranti](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIcITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985), ferite dopo essere arrivate a piedi attraversando il confine tra Slovenia e Italia. C'è [un caso attorno ai due fratelli](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIdITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985) che aggredirono un rabbino a Milano. Nell'ultimo anno sono aumentati i gruppi di medici attivisti che soccorrono i manifestanti: il Post ha spiegato [come fanno quello che fanno](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIeITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985). A Roma c'è stato [un altro furto di fentanyl](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIfITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985) e il festival del cinema russo è stato cancellato [dopo alcune polemiche](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIgITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Dal resto del mondo",
+          "paragraphs": [
+            "Oltre al traffico aereo, anche le principali banche statunitensi [hanno avuto problemi tecnici](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIhITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985). Ci sarà [un nuovo processo a Lindsay Clancy](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIiITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985), la donna statunitense accusata di aver ucciso i suoi tre figli. Il Regno Unito [ha imposto sanzioni a otto aziende israeliane](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIjITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985) che contribuiscono alla costruzione di insediamenti nelle colonie in Cisgiordania. Cinque paesi europei vogliono [mandare in Ruanda i migranti](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIkITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985) che non possono espellere. Un'altra nave mercantile è stata colpita da droni nel mar Nero ed [è affondata](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIlITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985). È stato [ucciso il giornalista Camilo Rodríguez](https://x.ilpost.it/re?l=D0I5w3tceI1z679szImITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985), noto per le inchieste su narcotraffico e corruzione in Costa Rica. Gérard Depardieu [ha ritirato il ricorso](https://x.ilpost.it/re?l=D0I5w3tceI1z679szInITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985) contro la condanna per aggressione sessuale, che ora è definitiva. In Serbia molte persone si sono radunate nei bar [per seguire in streaming la seduta inaugurale del parlamento](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIoITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Cose tech, diciamo",
+          "paragraphs": [
+            "Jensen Huang ha detto che [tornerebbe a fare il CEO di Nvidia, se glielo chiedessero](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIpITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985). La quotazione in borsa di Anthropic [è un test per tutta l’AI](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIqITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985), dopo i recenti sommovimenti. La California [ha fatto causa a OpenAI](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIrITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985) per l'attacco informatico alla piattaforma Hugging Face. Quella storia sull'[influenza da GTA VI](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIsITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985) pare un filino esagerata."
+          ]
+        },
+        {
+          "heading": "C'è parecchio nello sport, oggi",
+          "paragraphs": [
+            "Le federazioni calcistiche europee sosterranno all'unanimità [questo candidato](https://x.ilpost.it/re?l=D0I5w3tceI1z679szItITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985) come presidente della FIFA. [Flavio Cobolli ha perso contro Daniil Medvedev](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIuITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985) nella sua prima partita delle ATP Finals. Fernando Alonso [parteciperà al Rally Dakar](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIvITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985). Per questa stagione di NBA i San Antonio Spurs stanno provando [qualcosa di nuovo](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIwITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985). C'è poi un modo eccezionale di [finire un round di freccette](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIxITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985), e una ragazza di 14 anni che ha [appena fatto questo](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIyITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985): non sentitevi da meno."
+          ]
+        },
+        {
+          "heading": "Un'altra cosa che siamo contenti di fare",
+          "paragraphs": [
+            "Il 3 dicembre cominciano le Istruzioni su come nasce una verità scientifica, con Silvia Bencivelli: tre lezioni su come è cambiato nel tempo il modo di fare ricerca, come si stabilisce cosa è vero, cosa succede quando si sbaglia o quando un pregiudizio sociale diventa un «dato scientifico», con esperimenti che hanno portato a scoperte ma anche a cure che sembravano funzionare e a errori, e con i pregiudizi di genere ancora presenti nella ricerca e nella pratica clinica. [Ci si iscrive qui](https://x.ilpost.it/re?l=D0I5w3tceI1z679szIzITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985), con uno sconto sostanzioso per chi è abbonato. Poi i saluti: per oggi ci si ferma, e ci si ritrova domani."
+          ]
+        },
+        {
+          "heading": "Cose da leggere",
+          "paragraphs": [
+            "Dal lavoro con Giovanni Falcone a quello di capo della polizia, fino all'indagine per presunti depistaggi sulla strage di via D'Amelio: chi è stato e chi è oggi [Gianni De Gennaro](https://x.ilpost.it/re?l=D0I5w3tceI1z679szI11ITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985). È tornato lo [strambo dibattito italiano sulla patrimoniale](https://x.ilpost.it/re?l=D0I5w3tceI1z679szI13ITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985). Il papa, [colpito da un rosario](https://x.ilpost.it/re?l=D0I5w3tceI1z679szI14ITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985). I microchip sono ovunque e sempre più piccoli: [indovinate di cosa parliamo](https://x.ilpost.it/re?l=D0I5w3tceI1z679szI16ITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985). E Robert Pattinson è già [un Bond diverso da tutti gli altri](https://x.ilpost.it/re?l=D0I5w3tceI1z679szI18ITmwkzcpo1&s=EPFBGMACEOCEDPFO&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        }
+      ]
+    },
     {
       "id": "canzoni-2026-11-16",
       "source": "canzoni",
