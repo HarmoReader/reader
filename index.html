@@ -170,6 +170,8 @@ a { color: var(--accent); }
 #article .kicker { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--src); }
 #article h1 { font: 700 calc(26px * var(--t))/1.2 var(--font-read); margin: 6px 0 4px; text-wrap: balance; }
 #article .date { color: var(--muted); font-size: 13px; margin-bottom: 18px; }
+#article .strip { margin: 0 0 22px; background: #fff; border-radius: 10px; overflow: hidden; }
+#article .strip img { display: block; width: 100%; height: auto; }
 #article .lead { font: calc(18px * var(--t))/1.5 var(--font-read); margin: 0 0 22px; }
 #article h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 26px 0 6px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
 #article ul { list-style: none; margin: 0; padding: 0; }
@@ -283,7 +285,7 @@ a { color: var(--accent); }
     sunday: { name: 'Sunday Post', color: 'var(--sunday)', nav: '#e8b04a' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '25 · 16 novembre 2026';
+  var APP_VERSION = '26 · 18 novembre 2026';
   var DATA_URL = 'data/digests.json';
   var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null, q: '', seen: new Set(), slide: 0 };
 
@@ -434,6 +436,12 @@ a { color: var(--accent); }
     inner.appendChild(el('div', 'kicker', SOURCES[e.source] ? SOURCES[e.source].name : e.source));
     inner.appendChild(el('h1', null, e.title));
     inner.appendChild(el('div', 'date', fmtDay.format(parseDate(e.date))));
+    var imu = e.image && safeUrl(e.image.url);
+    if (imu) {
+      var fig = el('figure', 'strip'), im = el('img'); im.src = imu; im.alt = e.image.alt || 'Striscia a fumetti';
+      im.loading = 'lazy'; im.referrerPolicy = 'no-referrer'; im.onerror = function () { fig.remove(); };
+      fig.appendChild(im); inner.appendChild(fig);
+    }
     if (e.song) {
       var s = el('div', 'song');
       s.appendChild(el('div', 't', e.song.title));
