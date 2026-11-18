@@ -85,6 +85,12 @@ a { color: var(--accent); }
 .side-foot { margin-top: auto; padding: 10px 18px 16px; font-size: calc(15px * var(--t)); color: #7d89a6; border-top: 1px solid #263049; }
 .side-foot button { color: var(--side-fg); text-decoration: underline; min-height: 36px; font-size: inherit; }
 .side-foot .ver { margin-top: 6px; font-size: calc(12px * var(--t)); color: #7d89a6; }
+.side-foot .set-btn { display: flex; align-items: center; gap: 10px; width: 100%; text-decoration: none; min-height: 44px; font-size: calc(17px * var(--t)); }
+.set-btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex: none; transition: transform .25s; }
+.set-btn[aria-expanded="true"] svg { transform: rotate(60deg); }
+#set-panel { margin-top: 8px; max-height: 55vh; overflow: auto; }
+#set-panel[hidden] { display: none; }
+#restore-slot:not(:empty) { margin-bottom: 8px; }
 .voice-row { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; }
 .voice-row span { margin-right: auto; }
 .voice-row select { max-width: 150px; min-height: 36px; background: #1b2438; color: var(--side-fg); border: 1px solid #3a4666; border-radius: 8px; padding: 0 6px; font-size: inherit; }
@@ -210,6 +216,12 @@ a { color: var(--accent); }
     <div class="brand">Harmoreader<small id="upd">Ultimo aggiornamento: &ndash;</small></div>
     <div class="nav" id="nav"></div>
     <div class="side-foot">
+      <button id="set-btn" type="button" class="set-btn" aria-expanded="false" aria-controls="set-panel">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+        <span>Impostazioni</span>
+      </button>
+      <div id="set-panel" hidden>
+      <div id="restore-slot"></div>
       <div class="fs-row" role="group" aria-label="Dimensione del testo"><span>Testo</span>
         <button type="button" data-fs="0.9" aria-label="Testo piccolo" style="font-size:12px">A</button>
         <button type="button" data-fs="1" aria-label="Testo medio" style="font-size:15px">A</button>
@@ -224,6 +236,7 @@ a { color: var(--accent); }
       </div>
       <button id="theme-btn" type="button">Tema: automatico</button>
       <button id="push-btn" type="button" hidden>Notifiche: spente</button>
+      </div>
       <div class="ver" id="ver"></div></div>
   </nav>
   <div id="scrim"></div>
@@ -285,7 +298,7 @@ a { color: var(--accent); }
     sunday: { name: 'Sunday Post', color: 'var(--sunday)', nav: '#e8b04a' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '26 · 18 novembre 2026';
+  var APP_VERSION = '27 · 18 novembre 2026';
   var DATA_URL = 'data/digests.json';
   var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null, q: '', seen: new Set(), slide: 0 };
 
@@ -357,7 +370,7 @@ a { color: var(--accent); }
   }
 
   function renderNav() {
-    var nav = $('nav'); nav.textContent = '';
+    var nav = $('nav'); nav.textContent = ''; var slot = $('restore-slot'); slot.textContent = '';
     var unread = state.editions.filter(function (e) { return !state.read.has(e.id); }).length;
     function item(label, filter, count, icon, color) {
       var b = el('button'); b.type = 'button';
@@ -391,7 +404,7 @@ a { color: var(--accent); }
         if (!window.confirm('Rimettere nell\'app le newsletter cancellate?')) return;
         state.hidden = new Set(); save('letture.hidden', state.hidden); applyHidden(); renderAll();
       });
-      nav.appendChild(rb);
+      slot.appendChild(rb);
     }
   }
 
@@ -724,6 +737,10 @@ a { color: var(--accent); }
   function openSide() { $('side').classList.add('open'); $('scrim').classList.add('on'); }
   function closeSide() { $('side').classList.remove('open'); $('scrim').classList.remove('on'); }
   $('menu-btn').addEventListener('click', openSide);
+  $('set-btn').addEventListener('click', function () {
+    var open = $('set-panel').hidden; $('set-panel').hidden = !open; this.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (open) $('set-panel').scrollIntoView({ block: 'nearest' });
+  });
   $('scrim').addEventListener('click', closeSide);
   $('back-btn').addEventListener('click', function () { if (location.hash) history.back(); else closeReader(); });
 
