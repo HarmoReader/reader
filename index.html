@@ -87,9 +87,13 @@ a { color: var(--accent); }
 .side-foot .ver { margin-top: 6px; font-size: calc(12px * var(--t)); color: #7d89a6; }
 .side-foot .set-btn { display: flex; align-items: center; gap: 10px; width: 100%; text-decoration: none; min-height: 44px; font-size: calc(17px * var(--t)); }
 .set-btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex: none; transition: transform .25s; }
-.set-btn[aria-expanded="true"] svg { transform: rotate(60deg); }
-#set-panel { margin-top: 8px; max-height: 55vh; overflow: auto; }
+#set-panel { position: fixed; inset: 0; z-index: 60; background: var(--side); color: var(--side-fg); display: flex; flex-direction: column; padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0) env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0); }
 #set-panel[hidden] { display: none; }
+.set-head { display: flex; align-items: center; padding: 8px 8px 8px 18px; min-height: 56px; border-bottom: 1px solid #263049; }
+.set-head h2 { margin: 0 auto 0 0; color: #fff; font-size: calc(19px * var(--t)); font-weight: 700; }
+.set-head .icon-btn { color: #fff; }
+.set-body.side-foot { margin: 0; border: 0; padding: 18px; overflow: auto; flex: 1; font-size: calc(17px * var(--t)); }
+.set-body #theme-btn, .set-body #push-btn { display: block; min-height: 44px; margin-top: 4px; }
 #restore-slot:not(:empty) { margin-bottom: 8px; }
 .voice-row { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; }
 .voice-row span { margin-right: auto; }
@@ -220,7 +224,14 @@ a { color: var(--accent); }
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
         <span>Impostazioni</span>
       </button>
-      <div id="set-panel" hidden>
+      <div class="ver" id="ver"></div></div>
+  </nav>
+  <div id="scrim"></div>
+  <div id="set-panel" role="dialog" aria-modal="true" aria-label="Impostazioni" hidden>
+    <div class="set-head"><h2>Impostazioni</h2>
+      <button class="icon-btn" id="set-close" type="button" aria-label="Chiudi le impostazioni"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="set-body side-foot">
       <div id="restore-slot"></div>
       <div class="fs-row" role="group" aria-label="Dimensione del testo"><span>Testo</span>
         <button type="button" data-fs="0.9" aria-label="Testo piccolo" style="font-size:12px">A</button>
@@ -236,10 +247,8 @@ a { color: var(--accent); }
       </div>
       <button id="theme-btn" type="button">Tema: automatico</button>
       <button id="push-btn" type="button" hidden>Notifiche: spente</button>
-      </div>
-      <div class="ver" id="ver"></div></div>
-  </nav>
-  <div id="scrim"></div>
+    </div>
+  </div>
 
   <main id="list-pane">
     <header class="bar">
@@ -298,7 +307,7 @@ a { color: var(--accent); }
     sunday: { name: 'Sunday Post', color: 'var(--sunday)', nav: '#e8b04a' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '27 · 18 novembre 2026';
+  var APP_VERSION = '28 · 18 novembre 2026';
   var DATA_URL = 'data/digests.json';
   var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null, q: '', seen: new Set(), slide: 0 };
 
@@ -729,7 +738,7 @@ a { color: var(--accent); }
     window.addEventListener('popstate', function (ev) {
       if (ev.state && ev.state.root) {
         try { history.pushState({ home: 1 }, '', base); } catch (e) {}
-        closeSide();
+        closeSide(); if (window.__setPanel) window.__setPanel(false);
       }
     });
   })();
@@ -737,10 +746,11 @@ a { color: var(--accent); }
   function openSide() { $('side').classList.add('open'); $('scrim').classList.add('on'); }
   function closeSide() { $('side').classList.remove('open'); $('scrim').classList.remove('on'); }
   $('menu-btn').addEventListener('click', openSide);
-  $('set-btn').addEventListener('click', function () {
-    var open = $('set-panel').hidden; $('set-panel').hidden = !open; this.setAttribute('aria-expanded', open ? 'true' : 'false');
-    if (open) $('set-panel').scrollIntoView({ block: 'nearest' });
-  });
+  function setPanel(on) { $('set-panel').hidden = !on; $('set-btn').setAttribute('aria-expanded', on ? 'true' : 'false'); }
+  window.__setPanel = setPanel;
+  $('set-btn').addEventListener('click', function () { setPanel(true); });
+  $('set-close').addEventListener('click', function () { setPanel(false); });
+  document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape' && !$('set-panel').hidden) setPanel(false); });
   $('scrim').addEventListener('click', closeSide);
   $('back-btn').addEventListener('click', function () { if (location.hash) history.back(); else closeReader(); });
 
