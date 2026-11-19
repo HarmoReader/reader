@@ -1,6 +1,108 @@
 {
-  "updated": "2026-11-18T23:56:32+01:00",
+  "updated": "2026-11-19T19:01:00+01:00",
   "editions": [
+    {
+      "id": "evening-2026-11-19",
+      "source": "evening",
+      "date": "2026-11-19",
+      "title": "Evening Post, le storie di oggi",
+      "intro": "Giovedì 19 novembre: il ponte di Kerch colpito di nuovo, il trilaterale Trump-Putin-Xi, la morte di Corrado Augias, la condanna del Myanmar per il genocidio dei rohingya e la quotazione in borsa di Anthropic.",
+      "brief": "Kerch colpito ancora, il vertice Trump-Putin-Xi senza esiti concreti, morto Corrado Augias, Myanmar condannato per i rohingya, Anthropic in borsa; in Italia tensione tra governo e banche e ronde a Rebibbia.",
+      "sections": [
+        {
+          "heading": "In apertura",
+          "paragraphs": [
+            "La newsletter parte da una nota sul lavoro di redazione: ci sono settimane che non vogliono finire, e sono quelle che piacciono meno a chi fa un podcast settimanale e spera di prepararsi in anticipo per la puntata del sabato mattina, e a chi poi la deve montare. Segue una scusa scherzosa per aver spoilerato un pezzo del prossimo *Morning Weekend*."
+          ]
+        },
+        {
+          "heading": "Le notizie",
+          "paragraphs": [
+            "Il ponte di Kerch è stato [nuovamente colpito](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szI4ITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985) dall'Ucraina. Trump, Putin e Xi Jinping si sono visti in un trilaterale [senza precedenti](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szI5ITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985) e [molto coreografico](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szI6ITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985), ma con pochi sviluppi concreti.",
+            "È morto [Corrado Augias](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szI7ITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985). Il Myanmar [è stato condannato](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szI8ITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985) per il genocidio dei rohingya. Anthropic [si è quotata in borsa](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szI9ITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985), con l'operazione più grande di sempre."
+          ]
+        },
+        {
+          "heading": "Altre notizie dall'Italia",
+          "paragraphs": [
+            "Tra il governo e le banche butta male, [anzi malissimo](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIaITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985). La maggioranza di centrodestra si è divisa su un emendamento al decreto-legge sulla scuola, proposto e voluto da Fratelli d'Italia ma avversato da Forza Italia: [alla fine è passato lo stesso](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIbITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "A Rebibbia un gruppo guidato dall'influencer di estrema destra Simone Carabella sta facendo delle [ronde contro le persone migranti](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIcITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985), accerchiandole e minacciandole. Il sindaco di Palermo [vuole evitare i cortei funebri](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIdITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985) per i mafiosi.",
+            "Il sistema di allerta di Android [in caso di terremoti](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIeITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985) ora è disponibile in Italia. La Commissione europea ha inoltre approvato il progetto italiano per il primo sito europeo per lo stoccaggio strategico [delle materie prime critiche](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIfITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Dal resto del mondo",
+          "paragraphs": [
+            "Il parlamento della Danimarca ha ratificato l'accordo per la sicurezza fatto con Stati Uniti e Groenlandia, [che entrerà così in vigore](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIgITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985). Elon Musk [si è pentito](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIhITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985) di aver dato così tanti soldi ai Repubblicani, e i «podcast bros» [hanno mollato Trump](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIiITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "*GTA VI* è [uno dei migliori videogiochi](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIjITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985) di tutti i tempi: secondo i critici supera persino le già altissime aspettative. Il governo sudcoreano [ha fatto suonare il sistema di allerta](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIkITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985) sui cellulari poco prima dell'esame più importante dell'anno, per assicurarsi che gli studenti non potessero copiare.",
+            "In poche settimane sono andate in tilt banche, aziende e servizi fondamentali: nella nuova puntata di *Wilson* Francesco Costa ragiona su cosa sta succedendo, [e come prepararsi](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIlITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "E varie dallo sport",
+          "paragraphs": [
+            "La FIFA dovrebbe essere un'organizzazione democratica e senza scopo di lucro, [ma nei fatti non è proprio così](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szImITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985). La Formula 1 ha annunciato che dall'anno prossimo permetterà a chi guarda le gare di controllare in tempo reale anche [il battito cardiaco dei piloti](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szInITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985). Magnus Carlsen ha fatto [una mossa furba](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIoITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985) (e antisportiva) per rimanere primo al mondo negli scacchi."
+          ]
+        },
+        {
+          "heading": "Cose da leggere",
+          "paragraphs": [
+            "[Webuild è troppo grande o troppo piccola?](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIqITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985) E soprattutto: cosa ci fa lo Stato dentro la più importante impresa privata italiana di costruzioni, e con quali conseguenze? Poi [Perché tutti questi guasti informatici?](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIsITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "I social media manager dei partiti hanno avuto un'idea, [tutti la stessa](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szItITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985). Ci sono [la telefonata a Corrado Augias](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIvITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985) che fece riaprire l'inchiesta sulla strage di Ustica, durante [il programma](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIwITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985) che lo rese popolare, e la reputazione del celebre sale Maldon, che [è a rischio](https://x.ilpost.it/re?l=D0I5w3tx6I1z679szIyITmwntkly6&s=NMIAILJNCJCBGNDA&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        }
+      ],
+      "image": {
+        "url": "https://static-prod.cdnilpost.com/wp-content/uploads/2026/11/17/1794910265-pt_c261119.jpg",
+        "alt": "La striscia dei Peanuts di oggi (Charles Schulz)"
+      }
+    },
+    {
+      "id": "streaming-2026-11-19",
+      "source": "streaming",
+      "date": "2026-11-19",
+      "title": "Famiglie difficili e un eroe che non lo era",
+      "intro": "Robert Pattinson e il suo futuro Bond, poi Madden con Nicolas Cage e Christian Bale, un cartone Netflix sulle sorellastre di Cenerentola e Un eroe di Asghar Farhadi.",
+      "sections": [
+        {
+          "heading": "In apertura",
+          "paragraphs": [
+            "Solo quattro anni fa Robert Pattinson diceva di non vedere molti sbocchi per la propria carriera: quando si interpretano ruoli da protagonista in film molto grandi (era appena uscito il suo primo da Batman) non restano che film di quel tipo, e se ne fanno pochi ogni anno. Per questo ipotizzava di mettersi a fare anche il produttore. Oggi quella dichiarazione può spiegare in parte perché abbia accettato di diventare il nuovo James Bond, una parte di solito affidata ad attori poco noti. In realtà era stato troppo pessimista: dopo Batman ha interpretato Antinoo in *Odissea* di Christopher Nolan, *Mickey 17* di Bong Joon-ho e film meno grandi ma di buon successo come *The Drama*, *Die My Love* e *Primetime*, e a dicembre sarà in *Dune - Parte tre*.",
+            "Nessun ruolo della sua carriera lascia immaginare [come sarà il suo Bond](https://x.ilpost.it/re?l=D0I5w3to4I1z679szI3ITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985). Quello che ci va più vicino è forse *Tenet*, sempre di Nolan, disponibile su [Netflix](https://x.ilpost.it/re?l=D0I5w3to4I1z679szI4ITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985), [Prime Video](https://x.ilpost.it/re?l=D0I5w3to4I1z679szI5ITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985) e [HBO Max](https://x.ilpost.it/re?l=D0I5w3to4I1z679szI6ITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985). Per chi vuole vederlo in un ruolo diverso dal solito, una buona scelta è *Good Time* dei fratelli Safdie, film di gran ritmo, concitato e metropolitano, [su Prime Video](https://x.ilpost.it/re?l=D0I5w3to4I1z679szI7ITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985) e [MUBI](https://x.ilpost.it/re?l=D0I5w3to4I1z679szI8ITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "Oltre a questo: Paolo Sorrentino girerà per Netflix una serie con Toni Servillo su Tony Pagoda, il protagonista del suo romanzo *Hanno tutti ragione*; ed [è tra noi](https://x.ilpost.it/re?l=D0I5w3to4I1z679szI9ITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985) una prima scena di pochi minuti della serie *Harry Potter e la pietra filosofale*, in arrivo il 25 dicembre su HBO Max."
+          ]
+        },
+        {
+          "heading": "Ora in streaming",
+          "paragraphs": [
+            "**Madden** (2026, [Prime Video](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIaITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985)): John Madden fu un allenatore di football americano che nel gennaio 1977 vinse il Super Bowl con gli Oakland Raiders. Poi, per motivi di salute, lasciò il ruolo e divenne commentatore televisivo, e in quel periodo fu contattato per collaborare a un videogioco di football diverso da tutti quelli esistenti.",
+            "Non è la prima storia vera e intricata della nascita di un videogioco popolare a diventare un film da piattaforma, né la migliore: il primato spetta a *Tetris*, [su Apple TV](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIbITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985). Perché *Madden* finge di parlare dell'origine del gioco, ma è in realtà un classico film di David O. Russell (*Il lato positivo*, *The Fighter*): una storia di famiglie problematiche in cui l'amore si manifesta litigando. Come in molti suoi film, il lavoro sulla recitazione e sui duetti è notevole, soprattutto tra Christian Bale (il proprietario dei Raiders) e Nicolas Cage (Madden), due attori abituati a recitare sopra le righe che qui si trattengono, almeno per i loro standard. [Trailer](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIcITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Qualcosa di alternativo",
+          "paragraphs": [
+            "**Steps** (2026, [Netflix](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIdITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985)): fin da piccole le due sorellastre di Cenerentola non riescono a integrarsi con le altre bambine del regno, diventano outsider e provano risentimento verso la sorellastra; quando scoprono che ha una fata madrina, decidono di approfittare anche loro della magia, creando problemi che dovranno poi risolvere. È e non è la storia di Cenerentola da un altro punto di vista: parla di sorellanza contro una bulla, ma non c'è granché di realmente sovvertito. È però un cartone Netflix (disponibile da domani) scritto con grande vivacità, buon ritmo e ottima fattura tecnica. [Trailer](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIjITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "Per chi cerca invece un ribaltamento vero, l'anno scorso è uscito per adulti *The Ugly Stepsister*, che parla di canoni di bellezza e condizionamenti psicologici: si trova su [IWonderfull](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIeITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985) e a noleggio su [YouTube](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIfITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985), [Prime Video](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIgITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985), [Chili](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIhITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985) e [Rakuten](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIiITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Arrivi e partenze",
+          "paragraphs": [
+            "Dopo il film documentario [*Melania*](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIkITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985), che Prime Video [ha comprato a caro prezzo](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIlITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985), da domani è online [su Prime Video](https://x.ilpost.it/re?l=D0I5w3to4I1z679szImITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985) anche la serie in due puntate *Melania*, che espande il racconto della vita della first lady statunitense: per appassionati del genere. Lunedì arriverà [su Netflix](https://x.ilpost.it/re?l=D0I5w3to4I1z679szInITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985) *Chiara*, in teoria un documentario su Chiara Ferragni ma in realtà realizzato insieme a lei: dopo un paio d'anni di silenzio è il modo in cui racconta [il periodo buio](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIoITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985) venuto dopo il cosiddetto pandorogate.",
+            "L'[arrivo](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIpITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985) del film [*You Can See Everything*](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIqITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985) nei cinema italiani sta riportando online altri lavori di Nathan Fielder, tra cui *The Curse*, di cui è coideatore e in cui recita con Emma Stone: è disponibile [su MUBI](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIrITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985) da oggi. Da oggi [su Netflix](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIsITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985) c'è *The Altruists*, la vera storia di Sam Bankman-Fried e Caroline Ellison, accusati del furto di 8 miliardi di dollari mentre cercavano di cambiare la finanza globale.",
+            "Il revival di *Scrubs* uscito a febbraio è andato bene ed è stato rinnovato: ieri è iniziata la seconda stagione [su Disney+](https://x.ilpost.it/re?l=D0I5w3to4I1z679szItITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985). Arrivata alla terza stagione, *Percy Jackson e gli dei dell'Olimpo* ha superato gli eventi dei due film: da domani [su Disney+](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIuITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985) inizia la prima trasposizione del terzo romanzo, *La maledizione del Titano*."
+          ]
+        },
+        {
+          "heading": "Dalle profondità delle piattaforme",
+          "paragraphs": [
+            "**Un eroe** (2021, [RaiPlay](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIvITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985)): Rahim è in carcere per un debito non saldato. Durante un permesso, la compagna Farkhondeh trova una borsa con monete d'oro; lui pensa di venderle per ripagare il debito, ma poi decide di restituirla alla proprietaria. Il gesto lo rende un eroe mediatico, finché i dubbi sulla sua versione cominciano a distruggerne l'immagine.",
+            "Come spesso nei film di Asghar Farhadi (*Una separazione*, *Il cliente*) non ci sono eroi né cattivi, in una storia vera che sembra falsa, tanto è scritta bene e piena di ramificazioni. La parte più avvincente è provare a capire chi abbia ragione, e la risposta è che non ce l'ha nessuno: ma il modo in cui le vite si incrociano e meschinità e idealismi si confondono è un piacere da guardare. [Trailer](https://x.ilpost.it/re?l=D0I5w3to4I1z679szIwITmwnk6825&s=CAMBDINPNCAOKFKD&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        }
+      ]
+    },
     {
       "id": "canzoni-2026-11-18",
       "source": "canzoni",
