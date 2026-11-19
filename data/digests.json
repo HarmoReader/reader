@@ -1,6 +1,39 @@
 {
-  "updated": "2026-11-19T19:01:00+01:00",
+  "updated": "2026-11-19T23:55:49+01:00",
   "editions": [
+    {
+      "id": "canzoni-2026-11-19",
+      "source": "canzoni",
+      "date": "2026-11-19",
+      "title": "Le canzoni: Sing",
+      "intro": "Di Luca Sofri.",
+      "brief": "Oggi Sing dei Travis (2001), con una riflessione sui piccoli passaggi che rendono bella una canzone, a partire da Like it or not dei Genesis; prima, il ritorno di moda di Jeff Buckley e le colombe nelle canzoni.",
+      "song": {
+        "title": "Sing",
+        "artist": "Travis",
+        "year": 2001,
+        "links": [
+          {
+            "label": "Spotify",
+            "url": "https://x.ilpost.it/re?l=D0I5w3txbI1z679szI5ITmwo2epa6I5si09w&s=KEDEEAHECBHMIGOM&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "Apple Music",
+            "url": "https://x.ilpost.it/re?l=D0I5w3txbI1z679szI6ITmwo2epa6I5si09w&s=KEDEEAHECBHMIGOM&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "YouTube",
+            "url": "https://x.ilpost.it/re?l=D0I5w3txbI1z679szI7ITmwo2epa6I5si09w&s=KEDEEAHECBHMIGOM&req=dmc_cid%3D3683%26cv_id%3D370985"
+          }
+        ]
+      },
+      "paragraphs": [
+        "In apertura, [il Guardian dice](https://x.ilpost.it/re?l=D0I5w3txbI1z679szI2ITmwo2epa6I5si09w&s=KEDEEAHECBHMIGOM&req=dmc_cid%3D3683%26cv_id%3D370985) che c'è un nuovo ritorno di moda di Jeff Buckley presso una nuova generazione. Poi un pensiero nato guardando da un treno londinese un enorme pannello pubblicitario della nuova stagione di Black Doves: le «doves» godono di molta fortuna romantica nelle canzoni anglofone, mentre «colombi» e «colombe» hanno poca attrattiva poetica in italiano, salvo [Vola colomba](https://x.ilpost.it/re?l=D0I5w3txbI1z679szI3ITmwo2epa6I5si09w&s=KEDEEAHECBHMIGOM&req=dmc_cid%3D3683%26cv_id%3D370985), che non è proprio una raffinatezza. Figuriamoci i piccioni, anche se lì c'è una [drammatica eccezione](https://x.ilpost.it/re?l=D0I5w3txbI1z679szI4ITmwo2epa6I5si09w&s=KEDEEAHECBHMIGOM&req=dmc_cid%3D3683%26cv_id%3D370985).",
+        "Il tema di oggi è che in alcune canzoni la bellezza sta in un particolare passaggio, magari solo in quello, e ognuno ha il suo. L'esempio più familiare per Sofri è [Like it or not](https://x.ilpost.it/re?l=D0I5w3txbI1z679szI8ITmwo2epa6I5si09w&s=KEDEEAHECBHMIGOM&req=dmc_cid%3D3683%26cv_id%3D370985), canzone minore in un disco minore dei tardi [Genesis](https://x.ilpost.it/re?l=D0I5w3txbI1z679szI9ITmwo2epa6I5si09w&s=KEDEEAHECBHMIGOM&req=dmc_cid%3D3683%26cv_id%3D370985), Abacab (un disco minore dei tardi Genesis, precisa, vale per lui più del 99,9% del resto della produzione discografica). [A un certo punto](https://x.ilpost.it/re?l=D0I5w3txbI1z679szIaITmwo2epa6I5si09w&s=KEDEEAHECBHMIGOM&req=dmc_cid%3D3683%26cv_id%3D370985) Tony Banks crea una specie di scala a chiocciola con un trampolino in cima, e Phil Collins salta, come se se ne andasse altrove lasciando la canzone dov'era: è il momento che lo lascia ipnotizzato e beato.",
+        "A suo giudizio la magia accade soprattutto quando una canzone deraglia dalle attese e dal cammino prevedibile: lì il ritornello si è appena concluso e dovrebbe tornare la strofa o iniziare la chiusura, e invece viene rilanciato su un nuovo livello. Si dice «maddài!» ogni volta, anche quando lo si sa già, perché una volta che lo sai diventi complice della sorpresa invece che destinatario. Poi si chiede, autoironico, se stia dicendo cose da ubriaco che capisce solo lui, e annuncia finalmente la vera canzone di stasera.",
+        "Con Sing dei Travis gli succede la stessa cosa. È una canzone del 2001 di un gruppo scozzese che allora andava molto forte e che oggi esiste ancora ma con minori attenzioni, quasi solo nel Regno Unito. È una di [quelle canzoni](https://x.ilpost.it/re?l=D0I5w3txbI1z679szIbITmwo2epa6I5si09w&s=KEDEEAHECBHMIGOM&req=dmc_cid%3D3683%26cv_id%3D370985) che parlano della bellezza di cantare (in origine doveva chiamarsi «Swing»), un bel pezzo pop allegro, con un arrangiamento ricco e un bel banjo. A un certo punto riparte l'ultima strofa, ma è come se si impantanasse e il cantante restasse lì [a pensarci su](https://x.ilpost.it/re?l=D0I5w3txbI1z679szIcITmwo2epa6I5si09w&s=KEDEEAHECBHMIGOM&req=dmc_cid%3D3683%26cv_id%3D370985), fino a decidere che non vale la pena di cantare un'altra strofa e che è meglio rifare il ritornello, andandosene con una lunga coda di «na na na»."
+      ]
+    },
     {
       "id": "evening-2026-11-19",
       "source": "evening",
