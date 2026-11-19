@@ -184,7 +184,14 @@ a { color: var(--accent); }
 #article h1 { font: 700 calc(26px * var(--t))/1.2 var(--font-read); margin: 6px 0 4px; text-wrap: balance; }
 #article .date { color: var(--muted); font-size: 13px; margin-bottom: 18px; }
 #article .strip { margin: 0 0 22px; background: #fff; border-radius: 10px; overflow: hidden; }
-#article .strip img { display: block; width: 100%; height: auto; }
+#article .strip img { display: block; width: 100%; height: auto; cursor: zoom-in; }
+#lightbox { position: fixed; inset: 0; z-index: 70; background: #000; display: flex; flex-direction: column; }
+#lightbox[hidden] { display: none; }
+#lightbox .lb-bar { display: flex; align-items: center; padding: calc(env(safe-area-inset-top, 0px) + 6px) 8px 6px 16px; color: #fff; }
+#lightbox .lb-bar span { margin-right: auto; font-size: 14px; opacity: .8; }
+#lightbox .icon-btn { color: #fff; }
+#lightbox .lb-scroll { flex: 1; min-height: 0; overflow: auto; display: flex; align-items: center; -webkit-overflow-scrolling: touch; touch-action: pan-x pan-y pinch-zoom; }
+#lightbox .lb-scroll img { height: 70vh; width: auto; max-width: none; flex: none; background: #fff; margin: 0 auto; }
 #article .lead { font: calc(18px * var(--t))/1.5 var(--font-read); margin: 0 0 22px; }
 #article h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 26px 0 6px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
 #article ul { list-style: none; margin: 0; padding: 0; }
@@ -230,6 +237,12 @@ a { color: var(--accent); }
       <div class="ver" id="ver"></div></div>
   </nav>
   <div id="scrim"></div>
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Striscia ingrandita" hidden>
+    <div class="lb-bar"><span>Scorri verso sinistra per leggere tutta la striscia</span>
+      <button class="icon-btn" id="lb-close" type="button" aria-label="Chiudi"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="lb-scroll" id="lb-scroll"><img id="lb-img" alt=""></div>
+  </div>
   <div id="set-panel" role="dialog" aria-modal="true" aria-label="Impostazioni" hidden>
     <div class="set-head"><h2>Impostazioni</h2>
       <button class="icon-btn" id="set-close" type="button" aria-label="Chiudi le impostazioni"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
@@ -310,7 +323,7 @@ a { color: var(--accent); }
     sunday: { name: 'Sunday Post', color: 'var(--sunday)', nav: '#e8b04a' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '30 · 19 novembre 2026';
+  var APP_VERSION = '31 · 19 novembre 2026';
   var DATA_URL = 'data/digests.json';
   var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null, q: '', seen: new Set(), slide: 0 };
 
@@ -467,7 +480,7 @@ a { color: var(--accent); }
     var imu = e.image && safeUrl(e.image.url);
     if (imu) {
       var fig = el('figure', 'strip'), im = el('img'); im.src = imu; im.alt = e.image.alt || 'Striscia a fumetti';
-      im.loading = 'lazy'; im.referrerPolicy = 'no-referrer'; im.onerror = function () { fig.remove(); };
+      im.loading = 'lazy'; im.referrerPolicy = 'no-referrer'; im.onerror = function () { fig.remove(); }; im.addEventListener('click', function () { openLightbox(im.src, im.alt); });
       fig.appendChild(im); inner.appendChild(fig);
     }
     if (e.song) {
@@ -744,7 +757,7 @@ a { color: var(--accent); }
     window.addEventListener('popstate', function (ev) {
       if (ev.state && ev.state.root) {
         try { history.pushState({ home: 1 }, '', base); } catch (e) {}
-        closeSide(); if (window.__setPanel) window.__setPanel(false);
+        closeSide(); if (window.__setPanel) window.__setPanel(false); if (!$('lightbox').hidden) closeLightbox();
       }
     });
   })();
@@ -752,6 +765,11 @@ a { color: var(--accent); }
   function openSide() { $('side').classList.add('open'); $('scrim').classList.add('on'); }
   function closeSide() { $('side').classList.remove('open'); $('scrim').classList.remove('on'); }
   $('menu-btn').addEventListener('click', openSide);
+  function openLightbox(src, alt) { var lb = $('lightbox'); $('lb-img').src = src; $('lb-img').alt = alt || ''; lb.hidden = false; $('lb-scroll').scrollLeft = 0; }
+  function closeLightbox() { $('lightbox').hidden = true; $('lb-img').removeAttribute('src'); }
+  window.openLightbox = openLightbox;
+  $('lb-close').addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape' && !$('lightbox').hidden) closeLightbox(); });
   function setPanel(on) { $('set-panel').hidden = !on; $('set-btn').setAttribute('aria-expanded', on ? 'true' : 'false'); }
   window.__setPanel = setPanel;
   $('set-btn').addEventListener('click', function () { setPanel(true); });
