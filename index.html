@@ -307,7 +307,7 @@ a { color: var(--accent); }
     sunday: { name: 'Sunday Post', color: 'var(--sunday)', nav: '#e8b04a' },
     streaming: { name: 'Dicono che è bello al cinema', color: 'var(--streaming)', nav: '#4cc9a0' }
   };
-  var APP_VERSION = '28 · 18 novembre 2026';
+  var APP_VERSION = '29 · 19 novembre 2026';
   var DATA_URL = 'data/digests.json';
   var state = { editions: [], filter: { kind: 'all' }, openId: null, read: new Set(), starred: new Set(), updated: null, unsub: {}, raw: [], hidden: new Set(), fetchOk: null, q: '', seen: new Set(), slide: 0 };
 
@@ -315,7 +315,10 @@ a { color: var(--accent); }
   function load(key) { try { return new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch (e) { return new Set(); } }
   function save(key, set) { try { localStorage.setItem(key, JSON.stringify(Array.from(set))); } catch (e) {} }
   state.read = load('letture.read'); state.starred = load('letture.starred'); state.hidden = load('letture.hidden'); state.seen = load('letture.seen');
-  function applyHidden() { state.editions = state.raw.filter(function (e) { return !state.hidden.has(e.source); }); }
+  // Le uscite con più di 14 giorni spariscono da sole, tranne i preferiti.
+  var KEEP_DAYS = 14;
+  function cutoffYmd() { var d = new Date(); d.setDate(d.getDate() - KEEP_DAYS); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
+  function applyHidden() { var cut = cutoffYmd(); state.editions = state.raw.filter(function (e) { return !state.hidden.has(e.source) && (e.date >= cut || state.starred.has(e.id)); }); }
 
   var $ = function (id) { return document.getElementById(id); };
   var fmtDay = new Intl.DateTimeFormat('it-IT', { weekday: 'long', day: 'numeric', month: 'long' });
