@@ -1,6 +1,66 @@
 {
-  "updated": "2026-11-19T23:55:49+01:00",
+  "updated": "2026-11-20T19:01:00+01:00",
   "editions": [
+    {
+      "id": "evening-2026-11-20",
+      "source": "evening",
+      "date": "2026-11-20",
+      "title": "Evening Post, le storie di oggi",
+      "intro": "Venerdì 20 novembre: GTA VI e la diretta di Joypad, lo sciopero generale della CGIL, i primi accordi tra Regno Unito e Unione Europea dopo la Brexit, tre ponti colpiti a Kyiv e le ATP Finals.",
+      "brief": "Sciopero generale della CGIL, i primi accordi concreti Regno Unito-UE dopo la Brexit, la Russia colpisce tre ponti a Kyiv, Roma compra 2.800 alloggi; dal mondo la condanna del Myanmar festeggiata dai rohingya, il dibattito Sánchez-Feijóo, Bending Spoons compra Mailchimp.",
+      "sections": [
+        {
+          "heading": "In apertura",
+          "paragraphs": [
+            "[GTA VI](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szI4ITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985) è uscito ieri, ma il Post ne ha già parlato tantissimo: [di quanto fosse atteso](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szI5ITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985), [di come è stato fatto](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szI6ITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985), [dei luoghi in cui è ambientato](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szI7ITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985), e gli ha dedicato anche [un episodio di Manettini](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szI8ITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985), la newsletter sui videogiochi. Ma non si parla soltanto: quelli di [Joypad](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szI9ITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985) (Matteo Bordone, Francesco Fossetti e Alessandro Zampini) ci giocano e raccontano perché è [così eccezionale](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIaITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985) in una diretta video [martedì 24 novembre alle 19](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIbITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985), anche per chi non ha una console ma è stato incuriosito da tutto questo parlare."
+          ]
+        },
+        {
+          "heading": "Le notizie",
+          "paragraphs": [
+            "[Oggi è in corso uno sciopero generale](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIcITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985), indetto dalla CGIL, che coinvolge tutti i settori pubblici e privati. Regno Unito e Unione Europea hanno fatto [i primi accordi concreti](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIdITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985) per mitigare le conseguenze negative e più fastidiose della Brexit in alcuni ambiti. La Russia ha colpito di nuovo [tre ponti a Kyiv](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIeITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985). Flavio Cobolli [ha perso anche la sua terza partita](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIfITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985) alle ATP Finals di tennis, contro Carlos Alcaraz."
+          ]
+        },
+        {
+          "heading": "Dall'Italia",
+          "paragraphs": [
+            "Per promuovere la partecipazione alle manifestazioni la CGIL Lombardia [ha messo online un videogioco](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIgITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985). Il comune di Roma [spenderà 400 milioni di euro per comprare 2.800 alloggi](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIhITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985): nessun'altra grande città italiana sta investendo così tanto sulla casa in proporzione agli abitanti. A Bari la polizia ha arrestato un uomo sospettato dell'omicidio dell'ex compagna, [trovata morta 23 anni fa](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIiITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Altre dal mondo",
+          "paragraphs": [
+            "La storica condanna del Myanmar per il genocidio dei rohingya [è stata festeggiata](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIjITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985) nei campi profughi del Bangladesh dove vivono oltre 700mila persone di etnia rohingya. Il primo ministro spagnolo Pedro Sánchez e Alberto Núñez Feijóo, principale esponente dell'opposizione, si sono confrontati in un dibattito televisivo in vista delle elezioni: [il confronto è stato particolarmente acceso](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIkITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985), con i due che si sono interrotti ripetutamente.",
+            "Il presidente salvadoregno Nayib Bukele, di estrema destra, si è ricandidato: è in carica dal 2019 e [gode di consensi altissimi grazie a una violenta campagna contro le gang](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIlITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985), che ora combatte anche ad Haiti. Il Ghana ha un nuovo aereo presidenziale che [è costato 55 milioni di euro](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szImITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985), decisione molto criticata in un paese ancora alle prese con gli effetti della grave crisi economica.",
+            "Nel Regno Unito [sono aumentati gli acquisti di alimenti a lunga scadenza](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szInITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985) dopo l'invito del governo a fare scorte di emergenza. UniCredit ha ottenuto il via libera del governo tedesco [per acquisire Commerzbank](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIoITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985), Lufthansa ha detto di voler [eliminare mille posti di lavoro](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIpITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985), e il principale consigliere del governo statunitense sulla sicurezza informatica [è stato sostituito](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIqITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "Bending Spoons [comprerà per 3,68 miliardi di dollari Mailchimp](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIrITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985), uno dei più popolari servizi per mandare newsletter. Entro il 2035 i musulmani potrebbero [superare i cristiani per numero di fedeli](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIsITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985) nel mondo. Un attacco degli Houthi su Riyad [ha danneggiato](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szItITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985) la sede del fondo sovrano dell'Arabia Saudita. Ed [è morta Fiona](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIuITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985), l'ippopotamo più famoso al mondo."
+          ]
+        },
+        {
+          "heading": "E dallo sport",
+          "paragraphs": [
+            "La prossima settimana si gioca la Coppa Davis: ecco [i tennisti italiani convocati](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIvITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985). Intanto si stanno giocando [le ATP Finals, senza Jannik Sinner](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIwITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985). Ci sono poi [le scarpe che cambiano colore](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIxITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985) della giocatrice di basket Caitlin Clark e [chi è](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIyITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985) la nuova favorita per la Coppa del Mondo di sci."
+          ]
+        },
+        {
+          "heading": "Un podcast",
+          "paragraphs": [
+            "Che posto è il Regno Unito oggi, dieci anni dopo il famigerato referendum? Ne parla Matteo Castellucci in [Post Brexit](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szIzITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985), un podcast in quattro puntate scritto in gran parte nel Regno Unito, che racconta le conseguenze di quella scelta attraverso i luoghi e le persone che le hanno vissute di più. La prima puntata esce martedì 24 novembre. La newsletter si chiude con l'augurio di un buon weekend, perché anche questa settimana è [infine](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szI10ITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985) giunta al termine."
+          ]
+        },
+        {
+          "heading": "Cose da leggere",
+          "paragraphs": [
+            "[Cos'è la «guerra ibrida»](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szI12ITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985): quella che si fa con allarmi bomba, attacchi informatici e sabotaggi, e che la Russia conosce molto bene. I Pavement alla fine hanno sfondato, [senza volerlo](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szI14ITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985). La definizione di tradimento [sta cambiando?](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szI15ITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "[Alla COP31 sono spariti i combustibili fossili](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szI17ITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985). Sono tutti d'accordo a fare la bonifica di Bagnoli, [il problema è come](https://x.ilpost.it/re?l=D0I5w3u5rI1z679szI19ITmwp98k3i&s=GBBOIAFBDKJPMEMM&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        }
+      ],
+      "image": {
+        "url": "https://static-prod.cdnilpost.com/wp-content/uploads/2026/11/17/1794912128-pt_c261120.jpg",
+        "alt": "La striscia dei Peanuts di oggi (Charles Schulz)"
+      }
+    },
     {
       "id": "canzoni-2026-11-19",
       "source": "canzoni",
