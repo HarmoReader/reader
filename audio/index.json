@@ -1,6 +1,7 @@
 {
  "voice": "it-IT-IsabellaNeural",
  "ids": [
+  "sunday-2026-11-22",
   "canzoni-2026-11-20",
   "evening-2026-11-20",
   "canzoni-2026-11-19",
@@ -24,8 +25,6 @@
   "evening-2026-11-10",
   "canzoni-2026-11-09",
   "evening-2026-11-09",
-  "sunday-2026-11-08",
-  "canzoni-2026-11-06",
-  "evening-2026-11-06"
+  "sunday-2026-11-08"
  ]
 }
