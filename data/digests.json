@@ -1,6 +1,48 @@
 {
-  "updated": "2026-11-22T23:55:25+01:00",
+  "updated": "2026-11-23T19:05:00+01:00",
   "editions": [
+    {
+      "id": "evening-2026-11-23",
+      "source": "evening",
+      "date": "2026-11-23",
+      "title": "Evening Post, le storie di oggi",
+      "intro": "Lunedì 23 novembre: il Post e il modo di scrivere dell'Economist, il suicidio di Gianni De Gennaro e le accuse che lo avevano preceduto, Jensen Huang di nuovo amministratore delegato di Nvidia, le ATP Finals di Alcaraz e il campionato di MotoGP di Márquez.",
+      "brief": "Il suicidio di Gianni De Gennaro e le lettere che ha lasciato, Jensen Huang torna amministratore delegato di Nvidia, l'Ucraina attacca una nave russa in Libia, minacce di attentati nelle scuole tedesche e danesi, Alcaraz vince le ATP Finals e Márquez la MotoGP, Lazio e Roma prime in Serie A.",
+      "image": {
+        "url": "https://static-prod.ilpost.it/teckel/newsletter/ilpost-production/2026/11/99bacc9f33e77a4de1e088e70810999a.jpg",
+        "alt": "La striscia dei Peanuts di oggi (Charles Schulz)"
+      },
+      "sections": [
+        {
+          "heading": "In apertura",
+          "paragraphs": [
+            "Nei primi anni del Post, quando l'idea di cosa fare era dettata da ciò che sembrava mancare in Italia ma si era visto altrove, la redazione aveva preso appunti sui modi di scrivere e di informare di altri giornali internazionali. Sulla chiarezza e sul ricordarsi di spiegare le cose era ammirata e divertita dal modo in cui l'Economist sta sempre attento a scrivere cose come \"Bill Clinton, un ex presidente degli Stati Uniti\" o \"George Clooney, un celebre attore di Hollywood\". E lo è ancora. Ne è prova una frase dell'Economist stesso: \"Se volete farvi un'idea di come stia cambiando il vento nei confronti dell'influenza cinese, andate su YouTube, una piattaforma americana di condivisione di video\"."
+          ]
+        },
+        {
+          "heading": "Le notizie",
+          "paragraphs": [
+            "La storia di questi giorni è quella [del suicidio](https://x.ilpost.it/re?l=D0I5w3umvI1z679szI4ITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) di Gianni De Gennaro, [delle accuse](https://x.ilpost.it/re?l=D0I5w3umvI1z679szI5ITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) contro di lui e [delle lettere](https://x.ilpost.it/re?l=D0I5w3umvI1z679szI6ITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) che ha lasciato. Gira la ruota: Jensen Huang [è di nuovo amministratore delegato](https://x.ilpost.it/re?l=D0I5w3umvI1z679szI7ITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) di Nvidia. L'Ucraina ha attaccato [una nave militare russa in Libia](https://x.ilpost.it/re?l=D0I5w3umvI1z679szI8ITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985). Oggi è stato il giorno delle minacce di attentati [nelle scuole tedesche e danesi](https://x.ilpost.it/re?l=D0I5w3umvI1z679szI9ITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985). A Manchester [è stata evacuata](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIaITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) una grande sala da concerti dopo che alcune persone erano state intossicate da una sostanza non identificata.",
+            "La Conferenza sul clima è stata [un fallimento](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIbITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985), peggio [del solito](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIcITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) (oppure [meglio](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIdITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985)). [Carlos Alcaraz](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIeITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) ha vinto le ATP Finals di tennis (intanto Sinner sarà operato martedì, [si dice](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIfITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985)). [Marc Márquez](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIgITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) ha [vinto](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIhITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) il campionato di MotoGP. Lazio e Roma sono [prime e seconde in Serie A](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIiITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985): non succedeva, a parti invertite, da 25 anni.",
+            "Si stanno assegnando gli ultimi seggi, ed era dal 1992 che i Democratici non avevano [una maggioranza così larga](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIjITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) alla Camera degli Stati Uniti. La strada dove si va a protestare contro il governo [a Madrid](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIkITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985). Daniele Raineri [è ad Haiti](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIlITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985), dove il presidente del Salvador ha mandato l'esercito e le gang criminali [vogliono parlare](https://x.ilpost.it/re?l=D0I5w3umvI1z679szImITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) con le Nazioni Unite.",
+            "Una guida [alle inchieste sull'ex Ilva](https://x.ilpost.it/re?l=D0I5w3umvI1z679szInITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) di Taranto. I comuni italiani non potranno più contare [sul PNRR](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIoITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985). Un uomo è stato ingiustamente in carcere per 13 giorni [per un'omonimia](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIpITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985). [Quali giornali](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIqITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) ricevono la nuova quota di contributi pubblici (i soliti). Come si contano [le persone senzatetto](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIrITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) in Italia. Parliamo un po' [dei geometri](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIsITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "Su Ferran Adrià c'era in effetti bisogno della serie di Netflix, o almeno [dell'articolo del Post](https://x.ilpost.it/re?l=D0I5w3umvI1z679szItITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "In chiusura",
+          "paragraphs": [
+            "Stasera La7 [trasmetterà](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIuITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) una puntata del programma di Corrado Augias che lui stesso aveva voluto per quando fosse morto. La settimana prossima il Post sarà [a Peccioli](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIvITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) con molte cose e persone, e inizia anche una nuova serie di [Istruzioni](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIwITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985), con Silvia Bencivelli. Si può cominciare a parlare anche dei regali di Natale, con la ricca offerta \"per ogni palato\" di [Cose spiegate bene](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIxITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) e di [Altrecose](https://x.ilpost.it/re?l=D0I5w3umvI1z679szIyITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985): mancano un mese e un giorno, tra poco sarà l'inferno, là fuori."
+          ]
+        },
+        {
+          "heading": "Cose da leggere",
+          "paragraphs": [
+            "Le molte questioni ancora aperte [sulla strage di via D'Amelio](https://x.ilpost.it/re?l=D0I5w3umvI1z679szI10ITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985). [I rischi del \"culto del fondatore\"](https://x.ilpost.it/re?l=D0I5w3umvI1z679szI12ITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) nelle grandi aziende digitali. La leggenda [di Lou Reed](https://x.ilpost.it/re?l=D0I5w3umvI1z679szI13ITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985) e della droga ad Avellino. Come funzioneranno [i visti agevolati per giovani tra Regno Unito e Unione Europea](https://x.ilpost.it/re?l=D0I5w3umvI1z679szI15ITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985). Dal 2030 le macchine di Formula 1 [saranno più rumorose](https://x.ilpost.it/re?l=D0I5w3umvI1z679szI17ITmwtiwz89&s=OEAHLAGDEPDJCOMI&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        }
+      ]
+    },
     {
       "id": "sunday-2026-11-22",
       "source": "sunday",
