@@ -1,6 +1,56 @@
 {
-  "updated": "2026-11-23T23:58:00+01:00",
+  "updated": "2026-11-24T19:05:00+01:00",
   "editions": [
+    {
+      "id": "evening-2026-11-24",
+      "source": "evening",
+      "date": "2026-11-24",
+      "title": "Evening Post, le storie di oggi",
+      "intro": "Martedì 24 novembre: la redazione del Post si racconta contro i luoghi comuni (e Luca Misculin tra gli archivi di Una mattina), Nvidia dopo il ritorno di Huang, il risiko bancario tra Intesa e MPS, il caso De Gennaro, la Spagna a cinque giorni dal voto e la diretta di Joypad su GTA VI.",
+      "brief": "Il Post smonta i luoghi comuni sulla redazione, Nvidia cresce dopo il ritorno di Huang, Intesa Sanpaolo prova a comprare MPS, nuovi dettagli sul caso De Gennaro, la Spagna a cinque giorni dalle elezioni, Sinner si opera al ginocchio; stasera alle 19 la diretta su GTA VI.",
+      "image": {
+        "url": "https://static-prod.cdnilpost.com/wp-content/uploads/2026/11/17/1794912867-pt_c261124.jpg",
+        "alt": "La striscia dei Peanuts di oggi (Charles Schulz)"
+      },
+      "sections": [
+        {
+          "heading": "In apertura",
+          "paragraphs": [
+            "Il Post sa cosa si dice di lui là fuori, e lo sa anche chi lo legge: che la redazione è silenziosa, nessuno telefona e ci si parla solo su Slack; che le scrivanie sono spoglie perché non si consultano giornali, riviste o libri di carta; che, lavorando a un giornale solo online, non si è mai vista [una rotativa](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szI4ITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). La redazione vuole dimostrare che non è proprio così, con l'aiuto di Luca Misculin, che per il podcast Una mattina sta trascorrendo molte ore in archivio e trova spesso affinità con il lavoro di redazione.",
+            "Qualcuno [ricorderà forse](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szI5ITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985) la scaletta della diretta video di marzo, che somigliava un po' a un piano di battaglia; qualcun altro sarà più interessato al piano per liberare Milano, ma di quello non si può dire di più. Intanto, per chi non le avesse ascoltate, [ci sono le prime due stagioni](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szI6ITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985) di Una mattina."
+          ]
+        },
+        {
+          "heading": "Le notizie",
+          "paragraphs": [
+            "Dopo [il ritorno di Jensen Huang](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szI7ITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985) come amministratore delegato, il valore delle azioni di Nvidia [è cresciuto molto](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szI8ITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985) e i mercati [hanno reagito bene](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szI9ITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). Trump si è preso il merito, e in effetti lui e il governo statunitense hanno avuto [un ruolo centrale](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIaITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). Oggi è entrata nel vivo l'operazione più importante del cosiddetto risiko bancario: quella con cui [Intesa Sanpaolo sta provando a comprare MPS](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIbITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). L'Unione Europea limiterà temporaneamente le importazioni di auto ibride da alcuni paesi, [fra cui la Cina](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIcITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). In Italia [è scaduto lo sconto sulle accise del gasolio](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIdITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "Qui da noi: sul caso De Gennaro è venuto fuori che era intercettato nel suo stesso ufficio, e [non è una cosa da poco](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIeITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985); nell'inchiesta su di lui la commissione Antimafia ha avuto un ruolo [molto discusso](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIfITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). Un uomo senzatetto è stato trovato morto [nel cortile della Sapienza a Roma](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIgITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985), dove era accampato da giorni. A Napoli ha riaperto largo Maradona, [dopo il restauro](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIhITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). Alla fine, nel suo documentario, Chiara Ferragni non ha detto [nulla di nuovo sul “pandorogate”](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIiITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "Là in Spagna, a cinque giorni dalle elezioni: i Socialisti del primo ministro Pedro Sánchez stanno salendo nei sondaggi, [ma non abbastanza](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIjITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). Il partito di estrema destra Vox gira intorno al suo presidente Santiago Abascal, e [durante questa campagna elettorale](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIkITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985) lo si sta vedendo molto. È stata applicata l'amnistia al leader indipendentista catalano Carles Puigdemont, [infine](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIlITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "E tutt'intorno, nel vasto mondo: c'è una nuova stima, al rialzo, sui soldati russi uccisi in Ucraina, che sarebbero [più di 700mila](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szImITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). Nell'estrema destra tedesca si litiga [sulla remigrazione](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szInITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). La cantante iraniana Parastoo Ahmadi è stata frustata 74 volte [per essersi esibita senza velo](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIoITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). La Malaysia [rimpatrierà migliaia di rifugiati e richiedenti asilo](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIpITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985) in Myanmar: è probabile che molti facciano parte [della minoranza perseguitata dei rohingya](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIqITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). Per la prima volta [un astronauta non cinese](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIrITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985) visiterà la stazione spaziale della Cina. Perché l'India non riesce proprio a [ridurre l'inquinamento](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIsITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985)? Il Messico sta diventando [più efficace contro i narcos](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szItITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985)?"
+          ]
+        },
+        {
+          "heading": "Tre notizie di sport",
+          "paragraphs": [
+            "Tutti parlano dell'operazione al ginocchio di Jannik Sinner, [tranne Jannik Sinner](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIuITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). Tra Leclerc e Hamilton [va sempre peggio](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIvITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). Il Senegal ha vinto la Coppa d'Africa, [in tribunale](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIwITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Una cosa utile e due consigli per la serata",
+          "paragraphs": [
+            "Dieci idee per [regali di Natale](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIxITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985) sotto i 20 euro.",
+            "Stasera alle 19 Matteo Bordone, Francesco Fossetti e Alessandro Zampini di [Joypad](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIyITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985) saranno in diretta sul Post e [sul canale YouTube](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szIzITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985) per parlare di tutte le cose che si possono fare in Grand Theft Auto VI (per esempio: [birdwatching](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szI10ITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985)) ma soprattutto per mostrarle, giocandoci: una buona occasione anche per chi non ama il genere ma non vuole restare escluso dalle discussioni su [uno dei migliori e più attesi videogiochi di sempre](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szI11ITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "Oggi è iniziato anche Post Brexit, il nuovo podcast in cui Matteo Castellucci racconta che posto è il Regno Unito dieci anni dopo l'uscita dall'Unione Europea; la prima puntata spiega in che senso Brexit non piglia pesci, letteralmente. [Si ascolta qui](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szI12ITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). Il piano per conquistare i lettori finisce qui: se non è riuscito, si riprova domani."
+          ]
+        },
+        {
+          "heading": "Cose da leggere",
+          "paragraphs": [
+            "Mercurio è pieno di misteri, e ora due sonde [proveranno a svelarli](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szI14ITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). Ci sono otto uomini in cerchio: a turno uno si alza, si mette al centro e fa un movimento, e gli altri osservano e se vogliono lo imitano; è una delle attività di [un centro per uomini che hanno commesso violenza, a Bologna](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szI16ITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). Correre il rischio, [o esserne rincorsi](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szI17ITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985). Tatsuki Fujimoto è un autore giapponese di manga che ha 34 anni [ed è già una celebrità](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szI19ITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985), e se ne parla anche perché al cinema c'è un film tratto da un suo fumetto. [Un piano per ridurre il turismo](https://x.ilpost.it/re?l=D0I5w3uuwI1z679szI1bITmwuyautd&s=CHAJJCHNLFAKGFNG&req=dmc_cid%3D3683%26cv_id%3D370985) ai piedi del Monte Bianco, a Chamonix."
+          ]
+        }
+      ]
+    },
     {
       "id": "canzoni-2026-11-23",
       "source": "canzoni",
