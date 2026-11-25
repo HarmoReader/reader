@@ -1,6 +1,39 @@
 {
-  "updated": "2026-11-25T19:05:00+01:00",
+  "updated": "2026-11-25T23:58:00+01:00",
   "editions": [
+    {
+      "id": "canzoni-2026-11-25",
+      "source": "canzoni",
+      "date": "2026-11-25",
+      "title": "Le canzoni: No Chicago",
+      "intro": "Di Luca Sofri.",
+      "brief": "Oggi No Chicago dei Lambchop (2026), canzone che chiude l'ultimo disco, dopo un concerto della band a Manchester ridotta a Kurt Wagner e un chitarrista; prima, la morte di Andy Taylor dei Duran Duran.",
+      "song": {
+        "title": "No Chicago",
+        "artist": "Lambchop",
+        "year": 2026,
+        "links": [
+          {
+            "label": "Spotify",
+            "url": "https://x.ilpost.it/re?l=D0I5w3v5iI1z679szI4ITmwwpvwu0I5si09w&s=LNGIBFKANLGDAOEF&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "Apple Music",
+            "url": "https://x.ilpost.it/re?l=D0I5w3v5iI1z679szI5ITmwwpvwu0I5si09w&s=LNGIBFKANLGDAOEF&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "YouTube",
+            "url": "https://x.ilpost.it/re?l=D0I5w3v5iI1z679szI6ITmwwpvwu0I5si09w&s=LNGIBFKANLGDAOEF&req=dmc_cid%3D3683%26cv_id%3D370985"
+          }
+        ]
+      },
+      "paragraphs": [
+        "Prima di tutto, due notizie: è [morto](https://x.ilpost.it/re?l=D0I5w3v5iI1z679szI2ITmwwpvwu0I5si09w&s=LNGIBFKANLGDAOEF&req=dmc_cid%3D3683%26cv_id%3D370985) Andy Taylor dei Duran Duran, e il Post ha [raccontato](https://x.ilpost.it/re?l=D0I5w3v5iI1z679szI3ITmwwpvwu0I5si09w&s=LNGIBFKANLGDAOEF&req=dmc_cid%3D3683%26cv_id%3D370985) il famoso Last Waltz della Band, oggi non più così famoso.",
+        "Sofri si era segnato di usare questa canzone da quando era uscita, qualche mese fa, e oggi è il giorno giusto: ieri sera è stato a sentire i Lambchop in una piccola sala di Manchester. Un concerto strano e molto suggestivo, che rende ancora più difficile chiamare \"i Lambchop\" i Lambchop, visto che sul palco erano in due, con una chitarra. I Lambchop [sono](https://x.ilpost.it/re?l=D0I5w3v5iI1z679szI7ITmwwpvwu0I5si09w&s=LNGIBFKANLGDAOEF&req=dmc_cid%3D3683%26cv_id%3D370985) già [comparsi](https://x.ilpost.it/re?l=D0I5w3v5iI1z679szI8ITmwwpvwu0I5si09w&s=LNGIBFKANLGDAOEF&req=dmc_cid%3D3683%26cv_id%3D370985) ben [tre volte](https://x.ilpost.it/re?l=D0I5w3v5iI1z679szI9ITmwwpvwu0I5si09w&s=LNGIBFKANLGDAOEF&req=dmc_cid%3D3683%26cv_id%3D370985) in questa newsletter: la sintesi è che Kurt Wagner è un grande elaboratore del suono sdolcinato, orchestratore di testi ironici a metà tra il soul e il country & western e qualcos'altro che non esisteva, a capo di una band di Nashville che a volte arriva a una quindicina di elementi.",
+        "La band è soprattutto Kurt Wagner, che nella sua storia ha raccolto e lasciato molti collaboratori. Ieri sera con lui c'era Andrew Broder, musicista capace di tutto che si conosce [per via dei Fog](https://x.ilpost.it/re?l=D0I5w3v5iI1z679szIaITmwwpvwu0I5si09w&s=LNGIBFKANLGDAOEF&req=dmc_cid%3D3683%26cv_id%3D370985), e i due sedevano su due seggette in un palco vuoto e quasi al buio: nessuno ha visto la faccia di Wagner per tutta la sera, tenuta in ombra da uno dei suoi cappelli da baseball, mentre lampeggiava solo la recente e abbondante barba bianca. Hanno fatto le canzoni [dell'ultimo disco](https://x.ilpost.it/re?l=D0I5w3v5iI1z679szIbITmwwpvwu0I5si09w&s=LNGIBFKANLGDAOEF&req=dmc_cid%3D3683%26cv_id%3D370985) spogliate del banjo (che nel disco suona Justin Vernon dei Bon Iver) e dei ricchi cori post gospel che lo rendono particolare: una voce e una chitarra acustica. Poteva essere una serata noiosissima, come l'ultima volta per Sofri, a Roma nel 2017 per il disco \"elettronico\", e invece è stata davvero suggestiva, grazie alla voce speciale di Wagner, alla durata parsimoniosa delle canzoni e dell'insieme, e alle brillanti conversazioni tra i due, spiritosi con una comicità altrettanto rallentata e notturna. Bello, se capita (non da Peccioli, a meno di spostarsi in uno spazio più intimo).",
+        "No Chicago chiude il disco ed è una divertente invenzione in cui il coro elenca nomi di città del mondo, anche Bologna, Torino e \"Vincenza\": secondo alcune versioni lette online sarebbero state le tappe del tour di una band che dovette sospenderlo per ragioni di salute, e Wagner si limita a concludere con \"No Chicago\", con l'intenzione di prendere in giro i fan che si lamentano dei tour che non passano dalla loro città, il tutto reso angelico dai preziosi cori."
+      ]
+    },
     {
       "id": "evening-2026-11-25",
       "source": "evening",
