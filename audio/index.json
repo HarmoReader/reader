@@ -1,6 +1,7 @@
 {
  "voice": "it-IT-IsabellaNeural",
  "ids": [
+  "evening-2026-11-25",
   "canzoni-2026-11-24",
   "evening-2026-11-24",
   "canzoni-2026-11-23",
@@ -24,8 +25,6 @@
   "evening-2026-11-12",
   "streaming-2026-11-12",
   "canzoni-2026-11-11",
-  "evening-2026-11-11",
-  "canzoni-2026-11-10",
-  "evening-2026-11-10"
+  "evening-2026-11-11"
  ]
 }
