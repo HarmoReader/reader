@@ -4,7 +4,7 @@ const { execSync } = require('child_process');
 const webpush = require('web-push');
 
 const PUBLIC = 'BAd_Yge3vtG-3XPUfoydSh-DlLhE0g-xSr6C7RrNZmKU47zaxCB0Kl_kYU2mSegxN_rUBrl52iWoEB5c7iJaekw';
-const NAMES = { evening: 'Evening', canzoni: 'Le canzoni', charlie: 'Charlie', streaming: 'Dicono che è bello al cinema', sunday: 'Sunday Post', outpost: 'Outpost' };
+const NAMES = { evening: 'Evening', canzoni: 'Le canzoni', charlie: 'Charlie', streaming: 'Dicono che è bello al cinema', sunday: 'Sunday Post', outpost: 'Outpost', montecit: 'Montecit' };
 
 if (!process.env.VAPID_PRIVATE || !process.env.PUSH_SUB) { console.log('Notifiche non configurate: mancano i segreti.'); process.exit(0); }
 
