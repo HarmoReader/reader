@@ -1,6 +1,97 @@
 {
-  "updated": "2026-11-26T07:58:00+01:00",
+  "updated": "2026-11-26T19:10:00+01:00",
   "editions": [
+    {
+      "id": "evening-2026-11-26",
+      "source": "evening",
+      "date": "2026-11-26",
+      "title": "Evening Post, le storie di oggi",
+      "intro": "Giovedì 26 novembre: manosfera o maschiosfera, la quotazione di Anthropic che arricchisce migliaia di persone, un attacco iraniano che uccide due italiani in Kuwait, Pablo Hernández de Cos alla BCE, il decreto scuola, l'Unione Europea davanti a Le Pen e Sinner che salta gli Australian Open.",
+      "brief": "Un attacco iraniano uccide due italiani in Kuwait, accordo su Pablo Hernández de Cos presidente della BCE, il decreto scuola è legge, la quotazione di Anthropic arricchisce molte persone, Sinner salta gli Australian Open; in apertura la questione manosfera/maschiosfera.",
+      "image": {
+        "url": "https://static-prod.ilpost.it/teckel/newsletter/ilpost-production/2026/11/7075da5400482890c8b808a5339a2230.jpg",
+        "alt": "La striscia dei Peanuts di oggi (Charles Schulz)"
+      },
+      "sections": [
+        {
+          "heading": "In apertura",
+          "paragraphs": [
+            "\"Maschiosfera\" è la parola usata ieri, anche in questa newsletter, per definire l'[insieme di influencer e comunità online fieramente misogine](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szI4ITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985) di cui si è molto discusso negli ultimi anni. Oggi qualcuno ha commentato che finora si era usato \"manosfera\", e qualcun altro ha ribattuto che no, si usa \"maschiosfera\". Si è attivata un'indagine interna che ha verificato che sul Post sono state usate indifferentemente entrambe le parole, con una prevalenza leggera di \"manosfera\", e quindi c'era un po' di impasse sul da farsi. Per fortuna il Post [pubblica anche libri (di carta)](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szI5ITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985), che escono e fanno Cassazione: e quindi \"manosfera\" sia."
+          ]
+        },
+        {
+          "heading": "Le notizie",
+          "paragraphs": [
+            "La quotazione di Anthropic [ha reso ricche molte persone](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szI6ITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985): molte nel senso di migliaia, ricche nel senso di milionarie. Un attacco iraniano [ha ucciso due italiani in Kuwait](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szI7ITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985). C'è un accordo per Pablo Hernández de Cos come [nuovo presidente della BCE](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szI8ITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985). [Il “decreto scuola” è legge](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szI9ITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985), nonostante le divisioni nella maggioranza: il parlamento ha approvato le discusse norme sugli sconti ai libri scolastici digitali (ma vuole già cambiarle) e quelle sugli studenti stranieri.",
+            "In provincia di Pistoia [una donna è stata uccisa](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIaITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985): secondo la procura è stato il compagno, che poi si è ucciso lanciandosi da un viadotto. Il Corriere della Sera ha pubblicato [alcune parti di una lettera](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIbITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985) scritta dall'ex capo della polizia Gianni De Gennaro il giorno [prima di uccidersi](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIcITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Altre dal resto del mondo",
+          "paragraphs": [
+            "L'Unione Europea [si sta preparando all'arrivo di Marine Le Pen](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIdITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985) (o meglio, sta cercando di sbrigare un po' di faccende prima che arrivi). Nel Regno Unito l'immigrazione si è fortemente ridotta: [il saldo migratorio è il più basso in 30 anni](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIeITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985), un calo dovuto soprattutto alle restrizioni sui visti per studio, lavoro e ricongiungimento familiare. C'è [una buona notizia per Netanyahu](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIfITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985) nel processo contro di lui.",
+            "Il partito di Puigdemont sperava nel suo rientro per rimontare alle elezioni del 29 novembre, ma [lui ha detto che tornerà solo a dicembre](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIgITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985). C'è [una seconda puntata](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIhITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985) dell'inchiesta sulle frasi antisemite attribuite a Jordan Bardella. Nvidia ha bloccato le spedizioni di server verso quattro paesi del sud-est asiatico, [per impedire alle aziende cinesi di aggirare i divieti statunitensi](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIiITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985) sui chip per l'intelligenza artificiale. Una nave cisterna carica di gasolio è affondata al largo di Ibiza: [si teme una fuoriuscita](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIjITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Telefono, filosofia, tradizioni e sport",
+          "paragraphs": [
+            "WhatsApp sta introducendo [la possibilità di programmare i messaggi](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIkITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985), da 10 minuti a un massimo di 14 giorni, per le persone proprio organizzatissime. Una questione filosofica ma anche pratica: cosa cambia se [i grandi problemi matematici li risolve l'AI](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIlITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985). Da più di cent'anni nel giorno del Ringraziamento decine di carri con palloni aerostatici che raffigurano personaggi dei cartoni animati e dei fumetti sfilano per Manhattan: quest'anno [non sarà così](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szImITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "Tre cose di sport: un articolo sul [palleggiatore del futuro](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szInITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985); Jannik Sinner [salterà gli Australian Open](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIoITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985); Aaron Rodgers [ne ha combinata un'altra delle sue](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIpITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985): l'avevano messo in panchina e lui, quarterback molto forte e molto controverso, ha parlato malissimo del suo allenatore, e ora è senza squadra. La newsletter torna domani con l'ultima della settimana."
+          ]
+        },
+        {
+          "heading": "Cose da leggere",
+          "paragraphs": [
+            "Gianni De Gennaro aveva amici stretti in politica, a destra e a sinistra, nei servizi segreti, nella Polizia, tra manager e diplomatici e persino negli Stati Uniti: [aveva una rete potentissima](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIrITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985). Come si fa [una selezione tra migliaia di emendamenti alla legge di bilancio](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szItITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985). [I wanna beeeeee anarchy](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIuITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985). Federica Brignone è [la sciatrice preferita della tua sciatrice preferita](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIwITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985). [Cos'è e cosa non è](https://x.ilpost.it/re?l=D0I5w3ve9I1z679szIyITmwxtn3fy&s=MHNBIJENHBMMIKMH&req=dmc_cid%3D3683%26cv_id%3D370985) You Can See Everything."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "streaming-2026-11-26",
+      "source": "streaming",
+      "date": "2026-11-26",
+      "title": "Un po' di replicanti e qualcosa per l'astinenza da 883",
+      "intro": "La serie su Blade Runner ambientata nel 2099, il film di Sydney Sibilia su Mixed by Erry per chi è in astinenza da 883, i nuovi arrivi con Piedone, Her Private Hell, War e Nido di vipere, e Il tuttofare di Valerio Attanasio.",
+      "sections": [
+        {
+          "heading": "In apertura",
+          "paragraphs": [
+            "Venerdì scorso è uscita su Sky e Now l'ultima puntata di Nord Sud Ovest Est, seconda stagione della serie La leggendaria storia degli 883 (la prima era intitolata Hanno ucciso l'Uomo Ragno). È stata [un successo](https://x.ilpost.it/re?l=D0I5w3v8xI1z679szI3ITmwxk8v6t&s=PAMDDBFPJHPCJHEO&req=dmc_cid%3D3683%26cv_id%3D370985) come capita sempre più di rado alle serie italiane, ed è arrivata anche a una fetta di pubblico che non è fan della musica di Max Pezzali. Lo stesso Pezzali ha raccontato che grazie alle due stagioni sta vivendo [un ritorno di popolarità](https://x.ilpost.it/re?l=D0I5w3v8xI1z679szI4ITmwxk8v6t&s=PAMDDBFPJHPCJHEO&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "Il racconto di due ragazzi di Pavia che da compagni di banco pubblicano due album di grandissimo successo, cambiando il pop italiano, non ha troppo a che fare con la loro musica: dentro la serie ci sono soprattutto una storia di amicizia (su cui investe più capitale emotivo che sulle parti romantiche), un effetto nostalgia per gli anni Novanta che nessuno in Italia aveva ancora saputo rappresentare bene e una rara rappresentazione del sistema mediatico e televisivo italiano quando era ancora potente e grandioso."
+          ]
+        },
+        {
+          "heading": "Ora in streaming",
+          "paragraphs": [
+            "Blade Runner 2099 (2026), su [Prime Video](https://x.ilpost.it/re?l=D0I5w3v8xI1z679szI5ITmwxk8v6t&s=PAMDDBFPJHPCJHEO&req=dmc_cid%3D3683%26cv_id%3D370985): ottant'anni dopo gli eventi del film Blade Runner e cinquanta dopo quelli di Blade Runner 2049, i replicanti si sono ribellati e hanno preso il potere, gli umani sono cittadini di seconda classe e l'unità Blade Runner è formata da replicanti che danno la caccia agli umani. Ora a quel gruppo si è unita una donna che per sopravvivere si finge una replicante.",
+            "Ridley Scott non è coinvolto direttamente ma non è nemmeno estraneo: è produttore esecutivo e ha avuto voce in capitolo nella progettazione e nella revisione delle sceneggiature, in una produzione comunque separata dai film, di cui riprende l'impatto visivo. L'estetica della Los Angeles del futuro è la stessa, la colonna sonora ha sonorità e temi di quella di Vangelis e anche le grafiche dei computer somigliano a quelle del 1982. La storia è invece ribaltata, con un'umana che si nasconde da cacciatori replicanti: si perde così il sottotesto teorico del film, sul desiderare la vita e sul dubbio identitario. Si guadagna una grande ricchezza visiva, di eccezionale densità per una produzione televisiva, e il senso disperato di un mondo in cui è facile morire e difficile amare. [Trailer](https://x.ilpost.it/re?l=D0I5w3v8xI1z679szI6ITmwxk8v6t&s=PAMDDBFPJHPCJHEO&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Qualcos'altro di Sydney Sibilia",
+          "paragraphs": [
+            "Mixed by Erry (2023), su [Netflix](https://x.ilpost.it/re?l=D0I5w3v8xI1z679szI7ITmwxk8v6t&s=PAMDDBFPJHPCJHEO&req=dmc_cid%3D3683%26cv_id%3D370985): a Forcella, a Napoli, negli anni Ottanta i fratelli Frattasio cominciano a commerciare [audiocassette piratate](https://x.ilpost.it/re?l=D0I5w3v8xI1z679szI8ITmwxk8v6t&s=PAMDDBFPJHPCJHEO&req=dmc_cid%3D3683%26cv_id%3D370985) con il marchio Mixed by Erry e con una strategia editoriale inedita, fino a un giro d'affari illegale che comincia a preoccupare la guardia di finanza e l'industria discografica del nord. Per chi è in astinenza da La leggendaria storia degli 883, è l'ultimo film del suo creatore: non sono gli anni Novanta ma gli Ottanta, non Pavia ma Napoli, però c'è la stessa idea di un gruppo di persone con un sogno che realizza qualcosa di molto grande in modi estremamente ingenui.",
+            "A ricordare la serie è soprattutto la produzione: dietro ci sono Groenlandia, società di cui Sibilia è cofondatore, molto abile a costruire produzioni dalle immagini curate e dalle ricostruzioni di ottimo livello (è sua anche [La legge di Lidia Poët](https://x.ilpost.it/re?l=D0I5w3v8xI1z679szI9ITmwxk8v6t&s=PAMDDBFPJHPCJHEO&req=dmc_cid%3D3683%26cv_id%3D370985)), con un'attenzione all'americana per la credibilità. [Trailer](https://x.ilpost.it/re?l=D0I5w3v8xI1z679szIaITmwxk8v6t&s=PAMDDBFPJHPCJHEO&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        },
+        {
+          "heading": "Arrivi e partenze",
+          "paragraphs": [
+            "Da lunedì è disponibile [su Sky e Now](https://x.ilpost.it/re?l=D0I5w3v8xI1z679szIbITmwxk8v6t&s=PAMDDBFPJHPCJHEO&req=dmc_cid%3D3683%26cv_id%3D370985) il primo dei tre film della serie Piedone: come i primi quattro, storie autoconclusive sull'ispettore Palmieri (Salvatore Esposito) che riprendono lo spirito dei film con Bud Spencer, con crimine e umanità a Napoli ma con leggerezza. Her Private Hell è il nuovo film di Nicolas Winding Refn (Drive, Too Old to Die Young), passato con recensioni non buone da Cannes: una giovane attrice, un killer e una città indefinita di un futuro poco definito, disponibile da domani [su MUBI](https://x.ilpost.it/re?l=D0I5w3v8xI1z679szIcITmwxk8v6t&s=PAMDDBFPJHPCJHEO&req=dmc_cid%3D3683%26cv_id%3D370985).",
+            "War - Il divorzio del secolo, con Dominic West e Sienna Miller, è un legal thriller leggero su un divorzio milionario in cui la vera guerra è quella tra i due giganteschi studi di avvocati, con sartoria di altissimo livello e dietro lo stesso creatore di Lupin: da domani su Sky e Now. Da oggi su Netflix c'è la seconda stagione di Nido di vipere (The Hunting Wives), la cui prima stagione seguiva Sophie, depressa in un paesino del Texas, tra caccia al cinghiale, un omicidio e consueti misteri."
+          ]
+        },
+        {
+          "heading": "Dalle profondità delle piattaforme",
+          "paragraphs": [
+            "Il tuttofare (2018), su [Prime Video](https://x.ilpost.it/re?l=D0I5w3v8xI1z679szIdITmwxk8v6t&s=PAMDDBFPJHPCJHEO&req=dmc_cid%3D3683%26cv_id%3D370985): Antonio Bonocore è un avvocato praticante nello studio del grande penalista Salvatore Bellastella e per 300 euro al mese svolge lavori poco attinenti alla giurisprudenza, con la promessa di un futuro inquadramento; il dunque arriva quando Bellastella gli propone di sposare la sua amante argentina perché ottenga la cittadinanza italiana.",
+            "Il film d'esordio di Sydney Sibilia fu Smetto quando voglio, scritto con Valerio Attanasio, che esordì poi da sceneggiatore unico e regista con Il tuttofare: stesso umorismo, stesso punto di vista sull'Italia e un grandissimo ritmo. Conoscendo i film di Sibilia, si capisce che lui era l'anima epica di Smetto quando voglio e Attanasio la componente più grottesca e dall'umorismo nero. [Trailer](https://x.ilpost.it/re?l=D0I5w3v8xI1z679szIeITmwxk8v6t&s=PAMDDBFPJHPCJHEO&req=dmc_cid%3D3683%26cv_id%3D370985)."
+          ]
+        }
+      ]
+    },
     {
       "id": "canzoni-2026-11-25",
       "source": "canzoni",
