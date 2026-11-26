@@ -1,6 +1,39 @@
 {
-  "updated": "2026-11-26T19:10:00+01:00",
+  "updated": "2026-11-26T23:58:00+01:00",
   "editions": [
+    {
+      "id": "canzoni-2026-11-26",
+      "source": "canzoni",
+      "date": "2026-11-26",
+      "title": "Le canzoni: Don't leave the light on, baby",
+      "intro": "Di Luca Sofri.",
+      "brief": "Oggi Don't leave the light on, baby dei Belle and Sebastian (2003), canzone quieta e notturna sulla fine di una storia; prima, Peter Gabriel a Londra, i 45 giri britannici e un ricordo dei Duran Duran.",
+      "song": {
+        "title": "Don't leave the light on, baby",
+        "artist": "Belle and Sebastian",
+        "year": 2003,
+        "links": [
+          {
+            "label": "Spotify",
+            "url": "https://x.ilpost.it/re?l=D0I5w3vebI1z679szI8ITmwy2hogeI5si09w&s=PPDABDJIPCMBPMND&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "Apple Music",
+            "url": "https://x.ilpost.it/re?l=D0I5w3vebI1z679szIaITmwy2hogeI5si09w&s=PPDABDJIPCMBPMND&req=dmc_cid%3D3683%26cv_id%3D370985"
+          },
+          {
+            "label": "YouTube",
+            "url": "https://x.ilpost.it/re?l=D0I5w3vebI1z679szIbITmwy2hogeI5si09w&s=PPDABDJIPCMBPMND&req=dmc_cid%3D3683%26cv_id%3D370985"
+          }
+        ]
+      },
+      "paragraphs": [
+        "Prima di tutto, una coincidenza sfortunata: Sofri aveva programmato, senza ormai possibilità di deroghe, di ripartire da Londra domani alle quattro del pomeriggio, e Peter Gabriel ha fissato di [presentare il disco nuovo a Londra](https://x.ilpost.it/re?l=D0I5w3vebI1z679szI2ITmwy2hogeI5si09w&s=PPDABDJIPCMBPMND&req=dmc_cid%3D3683%26cv_id%3D370985) domani alle sette. Oggi ha rimpinguato la collezione di 45 giri, di cui si occupa quasi solo nel Regno Unito, perché le copertine britanniche sono di qualità molto migliore; ha però rinunciato a [questa copia firmata](https://x.ilpost.it/re?l=D0I5w3vebI1z679szI3ITmwy2hogeI5si09w&s=PPDABDJIPCMBPMND&req=dmc_cid%3D3683%26cv_id%3D370985) di Stanley Road di Paul Weller, fiero di conservare ancora un senso della misura.",
+        "Ieri aveva citato sbrigativamente la morte di Andy Taylor dei Duran Duran, perché la notizia era arrivata da poco e lui era in ritardo con la newsletter: ma i Duran Duran sono stati parte delle vite di molti, e Sofri è molto fan di [The chauffeur](https://x.ilpost.it/re?l=D0I5w3vebI1z679szI4ITmwy2hogeI5si09w&s=PPDABDJIPCMBPMND&req=dmc_cid%3D3683%26cv_id%3D370985) e [The seventh stranger](https://x.ilpost.it/re?l=D0I5w3vebI1z679szI5ITmwy2hogeI5si09w&s=PPDABDJIPCMBPMND&req=dmc_cid%3D3683%26cv_id%3D370985), come si sa, e anche [dei dischi](https://x.ilpost.it/re?l=D0I5w3vebI1z679szI6ITmwy2hogeI5si09w&s=PPDABDJIPCMBPMND&req=dmc_cid%3D3683%26cv_id%3D370985) successivi al fandom planetario, quelli che dimostrarono di che pasta erano fatti. La canzone che ha sentito più spesso nei locali pubblici in questa settimana britannica è [Ooh la la](https://x.ilpost.it/re?l=D0I5w3vebI1z679szI7ITmwy2hogeI5si09w&s=PPDABDJIPCMBPMND&req=dmc_cid%3D3683%26cv_id%3D370985) dei Faces. Davvero.",
+        "Dei Belle and Sebastian Sofri aveva già [detto qui](https://x.ilpost.it/re?l=D0I5w3vebI1z679szIcITmwy2hogeI5si09w&s=PPDABDJIPCMBPMND&req=dmc_cid%3D3683%26cv_id%3D370985) quando li aveva scelti per una serata allegra: stasera invece si resta più aderenti alla linea editoriale prevalente della newsletter, quieta e notturna, che non può farsi mancare una canzone che dice di non lasciare la luce accesa, baby. Lo dice perché la storia è finita e meglio farsene una ragione.",
+        "Le cose più belle della canzone sono l'inizio, con quell'organo e un verso sulla giornata stupidissima, e la rima conclusiva. Domenica i Belle and Sebastian suonano a Ciampino e [ci sono ancora biglietti](https://x.ilpost.it/re?l=D0I5w3vebI1z679szIdITmwy2hogeI5si09w&s=PPDABDJIPCMBPMND&req=dmc_cid%3D3683%26cv_id%3D370985). Il senso del finale è: non aspettarmi stasera, magari una volta ci vediamo."
+      ]
+    },
     {
       "id": "evening-2026-11-26",
       "source": "evening",
