@@ -1,6 +1,8 @@
 {
  "voice": "it-IT-IsabellaNeural",
  "ids": [
+  "montecit-2026-11-27",
+  "evening-2026-11-27",
   "canzoni-2026-11-26",
   "evening-2026-11-26",
   "streaming-2026-11-26",
@@ -24,9 +26,6 @@
   "evening-2026-11-16",
   "sunday-2026-11-15",
   "canzoni-2026-11-13",
-  "evening-2026-11-13",
-  "canzoni-2026-11-12",
-  "evening-2026-11-12",
-  "streaming-2026-11-12"
+  "evening-2026-11-13"
  ]
 }
